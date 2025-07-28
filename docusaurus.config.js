@@ -93,8 +93,17 @@ const config = {
             sidebarId: 'docsSidebar',
             position: 'right',
             label: 'Get Started',
-          },
-          {
+},
+{
+  type: 'docSidebar',
+  sidebarId: 'docsSidebar',
+  label: 'Training',
+  to: '/docs/training/overview',
+  position: 'right',
+},
+{
+  type: 'dropdown',
+
             type: 'dropdown',
             label: 'About',
             position: 'right',
