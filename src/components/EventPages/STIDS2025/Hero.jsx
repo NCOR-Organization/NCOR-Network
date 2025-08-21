@@ -32,26 +32,31 @@ export default function Hero() {
           </h1>
 
           <div className={styles.heroDate}>November 17–19, 2025</div>
+          <div style={{
+  marginTop: '1.5rem',
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <a
+    href="#unclassified-registration"
+    className={`${styles.button} ${styles.buttonPrimary}`}>
+    Unclassified Registration
+  </a>
+  <a
+    href="#classified-registration"
+    className={`${styles.button} ${styles.buttonPrimary}`}>
+    Classified Registration
+  </a>
+</div>
+
           <div className={styles.heroLocation}>
             Fuse at Mason Square (George Mason University)<br />
             3351 Fairfax Drive, Arlington, VA 22201
           </div>
 
-          {/* Two registration buttons */}
-          <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <a
-              href="#unclassified-registration"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Unclassified Registration
-            </a>
-            <a
-              href="#classified-registration"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Classified Registration
-            </a>
-          </div>
+          
         </div>
       </div>
     </>
