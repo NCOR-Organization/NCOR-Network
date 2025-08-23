@@ -55,8 +55,6 @@ export default function Hero() {
             Fuse at Mason Square (George Mason University)<br />
             3351 Fairfax Drive, Arlington, VA 22201
           </div>
-
-          
         </div>
       </div>
     </>
