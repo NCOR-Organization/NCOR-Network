@@ -17,8 +17,6 @@ const config = {
   projectName: 'NCOR-Network',
   trailingSlash: false,
 
-  // ✨ REMOVED from here (was causing the error): metadata
-
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
@@ -42,6 +40,11 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -58,20 +61,11 @@ const config = {
         exclude: ['resources/**'],
       },
     ],
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.7,
-        filename: 'sitemap.xml',
-      },
-    ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // ✅ Put global <meta> tags here in v3:
       metadata: [
         {
           name: 'description',

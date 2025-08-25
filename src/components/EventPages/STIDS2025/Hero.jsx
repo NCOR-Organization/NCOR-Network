@@ -31,32 +31,29 @@ export default function Hero() {
             Semantic Technology for Intelligence, Defense, and Security Conference (STIDS) 2025
           </h1>
 
-          <div className={styles.heroDate}>November 17–18, 2025</div>
-          <div className={styles.heroLocation}>
-            George Mason University, Potomac Science Center<br />
-            650 Mason Ferry Avenue, Woodbridge VA 22191
-          </div>
+          <div className={styles.heroDate}>November 17–19, 2025</div>
+          <div style={{
+  marginTop: '1.5rem',
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '1rem',
+  flexWrap: 'wrap'
+}}>
+  <a
+    href="#unclassified-registration"
+    className={`${styles.button} ${styles.buttonPrimary}`}>
+    Unclassified Registration
+  </a>
+  <a
+    href="#classified-registration"
+    className={`${styles.button} ${styles.buttonPrimary}`}>
+    Classified Registration
+  </a>
+</div>
 
-          <div className={styles.heroDate}>November 19, 2025</div>
           <div className={styles.heroLocation}>
-            National Geospatial-Intelligence Agency (NGA)<br />
-            7500 GEOINT Dr, Springfield VA 22150
-          </div>
-
-          {/* Two registration buttons */}
-          <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <a
-              href="#unclassified-registration"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Unclassified Registration
-            </a>
-            <a
-              href="#classified-registration"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Classified Registration
-            </a>
+            Fuse at Mason Square (George Mason University)<br />
+            3351 Fairfax Drive, Arlington, VA 22201
           </div>
         </div>
       </div>

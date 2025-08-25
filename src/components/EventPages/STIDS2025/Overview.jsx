@@ -31,8 +31,10 @@ export default function Overview() {
           </p>
 
           <div style={{ marginTop: '2rem' }}>
-            <ul><strong>Unclassified Session:</strong> November 17–18, 2025</ul>
-            <ul><strong>Classified Session:</strong> November 19, 2025 (by invite)</ul>
+            <ul>
+              <li><strong>Unclassified Session:</strong> November 17–18, 2025</li>
+              <li><strong>Classified Session:</strong> November 19, 2025 (by invite)</li>
+            </ul>
           </div>
         </div>
       </div>
