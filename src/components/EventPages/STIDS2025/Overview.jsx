@@ -23,7 +23,7 @@ centers on applying semantic technologies to support trustworthy and explainable
 reasoning across data ecosystems.</p>
           <div style={{ marginTop: '2rem' }}>
             <ul><strong>Unclassified Session:</strong> November 17-18, 2025</ul>
-            <ul><strong>Classified Session:</strong> November 19, 2025 (by invite)</ul>
+            <ul><strong>Classified Session:</strong> November 19, 2025</ul>
           </div>
         </div>
       </div>

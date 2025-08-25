@@ -110,13 +110,14 @@ export default function CallForPapers() {
         
         <div className={styles.card}>
           <h3>Submission Guidelines</h3>
-          <p>We invite submissions of original, unpublished research and application papers that
-address innovative solutions, architectures, and methodologies integrating semantic
-technologies with advanced computing in support of national security objectives. We
-particularly welcome papers that advance the state of the art in semantic interoperability
-and machine reasoning for data-intensive systems, supporting enhanced situational
-awareness, predictive analytics, and decision-making capabilities in complex,
-distributed environments.
+          <p>
+            We invite submissions of original, unpublished research and application papers that
+            address innovative solutions, architectures, and methodologies integrating semantic
+            technologies with advanced computing in support of national security objectives. We
+            particularly welcome papers that advance the state of the art in semantic interoperability
+            and machine reasoning for data-intensive systems, supporting enhanced situational
+            awareness, predictive analytics, and decision-making capabilities in complex,
+            distributed environments.
           </p>
           <ul>
             <li>Extended abstracts must be <b>no more than 3 pages</b></li>
@@ -146,20 +147,24 @@ distributed environments.
           </div>
         </div>
 
-  <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-  <a 
-    href="https://easychair.org/conferences/?conf=stids2025"
-    className={`${styles.button} ${styles.buttonPrimary}`}
-    style={{ marginRight: '1rem' }}
-  >
-    Submit Paper
-  </a>
-  <a 
-    href="/documents/CEUR-Template-Bundle.zip" 
-    download
-    className={`${styles.button} ${styles.buttonSecondary}`}
-  >
-            Download Template
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <div style={{ marginBottom: '1rem' }}>
+            <a href="https://ceur-ws.org/Vol-XXX/CEUR-Template-1col.odt" 
+              download
+              className={`${styles.button} ${styles.buttonSecondary}`}
+              style={{ marginRight: '1rem' }}>
+              Doc Template
+            </a>
+            <a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.button} ${styles.buttonSecondary}`}>
+              Latex Template
+            </a>
+          </div>
+          <a href="https://easychair.org/conferences/?conf=stids2025"
+            className={`${styles.button} ${styles.buttonPrimary}`}>
+            Submit Paper
           </a>
         </div>
       </div>
