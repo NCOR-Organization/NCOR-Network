@@ -66,6 +66,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
       metadata: [
         {
           name: 'description',
@@ -223,7 +224,9 @@ const config = {
       type: 'text/css',
     },
   ],
+
   headTags: [
+    // Scripts
     {
       tagName: 'script',
       attributes: {
@@ -236,10 +239,22 @@ const config = {
       attributes: { type: 'text/javascript' },
       innerHTML: `
         (function(){
-          emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+          // TODO: replace with your actual EmailJS user ID or remove if unused
+          emailjs.init("YOUR_USER_ID");
         })();
       `,
     },
+
+    // Global meta tags (migrated from themeConfig.metadata)
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'description',
+        content:
+          'NCOR is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems.',
+      },
+    },
+    { tagName: 'meta', attributes: { property: 'og:site_name', content: 'NCOR Network' } },
   ],
 };
 
