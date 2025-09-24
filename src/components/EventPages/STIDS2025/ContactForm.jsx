@@ -1,28 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './styles.module.css';
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
+export default function ContactInfo() {
   return (
     <div className={styles.section} style={{ background: 'var(--ifm-background-surface-color)' }}>
       <div className={styles.container}>
@@ -31,79 +10,32 @@ export default function ContactForm() {
           Have questions about STIDS 2025? We're here to help.
         </p>
 
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.formField}>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className={styles.formInput}
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className={styles.formField}>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className={styles.formInput}
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className={styles.formField}>
-            <label htmlFor="phone">Phone (optional)</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              className={styles.formInput}
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className={styles.formField}>
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              className={styles.formTextarea}
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div style={{ textAlign: 'center' }}>
-            <button 
-              type="submit" 
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
+        <div style={{ 
+          marginTop: '2rem',
+          textAlign: 'center',
+          color: 'var(--ifm-color-emphasis-700)',
+          fontSize: '1.1rem'
+        }}>
+          <a 
+            href="mailto:johnbeve@buffalo.edu?subject=STIDS%202025%20Inquiry" 
+            className={`${styles.button} ${styles.buttonPrimary}`}
+          >
+            Email Us
+          </a>
+        </div>
 
         <div style={{ 
           marginTop: '3rem',
           textAlign: 'center',
           color: 'var(--ifm-color-emphasis-700)'
         }}>
+          <p><strong>Location:</strong></p>
           <p>
-            <strong>Location:</strong>{' '}
-            George Mason University, Potomac Science Center<br />
-            650 Mason Ferry Avenue, Woodbridge VA 22191
+            Fuse at Mason Square (George Mason University)<br />
+            3351 Fairfax Drive, Arlington, VA 22201
           </p>
         </div>
       </div>
     </div>
   );
-} 
+}
