@@ -22,7 +22,7 @@ export default function ImportantDates() {
       )
     },
     {
-      title: 'Camera-Ready Submission Deadline',
+      title: 'Camera-Ready Submission Deadline ',
       date: 'November 3, 2025',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
