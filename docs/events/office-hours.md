@@ -4,6 +4,28 @@ title: Office Hours
 sidebar_position: 2
 ---
 
+<!-- NCOR Events Calendar -->
+<div id="ncor-calendar" style={{maxWidth:'1100px', margin:'1rem auto 2rem', padding:'0 1rem'}}>
+  <h2 style={{margin:'0 0 .75rem'}}>NCOR Events Calendar</h2>
+  <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=bmNvcm5ldHdvcmtAZ21haWwuY29t&src=NDRhMTk3MDk1NDE1ZDEwOWI3ZGMwOGUzZTU3MDUyMDU3MzlhMzEyYzliZjI0MDNiNDVhNTYzNDIwYWVjMzY5N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%237986cb"
+    style={{border:'1px solid #777', borderRadius:'8px', width:'100%', height:'800px'}}
+    frameBorder="0"
+    scrolling="no"
+    loading="lazy"
+    title="NCOR Events Calendar"
+  />
+  <p style={{marginTop:'.5rem'}}>
+    <a
+      href="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=bmNvcm5ldHdvcmtAZ21haWwuY29t&src=NDRhMTk3MDk1NDE1ZDEwOWI3ZGMwOGUzZTU3MDUyMDU3MzlhMzEyYzliZjI0MDNiNDVhNTYzNDIwYWVjMzY5N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%237986cb"
+      target="_blank" rel="noopener"
+    >
+      Open calendar in a new tab
+    </a>
+  </p>
+</div>
+
+
 # Office Hours
 
 NCOR hosts regular office hours to provide support and guidance for individuals and organizations working with ontologies.
