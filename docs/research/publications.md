@@ -12,11 +12,11 @@ Each records below includes the publication title, authors, year, a brief one-se
 
 ### National Center for Ontological Research (NCOR)
 
-- **Foundations for Digital Twins** (Finn Wilson, Regina Hurley, Dan Maxwell, Jon McLellan, John Beverley, 2024) – A JOWO 2024 paper presenting an ontology-driven framework for integrating physical systems with their informational counterparts to support digital twin architectures. **URL:** *No public link available.*
+- **Foundations for Digital Twins** (Finn Wilson, Regina Hurley, Dan Maxwell, Jon McLellan, John Beverley, 2024) – A JOWO 2024 paper presenting an ontology-driven framework for integrating physical systems with their informational counterparts to support digital twin architectures. **URL:** https://arxiv.org/pdf/2405.00960
 
-- **Middle Architecture Criteria** (John Beverley, Giacomo De Colle, Mark Jensen, Carter Benson, Barry Smith, 2024) – A JOWO 2024 paper proposing design criteria for the middle layer of ontology-based information architectures, bridging foundational and domain ontologies. **URL:** *No public link available.*
+- **Middle Architecture Criteria** (John Beverley, Giacomo De Colle, Mark Jensen, Carter Benson, Barry Smith, 2024) – A JOWO 2024 paper proposing design criteria for the middle layer of ontology-based information architectures, bridging foundational and domain ontologies. **URL:** https://arxiv.org/abs/2404.17757
 
-- **Towards a Cyber Information Ontology** (David Limbaugh, Mark Jensen, John Beverley, 2024) – A JOWO 2024 contribution outlining an ontology for representing cyber information, events, and actors to support integrated cybersecurity situational awareness. **URL:** *No public link available.*
+- **Towards a Cyber Information Ontology** (David Limbaugh, Mark Jensen, John Beverley, 2024) – A JOWO 2024 contribution outlining an ontology for representing cyber information, events, and actors to support integrated cybersecurity situational awareness. **URL:** https://arxiv.org/pdf/2407.18998
 
 - **Ontologies, Arguments, and Large-Language Models** (John Beverley, Francesco Franda, Hedi Karray, Dan Maxwell, Carter Benson, Barry Smith, 2024) – A JOWO 2024 paper analyzing how large-language models align or misalign with formal ontological structures, with a focus on representing arguments. **URL:** https://arxiv.org/abs/2407.17657
 
