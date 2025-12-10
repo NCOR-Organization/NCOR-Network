@@ -4,37 +4,37 @@ import styles from './styles.module.css';
 const partners = [
   {
     name: 'TotalEnergies',
-    logo: '/img/partners/totalenergies.png',
+    logo: '/img/partners/Total Energies .jpeg',
     url: 'https://totalenergies.com/',
   },
   {
     name: 'NaasAI',
-    logo: '/img/partners/naasai.png',
+    logo: '/img/partners/NasasAI.png',
     url: 'https://naas.ai/',
   },
   {
     name: 'Webworld Technologies (WTI)',
-    logo: '/img/partners/wti.png',
+    logo: '/img/partners/WTI-logo-type.png',
     url: 'https://wti-solutions.com/',
   },
   {
     name: 'Acacia Knowledge Systems',
-    logo: '/img/partners/acacia.png',
+    logo: '/img/partners/acaciaks_logo.png',
     url: 'https://acaciaks.com/',
   },
   {
     name: 'Summit Knowledge Solutions',
-    logo: '/img/partners/sks.png',
-    url: 'https://sks.ai/',
+    logo: '/img/partners/sks logo.jpeg.webp',
+    url: 'https://sks.ai/', // or correct URL
   },
   {
     name: 'KaDSci',
-    logo: '/img/partners/kadsci.png',
+    logo: '/img/partners/kadsci-logo.png',
     url: 'https://kadsci.com/',
   },
   {
     name: 'Crown Point Technologies',
-    logo: '/img/partners/crownpoint.png',
+    logo: '/img/partners/crown_white.png.webp',
     url: 'https://crownpoint.tech/',
   },
   {
@@ -43,6 +43,7 @@ const partners = [
     url: 'https://www.cubrc.org/',
   },
 ];
+
 
 export default function PartnersSection() {
   return (
