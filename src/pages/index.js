@@ -14,6 +14,7 @@ import PeopleSection from '@site/src/components/PeopleSection';
 import ResearchAreasSection from '@site/src/components/ResearchAreasSection';
 import EventsSection from '@site/src/components/EventsSection';
 import FeaturedVideosSection from '@site/src/components/FeaturedVideosSection';
+import PartnersSection from '@site/src/components/PartnersSection';
 
 import styles from './styles.module.css';
 
@@ -322,7 +323,6 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Events section */}
         <EventsSection />
         
         {/* Featured Videos section */}
@@ -330,6 +330,7 @@ export default function Home() {
         
         <HomepageFeatures />
         <PeopleSection />
+        <PartnersSection />
       </main>
     </Layout>
   );
