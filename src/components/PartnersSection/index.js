@@ -69,3 +69,16 @@ export default function PartnersSection() {
             >
               <div className={styles.logoWrapper}>
                 <img
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  className={styles.logo}
+                />
+              </div>
+              <div className={styles.name}>{partner.name}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
