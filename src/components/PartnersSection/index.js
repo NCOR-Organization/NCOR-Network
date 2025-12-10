@@ -27,16 +27,16 @@ const partners = [
     logo: '/img/partners/sks logo.jpeg.webp',
     url: 'https://sks.ai/', // or correct URL
   },
-  {
-    name: 'KaDSci',
-    logo: '/img/partners/kadsci-logo.png',
-    url: 'https://kadsci.com/',
-  },
-  {
-    name: 'Crown Point Technologies',
-    logo: '/img/partners/crown_white.png.webp',
-    url: 'https://crownpoint.tech/',
-  },
+{
+  name: 'KaDSci',
+  logo: '/img/partners/kadsci-logo.png',
+  url: 'https://kadsci.com/',
+},
+{
+  name: 'Crown Point Technologies',
+  logo: '/img/partners/crown_white.png.webp',
+  url: 'https://crownpoint.tech/',
+},
   {
     name: 'CUBRC',
     logo: '/img/partners/cubrc.png',
