@@ -328,9 +328,9 @@ export default function Home() {
         {/* Featured Videos section */}
         <FeaturedVideosSection />
         
-        <PeopleSection />
-        <PartnersSection />
         <HomepageFeatures />
+        <PartnersSection />
+        <PeopleSection />
       </main>
     </Layout>
   );
