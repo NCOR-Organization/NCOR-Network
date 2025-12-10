@@ -19,39 +19,51 @@ export default function FeaturedVideosSection() {
   const [loading, setLoading] = useState(true);
 
   // Initial video data with URLs
-  const initialVideos = [
+   const initialVideos = [
     {
       id: 1,
-      videoUrl: 'https://www.youtube.com/watch?v=RWpWxpGMjiU&t=3s',
-      // Optional fallback data if API fails
+      videoUrl: 'https://www.youtube.com/watch?v=VH9uBxLJx30',
+      fallbackTitle: 'How to Do Things with Ontologies',
+      fallbackPresenter: 'John Beverley',
+      fallbackDate: 'October 4, 2024'
+    },
+    {
+      id: 2,
+      videoUrl: 'https://www.youtube.com/watch?v=0Jk4-K6Vjkw',
+      fallbackTitle: 'Ontologies, LLMs, and Semantic Pipelines',
+      fallbackPresenter: 'John Beverley',
+      fallbackDate: 'November 14, 2025'
+    },
+    {
+      id: 3,
+      videoUrl: 'https://www.youtube.com/watch?v=RWpWxpGMjiU',
       fallbackTitle: 'Are we living in a simulation?',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'March 15, 2023'
     },
     {
-      id: 2,
-      videoUrl: 'https://www.youtube.com/watch?v=bj8mSbHh-qA&t=1911s',
+      id: 4,
+      videoUrl: 'https://www.youtube.com/watch?v=bj8mSbHh-qA',
       fallbackTitle: 'Introduction to Ontology Engineering',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'June 20, 2023'
     },
-    // Add your other videos here
     {
-      id: 3,
-      videoUrl: 'https://www.youtube.com/watch?v=p0buEjR3t8A&t=2s', // This is a fake URL
+      id: 5,
+      videoUrl: 'https://www.youtube.com/watch?v=p0buEjR3t8A',
       fallbackTitle: 'Introduction to Basic Formal Ontology',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'April 10, 2021'
     },
     {
-      id: 4,
-      videoUrl: 'https://www.youtube.com/watch?v=__P0HU3ln3w', // This is a fake URL
+      id: 6,
+      videoUrl: 'https://www.youtube.com/watch?v=__P0HU3ln3w',
       fallbackTitle: 'Ontology for system engineering',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'May 5, 2023'
     }
   ];
-
+  
   // Fetch video data from YouTube API
   useEffect(() => {
     async function fetchVideoData() {
