@@ -323,14 +323,14 @@ export default function Home() {
           </div>
         </div>
         
-        <EventsSection />
-        
-        {/* Featured Videos section */}
-        <FeaturedVideosSection />
-        
-        <HomepageFeatures />
-        <PartnersSection />
-        <PeopleSection />
+<EventsSection />
+
+{/* Featured Videos section */}
+<FeaturedVideosSection />
+
+<HomepageFeatures />
+<PeopleSection />
+<PartnersSection />
       </main>
     </Layout>
   );
