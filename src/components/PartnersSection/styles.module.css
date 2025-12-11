@@ -56,6 +56,10 @@
   justify-content: center;
   height: 70px;
   margin-bottom: 0.75rem;
+
+  background-color: #f6f6f6; /* NEW */
+  border-radius: 8px;        /* NEW */
+  padding: 10px;             /* NEW */
 }
 
 .logo {
