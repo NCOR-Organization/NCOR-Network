@@ -57,9 +57,9 @@
   height: 70px;
   margin-bottom: 0.75rem;
 
-  background-color: #f6f6f6; /* NEW */
-  border-radius: 8px;        /* NEW */
-  padding: 10px;             /* NEW */
+  background-color: #e0e0e0; /* DARKER GRAY */
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .logo {
