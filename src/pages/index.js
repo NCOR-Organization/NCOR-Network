@@ -322,15 +322,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-<EventsSection />
 
-{/* Featured Videos section */}
-<FeaturedVideosSection />
+        {/* Ontology Standards */}
+        <HomepageFeatures />
 
-<HomepageFeatures />
-<PeopleSection />
-<PartnersSection />
+        {/* Events */}
+        <EventsSection />
+
+        {/* Featured Videos */}
+        <FeaturedVideosSection />
+
+        {/* Our People */}
+        <PeopleSection />
+
+        {/* Our Partners */}
+        <PartnersSection />
+
       </main>
     </Layout>
   );
