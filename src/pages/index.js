@@ -338,6 +338,51 @@ export default function Home() {
         {/* Our Partners */}
         <PartnersSection />
 
+          {/* Support NCOR */}
+<section style={{ background: '#fff', padding: '60px 0', borderTop: '1px solid #eee' }}>
+  <div className="container">
+    <div className="row">
+      <div className="col col--8 col--offset-2">
+        <Heading as="h2" className="text--center margin-bottom--lg">
+          Support NCOR
+        </Heading>
+
+        <p style={{ textAlign: 'justify' }}>
+          The National Center for Ontological Research (NCOR) advances foundational and applied research in ontology and semantic technologies.
+          NCOR supports education, training, and community-driven standards that enable interoperable, trustworthy data across government,
+          industry, and academia.
+        </p>
+
+        <p className="margin-top--md">Contributions to NCOR help support:</p>
+        <ul>
+          <li>Research and development in formal and applied ontology</li>
+          <li>Educational programs, workshops, and student support</li>
+          <li>Open-access training materials and public resources</li>
+          <li>Stewardship of open, standards-driven ontological infrastructure</li>
+        </ul>
+
+        <p style={{ textAlign: 'justify' }}>
+          NCOR is a U.S. 501(c)(3) public charity, and contributions are tax-deductible as permitted by law.
+        </p>
+
+        <p style={{ textAlign: 'justify' }}>
+          At this time, donations are accepted via direct arrangement. To learn more about supporting NCOR or to request documentation, please contact:
+        </p>
+
+        <div className="text--center margin-top--lg">
+          <a
+            className="button button--lg"
+            style={{ backgroundColor: '#9e7418', borderColor: '#9e7418', color: 'white' }}
+            href="mailto:info@ncor-network.org"
+          >
+            info@ncor-network.org
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
     </Layout>
   );
