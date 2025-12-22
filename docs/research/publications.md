@@ -36,6 +36,9 @@ Each records below includes the publication title, authors, year, a brief one-se
 
 ### Basic Formal Ontology (BFO)
 
+- **A BFO-ready version of gist (Dave McComb, 2025)** – An article from Semantic Arts describing a BFO-aligned version of gist intended to support interoperability between gist-based models and BFO-based ontologies.  
+  https://www.semanticarts.com/wp-content/uploads/2025/01/20241024-BFO-and-gist-Article.pdf
+
 - **Fiat Surfaces in Basic Formal Ontology** (Michael Rabenberg, Werner Ceusters, 2024) – A FOIS 2024 paper analyzing the nature and ontological status of fiat surfaces in BFO, offering a refined account of their formal properties. **URL:** https://www.utwente.nl/en/eemcs/fois2024/resources/papers/ceusters-fiat-surfaces-in-basic-formal-ontology.pdf
 
 - **Representing Cyberspace with the Basic Formal Ontology** (Giacomo De Colle, 2024) – A FOIS 2024 paper demonstrating how BFO can structure representations of cyberspace, addressing entities, processes, and boundaries in virtual environments. **URL:** https://www.utwente.nl/en/eemcs/fois2024/resources/papers/colle-representing-cyberspace-with-the-basic-formal-ontology.pdf
