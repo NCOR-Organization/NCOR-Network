@@ -463,4 +463,21 @@
     max-width: 120px;
     max-height: 120px;
   }
+  .ncorButton {
+  background-color: #C4932D; /* NCOR gold */
+  border-color: #C4932D;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ncorButton:hover {
+  background-color: #a9781f; /* darker gold */
+  border-color: #a9781f;
+  color: #ffffff;
+}
+
+.ncorButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(196, 147, 45, 0.4);
+}
 } 
