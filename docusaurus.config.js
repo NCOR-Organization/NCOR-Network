@@ -125,16 +125,17 @@ const config = {
             ],
           },
 {
+  type: 'dropdown',
   label: 'Events',
   position: 'right',
   activeBasePath: '/docs/events',
   items: [
     { label: 'Calendar', to: '/docs/events/calendar' },
     { label: 'Office Hours', to: '/docs/events/office-hours' },
-    { label: 'Meetings and Workshops', to: '/docs/events/meetings-and-workshops' },
-    { label: 'Ontology 101 Working Group', to: '/docs/events/ontology-101-working-group' },
-    { label: 'Semantic Mappings Working Group', to: '/docs/events/semantic-mappings-working-group' },
-    { label: 'Common Core Ontologies Working Groups', to: '/docs/events/common-core-ontologies-working-groups' },
+    { label: 'Meetings and Workshops', to: '/docs/events/meetings-workshops' },
+    { label: 'Ontology 101 Working Group', to: '/docs/events/ontology-101' },
+    { label: 'Semantic Mappings Working Group', to: '/docs/events/semantic-mapping' },
+    { label: 'Common Core Ontologies Working Groups', to: '/docs/events/common-core-ontologies' },
   ],
 },
           {
