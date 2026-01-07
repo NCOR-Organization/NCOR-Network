@@ -295,7 +295,7 @@ ${formData.message || 'None provided'}
   const updatesOptions = ['Events', 'Training', 'News'];
 
   return (
-    <div className="membership-section">
+    <div className="membership-section" id="membership-application">
       <div className="application-header">
         <h2>Membership Application</h2>
         <p>Complete the form below to join our global network of ontology researchers and practitioners</p>
