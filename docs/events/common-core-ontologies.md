@@ -1,6 +1,7 @@
 ---
 sidebar_position: 12
 id: common-core
+slug: /events/common-core-ontologies
 title: Common Core Ontologies Working Groups
 description: Common Core Ontologies Working Groups
 ---
