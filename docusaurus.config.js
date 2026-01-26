@@ -103,6 +103,16 @@ const config = {
             ],
           },
           {
+  type: 'dropdown',
+  label: 'Credentialing & Certification',
+  position: 'right',
+  items: [
+    { label: 'Overview', to: '/docs/credentialing/overview' },
+    { label: 'Why Certification?', to: '/docs/credentialing/why-certification' },
+    { label: 'Ontology Vetting & Certification', to: '/docs/credentialing/ontology-vetting' },
+  ],
+},
+          {
             type: 'dropdown',
             label: 'Research',
             position: 'right',
