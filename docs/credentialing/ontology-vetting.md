@@ -25,50 +25,47 @@ NCOR certification follows a structured, multi-stage process designed to support
 
 ## Certification Process Overview
 
-<div class="ncorFlow">
-  <div class="ncorFlowStep">
-    <div class="ncorFlowIcon">🧾</div>
-    <div class="ncorFlowTitle">1. Submission</div>
-    <div class="ncorFlowText">Ontology artifact + brief documentation describing scope and intent.</div>
-  </div>
+<div class="cert-process-grid">
 
-  <div class="ncorFlowArrow">→</div>
+<div class="cert-card">
+<strong><span class="cert-badge">1</span> Submission</strong>
 
-  <div class="ncorFlowStep">
-    <div class="ncorFlowIcon">🔍</div>
-    <div class="ncorFlowTitle">2. Validation</div>
-    <div class="ncorFlowText">Automated checks where applicable to support consistency review.</div>
-  </div>
-
-  <div class="ncorFlowArrow">→</div>
-
-  <div class="ncorFlowStep">
-    <div class="ncorFlowIcon">👥</div>
-    <div class="ncorFlowTitle">3. Expert Review</div>
-    <div class="ncorFlowText">Multi-expert panel evaluates modeling choices and showing-of-work.</div>
-  </div>
+Ontology artifact plus brief documentation describing scope, intent, and modeling assumptions.
 </div>
 
-<div class="ncorCards">
-  <div class="ncorCard">
-    <div class="ncorCardHeader"><span class="ncorBadge">4</span> Feedback & Remediation</div>
-    <div class="ncorCardBody">Findings are documented; developers may revise and resubmit for re-evaluation.</div>
-  </div>
+<div class="cert-card">
+<strong><span class="cert-badge">2</span> Validation</strong>
 
-  <div class="ncorCard">
-    <div class="ncorCardHeader"><span class="ncorBadge">5</span> Certification & Registry Entry</div>
-    <div class="ncorCardBody">Successful ontologies receive certification, a registry identifier, and documented outcomes.</div>
-  </div>
-
-  <div class="ncorCard">
-    <div class="ncorCardHeader"><span class="ncorBadge">6</span> Renewal & Ongoing Review</div>
-    <div class="ncorCardBody">Certification is time-bound and may be renewed as the ontology evolves.</div>
-  </div>
+Automated checks where applicable to support consistency and structural review.
 </div>
 
-<div class="ncorNote">
-  <strong>Note:</strong> Automated checks support — but do not replace — expert review.
+<div class="cert-card">
+<strong><span class="cert-badge">3</span> Expert Review</strong>
+
+Multi-expert NCOR panel evaluates modeling choices and documented justification.
 </div>
+
+<div class="cert-card">
+<strong><span class="cert-badge">4</span> Feedback &amp; Remediation</strong>
+
+Findings are documented; developers may revise and resubmit for re-evaluation.
+</div>
+
+<div class="cert-card">
+<strong><span class="cert-badge">5</span> Certification &amp; Registry Entry</strong>
+
+Successful ontologies receive certification, a registry identifier, and documented outcomes.
+</div>
+
+<div class="cert-card">
+<strong><span class="cert-badge">6</span> Renewal &amp; Ongoing Review</strong>
+
+Certification is time-bound and may be renewed as the ontology evolves.
+</div>
+
+</div>
+
+> **Note:** Automated checks support — but do not replace — expert human review.
 
 ## Why this works
 
