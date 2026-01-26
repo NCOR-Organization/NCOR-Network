@@ -2,11 +2,47 @@
 title: Why Certification?
 ---
 
-Ontologies increasingly serve as critical infrastructure for data integration, AI systems, and compliance workflows. Errors in foundational models can propagate across systems and organizations.
+As ontologies increasingly underpin AI systems, data integration, analytics, and compliance workflows, the need for **independent certification** has become increasingly important.
 
-Independent certification provides:
-- Objective evaluation separate from implementers
-- Assurance of alignment with formal ontology principles
-- Confidence for enterprises, governments, and standards bodies
+## Why Ontology Certification Matters
 
-NCOR operates as a nonprofit, independent authority to ensure that certification reflects scientific rigor rather than commercial or organizational interests.
+Ontologies are not just documentation artifacts. They are foundational components of:
+
+- AI reasoning systems  
+- Data governance frameworks  
+- Interoperability across organizations and domains  
+- Regulatory and compliance workflows  
+
+Errors or inconsistencies at the ontological level can propagate throughout downstream systems, leading to incorrect inferences, interoperability failures, and long-term technical debt.
+
+## Why Certification Must Be Independent
+
+Certification of ontologies must be performed by an organization that is:
+
+- Independent of ontology implementers  
+- Free from commercial incentives tied to adoption  
+- Grounded in scientific and formal methods rather than heuristics  
+
+When certification is performed by implementers or vendors, conflicts of interest are unavoidable. NCOR’s nonprofit status and governance structure ensure that certification decisions are made solely on technical and scientific grounds.
+
+## Scientific and Formal Evaluation
+
+Many informal reviews rely on surface-level heuristics or tooling alone. NCOR certification emphasizes:
+
+- Formal ontological analysis  
+- Explicit alignment with foundational standards such as BFO and CCO  
+- Expert human review by qualified ontologists  
+- Traceable evaluation criteria and documented outcomes  
+
+This approach reflects decades of experience in ontology evaluation across research, industry, and government contexts, including foundational work on widely adopted ontology standards and long-standing participation in their governance and refinement.
+
+## Supporting Trust and Reuse
+
+Independent certification supports:
+
+- Trust in shared ontologies  
+- Confident reuse across organizations  
+- Long-term sustainability of open standards  
+- Clear communication between ontology developers, adopters, and auditors  
+
+Certification is not an obstacle to innovation — it is an enabler of reliable, interoperable, and reusable semantic systems.
