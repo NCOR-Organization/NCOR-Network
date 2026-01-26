@@ -137,6 +137,27 @@ const config = {
             ],
           },
           {
+  type: 'dropdown',
+  label: 'Credentialing & Certification',
+  position: 'right',
+  items: [
+    {
+      label: 'Overview',
+      to: '/docs/credentialing/overview',
+    },
+    {
+      label: 'Why Certification?',
+      to: '/docs/credentialing/why-certification',
+    },
+    {
+      label: 'Ontology Vetting and Certification',
+      to: '/docs/credentialing/ontology-vetting',
+    },
+    // later we can add:
+    // { label: 'Registry', to: '/docs/credentialing/registry' },
+  ],
+},
+          {
             type: 'dropdown',
             label: 'Wiki',
             position: 'right',
