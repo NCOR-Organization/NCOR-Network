@@ -23,6 +23,7 @@ NCOR provides specialty certification tracks, including:
 
 NCOR certification follows a structured, multi-stage process designed to support scientific rigor, transparency, and long-term reuse. The stages below provide a high-level overview of the certification workflow.
 
+<div class="ncor-cert-table">
 | Stage | Purpose | What Happens |
 |------|--------|--------------|
 | **1. Ontology Submission** | Establish scope and intent | Ontology developers submit the ontology artifact (e.g., OWL, RDF), along with documentation describing scope, intended use, classes, relations, and relevant implementation context. |
@@ -31,6 +32,7 @@ NCOR certification follows a structured, multi-stage process designed to support
 | **4. Remediation and Resubmission** | Address identified issues | Findings are documented and shared with developers, who may revise and resubmit the ontology for re-evaluation. |
 | **5. Certification and Registry Entry** | Record successful certification | Successful ontologies receive a formal NCOR certificate, a registry identifier, and a documented audit trail. Certification is valid for 12 months. |
 | **6. Renewal and Continuous Audit** | Maintain long-term trust | Certified ontologies may be renewed annually to reflect ontology evolution, updates to relevant standards, and continued alignment with best practices. |
+</div>
 
 :::info Certification Process Overview
 NCOR certification follows a structured, multi-stage process designed to support scientific rigor, transparency, and long-term reuse.
