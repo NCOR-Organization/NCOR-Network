@@ -34,9 +34,11 @@ NCOR certification follows a structured, multi-stage process designed to support
 | **6. Renewal and Continuous Audit** | Maintain long-term trust | Certified ontologies may be renewed annually to reflect ontology evolution, updates to relevant standards, and continued alignment with best practices. |
 </div>
 
+<div class="ncor-cert-admonition">
 :::info Certification Process Overview
 NCOR certification follows a structured, multi-stage process designed to support scientific rigor, transparency, and long-term reuse.
 :::
+</div>
 
 ### Why this works
 
