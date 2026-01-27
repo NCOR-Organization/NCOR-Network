@@ -1,5 +1,6 @@
 ---
 title: Donations
+slug: /docs/donations
 ---
 
 NCOR is a nonprofit organization dedicated to advancing formal ontology, open standards, and independent credentialing in support of trustworthy AI, data governance, and scientific interoperability.
