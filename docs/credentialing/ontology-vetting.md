@@ -1,5 +1,6 @@
 ---
 title: Ontology Vetting and Certification
+sidebar_position: 4
 ---
 
 NCOR operates an independent ontology vetting and certification program grounded in formal ontology and international standards.
