@@ -111,6 +111,7 @@ const config = {
     { label: 'Why Certification?', to: '/docs/credentialing/why-certification' },
     { label: 'What Are Ontologies?', to: '/docs/credentialing/what-ontologies-are' },
     { label: 'Ontology Vetting & Certification', to: '/docs/credentialing/ontology-vetting' },
+    { label: 'Registry', to: '/docs/credentialing/registry' },
   ],
 },
           {
