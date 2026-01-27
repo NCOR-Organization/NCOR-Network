@@ -1,5 +1,6 @@
 ---
 title: What Ontologies Are
+sidebar_position: 2
 ---
 
 Ontologies are structured representations of the entities and relationships that exist in a domain. They provide shared meaning for data and enable consistent interpretation across systems, teams, and organizations.
