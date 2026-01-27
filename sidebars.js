@@ -25,6 +25,16 @@ const sidebars = {
       label: 'About',
       items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai', 'about/success-stories'],
     },
+   {
+  type: 'category',
+  label: 'Credentialing & Certification',
+  items: [
+    'credentialing/overview',
+    'credentialing/what-ontologies-are',
+    'credentialing/why-certification',
+    'credentialing/ontology-vetting',
+  ],
+},
     {
       type: 'category',
       label: 'Events',
