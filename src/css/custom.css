@@ -948,4 +948,29 @@ div[class^='announcementBar_'] {
 .markdown table tr:nth-child(even) {
   background-color: rgba(0,0,0,0.02);
 }
+/* NCOR Certification Process Table */
+.ncor-cert-table table {
+  font-size: 0.9rem;              /* smaller but still very readable */
+}
 
+.ncor-cert-table th,
+.ncor-cert-table td {
+  padding: 0.5rem 0.75rem;        /* tighter rows */
+  vertical-align: top;
+}
+
+.ncor-cert-table th {
+  font-weight: 600;
+}
+
+.ncor-cert-table td p {
+  margin: 0;                      /* remove extra paragraph spacing */
+  line-height: 1.4;
+}
+
+/* Optional: slightly tighter on smaller screens */
+@media (max-width: 996px) {
+  .ncor-cert-table table {
+    font-size: 0.85rem;
+  }
+}
