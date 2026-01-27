@@ -1,5 +1,6 @@
 ---
 title: Why Certification?
+sidebar_position: 3
 ---
 
 As ontologies increasingly underpin AI systems, data integration, analytics, and compliance workflows, the need for **independent certification** has become increasingly important.
