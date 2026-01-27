@@ -158,10 +158,10 @@ const config = {
           },
 {
   to: '/docs/donations/overview',
-  label: 'Donations',
   position: 'right',
+  label: 'Donations',
   activeBasePath: '/docs/donations',
-}
+},
           { href: 'https://github.com/NCOR-Organization', label: 'GitHub', position: 'right' },
           {
             to: '/join',
