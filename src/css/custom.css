@@ -988,3 +988,21 @@ div[class^='announcementBar_'] {
   font-size: 0.9rem;
   line-height: 1.4;
 }
+/* Smaller principles table */
+.ncor-principles-table table {
+  font-size: 0.9rem;
+}
+
+.ncor-principles-table th {
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.ncor-principles-table td {
+  padding: 0.5rem 0.75rem;
+  line-height: 1.4;
+}
+
+.ncor-principles-table thead th {
+  background: rgba(0,0,0,0.04);
+}
