@@ -156,6 +156,12 @@ const config = {
             label: 'Affiliates',
             activeBasePath: '/docs/affiliates',
           },
+          {
+  to: '/docs/donations',
+  position: 'right',
+  label: 'Donations',
+  activeBasePath: '/docs/donations',
+},
           { href: 'https://github.com/NCOR-Organization', label: 'GitHub', position: 'right' },
           {
             to: '/join',
