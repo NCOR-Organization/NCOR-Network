@@ -55,6 +55,11 @@ const sidebars = {
     label: 'Organizational & Institutional Affiliates',
   }],
 },
+   {
+  type: 'category',
+  label: 'Donations',
+  items: ['donations/overview'],
+},
     {
       type: 'doc',
       id: 'faq',
