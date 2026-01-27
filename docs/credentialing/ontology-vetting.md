@@ -23,55 +23,28 @@ NCOR provides specialty certification tracks, including:
 
 NCOR certification follows a structured, multi-stage process designed to support scientific rigor, transparency, and long-term reuse. The stages below provide a high-level overview of the certification workflow.
 
-### 1. Ontology Submission
+| Stage | Purpose | What Happens |
+|------|--------|--------------|
+| **1. Ontology Submission** | Establish scope and intent | Ontology developers submit the ontology artifact (e.g., OWL, RDF), along with documentation describing scope, intended use, classes, relations, and relevant implementation context. |
+| **2. Automated Structural Validation** | Support consistency review | Where applicable, automated checks are run (e.g., OWL2 conformance, structural consistency using established tooling). These checks support — but do not replace — expert review. |
+| **3. Expert Review** | Evaluate conceptual quality | A three-member NCOR expert panel evaluates conceptual soundness, alignment with stated standards (e.g., BFO, CCO), modeling decisions and justifications, and overall ontology engineering quality. |
+| **4. Remediation and Resubmission** | Address identified issues | Findings are documented and shared with developers, who may revise and resubmit the ontology for re-evaluation. |
+| **5. Certification and Registry Entry** | Record successful certification | Successful ontologies receive a formal NCOR certificate, a registry identifier, and a documented audit trail. Certification is valid for 12 months. |
+| **6. Renewal and Continuous Audit** | Maintain long-term trust | Certified ontologies may be renewed annually to reflect ontology evolution, updates to relevant standards, and continued alignment with best practices. |
 
-Ontology developers submit:
+:::info Certification Process Overview
+NCOR certification follows a structured, multi-stage process designed to support scientific rigor, transparency, and long-term reuse.
+:::
 
-- The ontology artifact (e.g., OWL, RDF)
-- Documentation describing scope, intended use, classes, and relations
-- Relevant implementation context
+### Why this works
 
-### 2. Automated Structural Validation
+| Principle | What it ensures |
+|---------|----------------|
+| **Independence** | Certification is conducted by NCOR, not ontology implementers or vendors. |
+| **Scientific rigor** | Evaluation is grounded in formal ontology rather than informal heuristics. |
+| **Traceability** | Decisions are documented, auditable, and tied to stated criteria. |
+| **Reusability** | Certified ontologies can be confidently reused across teams and organizations. |
 
-Where applicable, ontologies undergo automated structural checks, such as:
-
-- OWL2 conformance
-- Structural consistency using established APIs and tooling
-
-These checks support — but do not replace — expert human review.
-
-### 3. Expert Review
-
-Each submission is reviewed by a **three-member NCOR expert panel** with relevant domain and formal ontology expertise.
-
-Review focuses on:
-
-- Conceptual soundness
-- Alignment with stated standards (e.g., BFO, CCO)
-- Modeling decisions and their justifications
-- Ontology engineering quality and maintainability
-
-### 4. Remediation and Resubmission
-
-Developers receive detailed feedback and may revise and resubmit their ontology to address identified issues.
-
-### 5. Certification and Registry Entry
-
-Ontologies that meet certification criteria receive:
-
-- A formal NCOR certificate
-- A registry identifier
-- A documented audit trail of the evaluation
-
-Certification is valid for **12 months**.
-
-### 6. Renewal and Continuous Audit
-
-Certified ontologies may be renewed annually to reflect:
-
-- Ontology evolution
-- Updates to relevant standards
-- Ongoing alignment with best practices
 
 This process supports long-term trust, reuse, and sustainability across ontology-based systems.
 
