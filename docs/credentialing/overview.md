@@ -1,5 +1,6 @@
 ---
 title: Credentialing & Certification
+sidebar_position: 1
 ---
 
 NCOR provides independent, nonprofit certification services for ontologies and ontology engineering practices, grounded in formal ontology and international standards.
