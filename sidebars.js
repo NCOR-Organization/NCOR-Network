@@ -55,13 +55,6 @@ const sidebars = {
     label: 'Organizational & Institutional Affiliates',
   }],
 },
-     {
-      type: 'category',
-      label: 'donations',
-      items: [
-    'donations/overview',
-       ],
-    },
     {
       type: 'doc',
       id: 'faq',
