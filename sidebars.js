@@ -33,6 +33,7 @@ const sidebars = {
     'credentialing/what-ontologies-are',
     'credentialing/why-certification',
     'credentialing/ontology-vetting',
+    'credentialing/registry',
   ],
 },
     {
