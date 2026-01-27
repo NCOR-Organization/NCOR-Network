@@ -974,3 +974,17 @@ div[class^='announcementBar_'] {
     font-size: 0.85rem;
   }
 }
+/* Smaller certification overview callout */
+.ncor-cert-admonition .admonition {
+  padding: 0.75rem 1rem;
+}
+
+.ncor-cert-admonition .admonition-heading {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.ncor-cert-admonition .admonition-content {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
