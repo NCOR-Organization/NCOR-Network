@@ -1,6 +1,8 @@
 ---
 title: Registry
 sidebar_position: 5
+pagination_prev: credentialing/ontology-vetting
+pagination_next: null
 ---
 
 NCOR maintains a public registry of vetted ontologies and issued certifications.
