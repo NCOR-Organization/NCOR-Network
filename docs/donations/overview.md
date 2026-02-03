@@ -53,7 +53,7 @@ We welcome contributions at all levels:
 
 Donation options and contribution tiers will be available shortly.
 
-If you are interested in supporting NCOR or discussing philanthropic alignment, please contact us directly.
+If you are interested in supporting NCOR or to discuss support aligned with NCOR’s mission, please contact us directly.
 
 <div style={{ textAlign: 'center', marginTop: '2rem' }}>
   <a
