@@ -54,3 +54,13 @@ We welcome contributions at all levels:
 Donation options and contribution tiers will be available shortly.
 
 If you are interested in supporting NCOR or discussing philanthropic alignment, please contact us directly.
+
+<div style={{ textAlign: 'center', marginTop: '2rem' }}>
+  <a
+    href="mailto:info@ncor-network.org"
+    class="button button--primary"
+  >
+    info@ncor-network.org
+  </a>
+</div>
+
