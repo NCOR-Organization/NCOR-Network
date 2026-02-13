@@ -20,7 +20,7 @@ const BenefitsSection = () => {
         </svg>
       ),
       title: 'Global Network',
-      description: 'Connect with leading researchers, industry practitioners, and government partners worldwide'
+      description: 'Connect with leading researchers and industry practitioners'
     },
     {
       icon: (
@@ -29,7 +29,7 @@ const BenefitsSection = () => {
         </svg>
       ),
       title: 'Knowledge Exchange',
-      description: 'Access expert insights, attend specialized workshops, and participate in working groups'
+      description: 'Access expert insights, attend public workshops, and participate in working groups'
     },
     {
       icon: (

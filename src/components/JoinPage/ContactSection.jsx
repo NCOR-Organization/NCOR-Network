@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <div className={styles.contactSection}>
       <h2>Contact Us</h2>
-      <p>For questions about membership or to discuss potential collaboration:</p>
+      <p>For questions about becoming a community partner or potential collaborator:</p>
       
       <div className={styles.contactGrid}>
         <div className={styles.contactItem}>
