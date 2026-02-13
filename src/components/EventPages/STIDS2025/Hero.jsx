@@ -42,12 +42,7 @@ export default function Hero() {
   <a
     href="#unclassified-registration"
     className={`${styles.button} ${styles.buttonPrimary}`}>
-    Unclassified Registration
-  </a>
-  <a
-    href="#classified-registration"
-    className={`${styles.button} ${styles.buttonPrimary}`}>
-    Classified Registration
+    Registration
   </a>
 </div>
 
