@@ -31,7 +31,7 @@ export default function Hero() {
             Semantic Technology for Intelligence, Defense, and Security Conference (STIDS) 2025
           </h1>
 
-          <div className={styles.heroDate}>TBD</div>
+          <div className={styles.heroDate}>May 27-28, 2026</div>
           <div style={{
   marginTop: '1.5rem',
   display: 'flex',

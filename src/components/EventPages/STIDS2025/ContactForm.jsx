@@ -17,7 +17,7 @@ export default function ContactInfo() {
           fontSize: '1.1rem'
         }}>
           <a 
-            href="mailto:johnbeve@buffalo.edu?subject=STIDS%202025%20Inquiry" 
+            href="mailto:info@ncornetwork.org?subject=STIDS%202025%20Inquiry" 
             className={`${styles.button} ${styles.buttonPrimary}`}
           >
             Email Us

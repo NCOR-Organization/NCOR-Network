@@ -11,7 +11,7 @@ export default function EventsSection() {
       id: 1,
       title: 'STIDS 2025',
       description: 'Semantic Technology for Intelligence, Defense, and Security Conference featuring cutting-edge research presentations, expert keynotes, and classified sessions.',
-      date: 'TBD',
+      date: 'May 27-28, 2026',
       location: 'George Mason University, Woodbridge, VA',
       url: '/events/stids2025'
     },

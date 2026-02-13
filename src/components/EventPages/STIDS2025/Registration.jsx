@@ -89,7 +89,7 @@ export default function Registration() {
                 ))}
               </ul>
               <a 
-                href="https://www.eventbrite.com/e/semantic-technology-for-intelligence-defense-and-security-2025-tickets-1479068025279?aff=oddtdtcreator" 
+                href="https://www.eventbrite.com/e/semantic-technology-for-intelligence-defense-and-security-tickets-1475393544809?aff=oddtdtcreator" 
                 className={`${styles.button} ${styles.buttonPrimary}`}
                 style={{ width: '100%' }}
               >
@@ -97,26 +97,6 @@ export default function Registration() {
               </a>
             </div>
           ))}
-        </div>
-
-        <div id="classified-registration" style={{ marginTop: '4rem', textAlign: 'center' }}>
-          <p><strong>Classified Session Registration:</strong></p>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-            <a
-              href="https://go.intelink.gov/PxGSGtN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Register with CAC card
-            </a>
-            <a
-              href="mailto:Ontology_Registration@nga.mil"
-              className={`${styles.button} ${styles.buttonPrimary}`}
-            >
-              Email for Non-CAC Registration
-            </a>
-          </div>
         </div>
       </div>
     </div>
