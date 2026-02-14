@@ -6,30 +6,32 @@ export default function CommunityPartners() {
   return (
     <Layout
       title="Community Partners | NCOR"
-      description="Engage in NCOR’s open scholarly working groups and public ontology initiatives"
+      description="Participate in NCOR’s open scholarly working groups"
     >
       <div className="container margin-top--xl margin-bottom--xl">
         <h1>Community Partners</h1>
 
         <p>
-          Community Partners participate in NCOR’s open scholarly ecosystem,
+          Community Partners engage in NCOR’s open scholarly ecosystem,
           including public working groups, seminars, and research discussions.
         </p>
 
-        <h2>How You Can Engage</h2>
+        <h2>Application Requirements</h2>
         <ul>
-          <li>Join existing public working groups</li>
-          <li>Propose a new public working group</li>
-          <li>Participate in ontology research discussions</li>
-          <li>Contribute to open technical initiatives</li>
+          <li>Select one or more existing public working groups, or</li>
+          <li>Propose a new public working group idea</li>
+          <li>Describe how you would like to contribute</li>
+          <li>Agree to participate in open, non-restricted collaboration</li>
         </ul>
 
         <p style={{ opacity: 0.8 }}>
-          Community participation does not constitute legal membership in the nonprofit
-          corporation nor authorization to represent NCOR in contractual or governmental matters.
+          Community participation does not confer authority to represent NCOR
+          in contractual, governmental, or restricted contexts.
         </p>
 
-        <ApplicationSection />
+        <hr style={{ margin: '3rem 0' }} />
+
+        <ApplicationSection mode="community" />
       </div>
     </Layout>
   );
