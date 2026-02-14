@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import ApplicationSection from '../components/ApplicationSection';
+import ApplicationSection from '../components/JoinPage/ApplicationSection';
 
 export default function CommunityPartners() {
   return (
