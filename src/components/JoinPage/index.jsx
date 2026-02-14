@@ -58,7 +58,7 @@ const JoinPage = () => {
                         type="button"
                         onClick={() => goToApplication('individual')}
                       >
-                        Apply as an Individual Participant
+                        Apply to be a Community Partner
                       </button>
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const JoinPage = () => {
                 <div className="col col--6">
                   <div className="card">
                     <div className="card__body">
-                      <h3>Collaborator (Organization or Lab)</h3>
+                      <h3>Collaborator</h3>
                       <p>
                         Collaborators are institutions, labs, companies, or structured research teams
                         that seek deeper engagement in applied ontology initiatives.
@@ -77,14 +77,13 @@ const JoinPage = () => {
                       <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
                         Formal collaboration does not automatically confer authority to act
                         on behalf of NCOR in contractual or governmental contexts.
-                        Additional agreements may be required for restricted or government-funded work.
                       </p>
                       <button
                         className={`button ${styles.ncorButton}`}
                         type="button"
                         onClick={() => goToApplication('organization')}
                       >
-                        Apply as an Organizational Participant
+                        Apply to be a Collaborator
                       </button>
                     </div>
                   </div>

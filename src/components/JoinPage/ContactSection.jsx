@@ -16,7 +16,7 @@ const ContactSection = () => {
           </div>
           <div>
             <h3>Email Us</h3>
-            <a href="mailto:ncornetwork@gmail.com">ncornetwork@gmail.com</a>
+            <a href="mailto:info@ncornetwork.org">info@ncornetwork.org</a>
           </div>
         </div>
         
