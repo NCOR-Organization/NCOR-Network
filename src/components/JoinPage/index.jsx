@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import JoinHero from './JoinHero';
 import BenefitsSection from './BenefitsSection';
-import ApplicationSection from './ApplicationSection';
 import ContactSection from './ContactSection';
+import Link from '@docusaurus/Link';
 import styles from './JoinPage.module.css';
 
 const JoinPage = () => {
-  const [initialParticipantType, setInitialParticipantType] = useState(null);
-
-  const goToApplication = (type) => {
-    setInitialParticipantType(type);
-    requestAnimationFrame(() => {
-      const el = document.getElementById('participation-application');
-      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  };
-
   return (
     <Layout
       title="Participate in NCOR"
@@ -28,7 +18,6 @@ const JoinPage = () => {
         <div className="row">
           <div className="col col--10 col--offset-1">
 
-            {/* Participation Options */}
             <div style={{ marginBottom: '2rem' }}>
               <h2>Ways to Engage</h2>
               <p>
@@ -45,21 +34,19 @@ const JoinPage = () => {
                       <h3>Community Partner</h3>
                       <p>
                         Community Partners participate in NCOR’s open scholarly ecosystem,
-                        including public working groups, seminars, and discussions.
-                        This pathway is designed for researchers, students, and practitioners
-                        who wish to engage in open collaboration.
+                        including public working groups and seminars.
                       </p>
                       <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
                         Community participation does not constitute legal membership in the nonprofit
-                        corporation nor authorization to represent NCOR in contractual or governmental matters.
+                        corporation nor authorization to represent NCOR.
                       </p>
-                      <button
-                        className={`button ${styles.ncorButton}`}
-                        type="button"
-                        onClick={() => goToApplication('individual')}
+
+                      <Link
+                        to="/community-partners"
+                        className={`button button--primary ${styles.ncorButton}`}
                       >
                         Apply to be a Community Partner
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -70,21 +57,20 @@ const JoinPage = () => {
                     <div className="card__body">
                       <h3>Collaborator</h3>
                       <p>
-                        Collaborators are institutions, labs, companies, or structured research teams
-                        that seek deeper engagement in applied ontology initiatives.
-                        Collaborators may participate in formal projects and coordinated research efforts.
+                        Collaborators are institutions, labs, or companies seeking structured engagement
+                        in applied ontology initiatives and funded projects.
                       </p>
                       <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
                         Formal collaboration does not automatically confer authority to act
-                        on behalf of NCOR in contractual or governmental contexts.
+                        on behalf of NCOR.
                       </p>
-                      <button
-                        className={`button ${styles.ncorButton}`}
-                        type="button"
-                        onClick={() => goToApplication('organization')}
+
+                      <Link
+                        to="/collaborators"
+                        className={`button button--primary ${styles.ncorButton}`}
                       >
                         Apply to be a Collaborator
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -93,7 +79,6 @@ const JoinPage = () => {
             </div>
 
             <BenefitsSection />
-            <ApplicationSection initialParticipantType={initialParticipantType} />
             <ContactSection />
 
           </div>
