@@ -20,7 +20,7 @@ const wikiSidebars = {
     {
       type: 'category',
       label: 'Courses',
-      items: ['courses/barry-smith', 'courses/werner-ceusters', 'courses/john-beverley'],
+      items: ['courses/barry-smith', 'courses/john-beverley'],
     },
     {
       type: 'category',
@@ -38,17 +38,6 @@ const wikiSidebars = {
         'books/building-ontologies-with-basic-formal-ontology',
       ],
     },
-    {
-      type: 'doc',
-      id: 'glossary',
-      label: 'Glossary',
-    },
-    // You can uncomment these as more files are created
-    // {
-    //   type: 'category',
-    //   label: 'Resources',
-    //   items: ['suggested-reading', 'training-videos'],
-    // },
   ],
 };
 
