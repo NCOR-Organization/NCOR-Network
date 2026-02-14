@@ -17,10 +17,6 @@
 const sidebars = {
   docsSidebar: [
     {
-      type: 'doc',
-      id: 'get-started',
-    },
-    {
       type: 'category',
       label: 'About',
       items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai', 'about/success-stories'],
@@ -60,10 +56,6 @@ const sidebars = {
   label: 'Donations',
   items: ['donations/overview'],
 },
-    {
-      type: 'doc',
-      id: 'faq',
-    },
     {
       type: 'doc',
       id: 'useful-links',
