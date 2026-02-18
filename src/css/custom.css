@@ -1006,3 +1006,56 @@ div[class^='announcementBar_'] {
 .ncor-principles-table thead th {
   background: rgba(0,0,0,0.04);
 }
+
+/* =========================
+   Community Partners page
+   ========================= */
+
+.community-partners-header {
+  margin-bottom: 1.25rem;
+}
+
+.community-partners-title {
+  font-size: 2.25rem; /* controls the gigantic H1 */
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.community-partners-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 70ch;
+  margin-bottom: 0;
+}
+
+.community-partners-h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.community-partners-h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.community-partners-list {
+  margin-top: 0.5rem;
+}
+
+.community-partners-card {
+  border: 1px solid #e0e4ea;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Stronger, cleaner info callout */
+.community-partners-alert.alert--info {
+  background-color: #e8f1fb;
+  border-left: 4px solid #2b6cb0;
+}
+
+/* Contrast band behind the application section */
+.community-form-section {
+  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
+  border-top: 1px solid #e3e6eb;
+  margin-top: 1.5rem;
+}
