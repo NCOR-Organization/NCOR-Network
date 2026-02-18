@@ -1011,31 +1011,32 @@ div[class^='announcementBar_'] {
    Community Partners (page-scoped)
    ========================================= */
 
-/* Use the site's gold tone for accents.
-   If NCOR has a CSS variable for gold, swap it in here. */
 :root {
-  --ncor-gold: #b8860b; /* safe gold default */
-  --cp-band: #f4f6f9;   /* light contrast band */
-  --cp-hero: #f7f6f2;   /* warm hero background */
+  --ncor-gold: #b8860b;
   --cp-border: #e3e6eb;
   --cp-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  /* Use ONE neutral family so the page doesn’t look tri-colored */
+  --cp-surface: #f6f6f3;     /* shared surface for hero + form band */
+  --cp-page: #ffffff;        /* main page white */
+  --cp-alert-bg: #fff8e6;    /* pale gold callout */
 }
 
 .community-partners-page .cp-container {
   max-width: 980px;
 }
 
-/* HERO */
+/* HERO (now same surface family as form band) */
 .community-partners-page .cp-hero {
-  background: var(--cp-hero);
+  background: var(--cp-surface);
   border-bottom: 1px solid var(--cp-border);
-  padding: 2.25rem 0 1.5rem;
+  padding: 2.1rem 0 1.35rem;
 }
 
 .community-partners-page .cp-title {
-  font-size: 2.25rem;
+  font-size: 2.15rem;
   line-height: 1.15;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.6rem 0;
 }
 
 .community-partners-page .cp-subtitle {
@@ -1047,7 +1048,8 @@ div[class^='announcementBar_'] {
 
 /* TOP SECTION */
 .community-partners-page .cp-top {
-  padding: 1.75rem 0 1.25rem;
+  background: var(--cp-page);
+  padding: 1.6rem 0 1.15rem;
 }
 
 .community-partners-page .cp-grid {
@@ -1072,7 +1074,7 @@ div[class^='announcementBar_'] {
 }
 
 .community-partners-page .cp-h2 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   margin: 0 0 0.85rem 0;
 }
 
@@ -1081,17 +1083,24 @@ div[class^='announcementBar_'] {
   margin: 0 0 0.85rem 0;
 }
 
+/* LIST FIX: align bullets and reduce awkward indent */
 .community-partners-page .cp-list {
-  margin: 0 0 1rem 1.1rem;
+  list-style-position: outside;
+  padding-left: 1.1rem;   /* controls bullet indent */
+  margin: 0 0 1rem 0;     /* remove extra left margin */
+}
+
+.community-partners-page .cp-list li {
+  margin: 0.35rem 0;
 }
 
 .community-partners-page .cp-list--tight {
   margin-bottom: 0;
 }
 
-/* Gold-accent callout (replaces blue) */
+/* Gold-accent callout */
 .community-partners-page .cp-alert {
-  background: #fff8e6; /* warm pale gold */
+  background: var(--cp-alert-bg);
   border-left: 4px solid var(--ncor-gold);
   padding: 0.9rem 1rem;
   border-radius: 6px;
@@ -1099,26 +1108,25 @@ div[class^='announcementBar_'] {
   margin-top: 1rem;
 }
 
-/* FORM BAND */
+/* APPLICATION BAND (same surface as hero, so it doesn’t feel like a third color) */
 .community-partners-page .cp-form-band {
-  background: var(--cp-band);
+  background: var(--cp-surface);
   border-top: 1px solid var(--cp-border);
-  padding: 2rem 0;
-  margin-top: 1.5rem;
+  padding: 1.6rem 0 2rem;
+  margin-top: 1.25rem;
 }
 
-/* Tighten the perceived whitespace above the application heading */
 .community-partners-page .cp-form-container {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
 }
 
-/* Optional: make the "Community Partner Application" heading feel connected */
+/* Optional: bring the application heading closer to the band top */
 .community-partners-page .cp-form-band h2,
 .community-partners-page .cp-form-band h3 {
   margin-top: 0;
 }
 
-/* Optional: make primary buttons feel on-brand if they inherit default blue */
+/* Optional: page-scoped primary button = gold */
 .community-partners-page .cp-form-band .button--primary {
   background-color: var(--ncor-gold);
   border-color: var(--ncor-gold);
