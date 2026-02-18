@@ -47,6 +47,7 @@ export default function CommunityPartners() {
               <div className="card cp-card cp-card--aside">
                 <div className="card__body">
                   <h3 className="cp-h3">What this pathway supports</h3>
+
                   <ul className="cp-list cp-list--tight">
                     <li>Open scholarly collaboration</li>
                     <li>Public working groups</li>
@@ -58,7 +59,7 @@ export default function CommunityPartners() {
           </div>
         </section>
 
-        {/* APPLICATION (contrast band) */}
+        {/* APPLICATION */}
         <section className="cp-form-band">
           <div className="container cp-container cp-form-container">
             <ApplicationSection mode="community" />
