@@ -8,31 +8,61 @@ export default function CommunityPartners() {
       title="Community Partners | NCOR"
       description="Participate in NCOR’s open scholarly working groups"
     >
-      <div className="container margin-top--xl margin-bottom--xl">
-        <h1>Community Partners</h1>
+      <main className="container margin-vert--xl">
 
-        <p>
-          Community Partners engage in NCOR’s open scholarly ecosystem,
-          including public working groups, seminars, and research discussions.
-        </p>
+        {/* Header */}
+        <header className="margin-bottom--lg">
+          <h1>Community Partners</h1>
+          <p className="hero__subtitle">
+            Community Partners engage in NCOR’s open scholarly ecosystem,
+            including public working groups, seminars, and research discussions.
+          </p>
+        </header>
 
-        <h2>Application Requirements</h2>
-        <ul>
-          <li>Select one or more existing public working groups, or</li>
-          <li>Propose a new public working group idea</li>
-          <li>Describe how you would like to contribute</li>
-          <li>Agree to participate in open, non-restricted collaboration</li>
-        </ul>
+        <div className="row">
+          <div className="col col--8">
 
-        <p style={{ opacity: 0.8 }}>
-          Community participation does not confer authority to represent NCOR
-          in contractual, governmental, or restricted contexts.
-        </p>
+            {/* Requirements Card */}
+            <div className="card margin-bottom--lg">
+              <div className="card__body">
+                <h2 className="margin-top--none">Application Requirements</h2>
+                <ul>
+                  <li>Select one or more existing public working groups, or</li>
+                  <li>Propose a new public working group idea</li>
+                  <li>Describe how you would like to contribute</li>
+                  <li>Agree to participate in open, non-restricted collaboration</li>
+                </ul>
 
-        <hr style={{ margin: '3rem 0' }} />
+                <div className="alert alert--info margin-top--md" role="alert">
+                  Community participation does not confer authority to represent NCOR
+                  in contractual, governmental, or restricted contexts.
+                </div>
+              </div>
+            </div>
 
+          </div>
+
+          {/* Optional right-side spacing column for breathing room */}
+          <div className="col col--4">
+            <div className="card">
+              <div className="card__body">
+                <h3 className="margin-top--none">What this pathway supports</h3>
+                <ul className="margin-bottom--none">
+                  <li>Open scholarly collaboration</li>
+                  <li>Public working groups</li>
+                  <li>Research discussions and seminars</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr className="margin-vert--xl" />
+
+        {/* Application Section (unchanged) */}
         <ApplicationSection mode="community" />
-      </div>
+
+      </main>
     </Layout>
   );
 }
