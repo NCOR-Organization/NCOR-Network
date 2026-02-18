@@ -1008,14 +1008,22 @@ div[class^='announcementBar_'] {
 }
 /* =========================================
    Community Partners (page-scoped)
-   + Application layout improvements
+   Soft grey canvas version
    ========================================= */
 
 :root {
   --ncor-gold: #b8860b;
   --cp-border: #e3e6eb;
   --cp-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --cp-alert-bg: #fff8e6; /* pale gold callout */
+  --cp-alert-bg: #fff8e6;
+
+  /* New: soft canvas grey */
+  --cp-canvas: #f5f6f7;
+}
+
+/* Whole page background */
+.community-partners-page {
+  background: var(--cp-canvas);
 }
 
 /* Container width */
@@ -1023,10 +1031,11 @@ div[class^='announcementBar_'] {
   max-width: 980px;
 }
 
-/* HERO — white */
+/* HERO — still white for clarity */
 .community-partners-page .cp-hero {
   background: #ffffff;
   padding: 2rem 0 1.25rem;
+  border-bottom: 1px solid var(--cp-border);
 }
 
 .community-partners-page .cp-title {
@@ -1044,8 +1053,7 @@ div[class^='announcementBar_'] {
 
 /* TOP SECTION */
 .community-partners-page .cp-top {
-  background: #ffffff;
-  padding: 1.6rem 0 2rem;
+  padding: 2rem 0;
 }
 
 /* Grid layout */
@@ -1062,8 +1070,9 @@ div[class^='announcementBar_'] {
   }
 }
 
-/* Cards */
+/* Cards now sit on grey canvas */
 .community-partners-page .cp-card {
+  background: #ffffff;
   border: 1px solid var(--cp-border);
   box-shadow: var(--cp-shadow);
   border-radius: 10px;
@@ -1081,7 +1090,7 @@ div[class^='announcementBar_'] {
   margin: 0 0 0.85rem 0;
 }
 
-/* LIST FIX — cleaner bullet alignment */
+/* Bullet alignment */
 .community-partners-page .cp-list {
   list-style-position: outside;
   padding-left: 1rem;
@@ -1096,7 +1105,7 @@ div[class^='announcementBar_'] {
   margin-bottom: 0;
 }
 
-/* Gold-accent callout */
+/* Gold callout */
 .community-partners-page .cp-alert {
   background: var(--cp-alert-bg);
   border-left: 4px solid var(--ncor-gold);
@@ -1106,27 +1115,20 @@ div[class^='announcementBar_'] {
   margin-top: 1rem;
 }
 
-/* FORM SECTION — white page, but contained application panel */
+/* Application section */
 .community-partners-page .cp-form-band {
-  background: #ffffff;
   padding: 2.5rem 0;
-  margin-top: 1.5rem;
 }
 
-.community-partners-page .cp-form-container {
-  max-width: 980px;
-}
-
-/* Subtle containment around the ApplicationSection output */
 .community-partners-page .cp-form-container > * {
-  background: #fafafa;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 10px;
   border: 1px solid var(--cp-border);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--cp-shadow);
 }
 
-/* Anchor the application heading slightly */
+/* Anchor application heading */
 .community-partners-page .cp-form-band h2 {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -1134,7 +1136,7 @@ div[class^='announcementBar_'] {
   padding-bottom: 0.5rem;
 }
 
-/* Page-scoped primary button = gold */
+/* Gold button */
 .community-partners-page .cp-form-band .button--primary {
   background-color: var(--ncor-gold);
   border-color: var(--ncor-gold);
@@ -1144,41 +1146,19 @@ div[class^='announcementBar_'] {
   filter: brightness(0.95);
 }
 
-/* =========================================
-   Working Groups: 2-column checkbox layout
-   (Selectors include common wrappers; adjust if needed)
-   ========================================= */
-
-/* Checkbox spacing */
+/* Working groups grid */
 .community-partners-page .cp-form-band input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
-/* Try common wrappers for the working-group list */
-.community-partners-page .cp-form-band .working-groups,
-.community-partners-page .cp-form-band .checkbox-group,
 .community-partners-page .cp-form-band fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem 2rem;
 }
 
-/* Make labels align nicely in the grid */
-.community-partners-page .cp-form-band label {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-/* Collapse to 1 column on small screens */
 @media (max-width: 768px) {
-  .community-partners-page .cp-form-band .working-groups,
-  .community-partners-page .cp-form-band .checkbox-group,
   .community-partners-page .cp-form-band fieldset {
     grid-template-columns: 1fr;
   }
-}
-
-.community-partners-page .cp-form-band .button--primary:hover {
-  filter: brightness(0.95);
 }
