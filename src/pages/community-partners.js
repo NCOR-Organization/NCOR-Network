@@ -10,10 +10,12 @@ export default function CommunityPartners() {
     >
       <main className="community-partners-page">
 
-        {/* Top content */}
-        <div className="container margin-vert--lg">
+        <div className="community-narrow-container">
+
           <header className="community-partners-header">
-            <h1 className="community-partners-title">Community Partners</h1>
+            <h1 className="community-partners-title">
+              Community Partners
+            </h1>
 
             <p className="community-partners-subtitle">
               Community Partners engage in NCOR’s open scholarly ecosystem,
@@ -21,45 +23,38 @@ export default function CommunityPartners() {
             </p>
           </header>
 
-          <div className="row">
-            <div className="col col--8">
-              <div className="card community-partners-card">
-                <div className="card__body">
-                  <h2 className="community-partners-h2">Application Requirements</h2>
+          <div className="community-grid">
 
-                  <ul className="community-partners-list">
-                    <li>Select one or more existing public working groups, or</li>
-                    <li>Propose a new public working group idea</li>
-                    <li>Describe how you would like to contribute</li>
-                    <li>Agree to participate in open, non-restricted collaboration</li>
-                  </ul>
+            <div className="community-card">
+              <h2 className="community-partners-h2">Application Requirements</h2>
 
-                  <div className="alert alert--info community-partners-alert" role="alert">
-                    Community participation does not confer authority to represent NCOR
-                    in contractual, governmental, or restricted contexts.
-                  </div>
-                </div>
+              <ul>
+                <li>Select one or more existing public working groups, or</li>
+                <li>Propose a new public working group idea</li>
+                <li>Describe how you would like to contribute</li>
+                <li>Agree to participate in open, non-restricted collaboration</li>
+              </ul>
+
+              <div className="community-alert">
+                Community participation does not confer authority to represent NCOR
+                in contractual, governmental, or restricted contexts.
               </div>
             </div>
 
-            <div className="col col--4">
-              <div className="card community-partners-card">
-                <div className="card__body">
-                  <h3 className="community-partners-h3">What this pathway supports</h3>
-                  <ul className="community-partners-list margin-bottom--none">
-                    <li>Open scholarly collaboration</li>
-                    <li>Public working groups</li>
-                    <li>Research discussions and seminars</li>
-                  </ul>
-                </div>
-              </div>
+            <div className="community-card small">
+              <h3>What this pathway supports</h3>
+              <ul>
+                <li>Open scholarly collaboration</li>
+                <li>Public working groups</li>
+                <li>Research discussions and seminars</li>
+              </ul>
             </div>
+
           </div>
         </div>
 
-        {/* Bottom contrast section */}
         <section className="community-form-section">
-          <div className="container padding-vert--xl">
+          <div className="community-narrow-container form-tight">
             <ApplicationSection mode="community" />
           </div>
         </section>
