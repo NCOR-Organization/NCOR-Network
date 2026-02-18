@@ -1107,8 +1107,8 @@ div[class^='announcementBar_'] {
 
 /* Gold callout */
 .community-partners-page .cp-alert {
-  background: var(--cp-alert-bg);
-  border-left: 4px solid var(--ncor-gold);
+  background: var(--ifm-color-warning-lightest);
+  border-left: 4px solid var(--ifm-color-warning-darkest);
   padding: 0.9rem 1rem;
   border-radius: 6px;
   font-size: 0.95rem;
@@ -1253,8 +1253,8 @@ div[class^='announcementBar_'] {
 
 /* Gold callout */
 .collaborators-page .col-alert {
-  background: #fff8e6;
-  border-left: 4px solid #b8860b;
+  background: var(--ifm-color-warning-lightest);
+  border-left: 4px solid var(--ifm-color-warning-darkest);
   padding: 0.9rem 1rem;
   border-radius: 6px;
   font-size: 0.95rem;
