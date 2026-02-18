@@ -1162,3 +1162,131 @@ div[class^='announcementBar_'] {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   Collaborators (page-scoped)
+   Matches Community Partners styling
+   ========================================= */
+
+.collaborators-page {
+  background: #f5f6f7;
+}
+
+/* Container width */
+.collaborators-page .col-container {
+  max-width: 980px;
+}
+
+/* HERO */
+.collaborators-page .col-hero {
+  background: #ffffff;
+  padding: 2rem 0 1.25rem;
+  border-bottom: 1px solid #e3e6eb;
+}
+
+.collaborators-page .col-title {
+  font-size: 2.1rem;
+  line-height: 1.15;
+  margin: 0 0 0.6rem 0;
+}
+
+.collaborators-page .col-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 70ch;
+  margin: 0;
+}
+
+/* TOP SECTION */
+.collaborators-page .col-top {
+  padding: 2rem 0;
+}
+
+/* Grid layout */
+.collaborators-page .col-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (max-width: 996px) {
+  .collaborators-page .col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.collaborators-page .col-card {
+  background: #ffffff;
+  border: 1px solid #e3e6eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Headings */
+.collaborators-page .col-h2 {
+  font-size: 1.3rem;
+  margin: 0 0 0.85rem 0;
+}
+
+.collaborators-page .col-h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.85rem 0;
+}
+
+/* Bullet alignment */
+.collaborators-page .col-list {
+  list-style-position: outside;
+  padding-left: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.collaborators-page .col-list li {
+  margin: 0.35rem 0;
+}
+
+.collaborators-page .col-list--tight {
+  margin-bottom: 0;
+}
+
+/* Gold callout */
+.collaborators-page .col-alert {
+  background: #fff8e6;
+  border-left: 4px solid #b8860b;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Application section */
+.collaborators-page .col-form-band {
+  padding: 2.5rem 0;
+}
+
+.collaborators-page .col-form-container > * {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e3e6eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.collaborators-page .col-form-band h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e3e6eb;
+  padding-bottom: 0.5rem;
+}
+
+/* Gold primary button */
+.collaborators-page .col-form-band .button--primary {
+  background-color: #b8860b;
+  border-color: #b8860b;
+}
+
+.collaborators-page .col-form-band .button--primary:hover {
+  filter: brightness(0.95);
+}
