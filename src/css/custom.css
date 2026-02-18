@@ -1006,17 +1006,16 @@ div[class^='announcementBar_'] {
 .ncor-principles-table thead th {
   background: rgba(0,0,0,0.04);
 }
-
 /* =========================================
    Community Partners (page-scoped)
-   Clean white version — no striped sections
+   + Application layout improvements
    ========================================= */
 
 :root {
   --ncor-gold: #b8860b;
   --cp-border: #e3e6eb;
   --cp-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --cp-alert-bg: #fff8e6;  /* pale gold callout */
+  --cp-alert-bg: #fff8e6; /* pale gold callout */
 }
 
 /* Container width */
@@ -1024,7 +1023,7 @@ div[class^='announcementBar_'] {
   max-width: 980px;
 }
 
-/* HERO — now white */
+/* HERO — white */
 .community-partners-page .cp-hero {
   background: #ffffff;
   padding: 2rem 0 1.25rem;
@@ -1043,7 +1042,7 @@ div[class^='announcementBar_'] {
   margin: 0;
 }
 
-/* TOP SECTION — white */
+/* TOP SECTION */
 .community-partners-page .cp-top {
   background: #ffffff;
   padding: 1.6rem 0 2rem;
@@ -1107,27 +1106,77 @@ div[class^='announcementBar_'] {
   margin-top: 1rem;
 }
 
-/* FORM SECTION — white, no background band */
+/* FORM SECTION — white page, but contained application panel */
 .community-partners-page .cp-form-band {
   background: #ffffff;
-  padding: 2rem 0 2.5rem;
+  padding: 2.5rem 0;
   margin-top: 1.5rem;
 }
 
 .community-partners-page .cp-form-container {
-  padding-top: 0.25rem;
+  max-width: 980px;
 }
 
-/* Remove excess margin from application heading */
-.community-partners-page .cp-form-band h2,
-.community-partners-page .cp-form-band h3 {
+/* Subtle containment around the ApplicationSection output */
+.community-partners-page .cp-form-container > * {
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--cp-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Anchor the application heading slightly */
+.community-partners-page .cp-form-band h2 {
   margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--cp-border);
+  padding-bottom: 0.5rem;
 }
 
 /* Page-scoped primary button = gold */
 .community-partners-page .cp-form-band .button--primary {
   background-color: var(--ncor-gold);
   border-color: var(--ncor-gold);
+}
+
+.community-partners-page .cp-form-band .button--primary:hover {
+  filter: brightness(0.95);
+}
+
+/* =========================================
+   Working Groups: 2-column checkbox layout
+   (Selectors include common wrappers; adjust if needed)
+   ========================================= */
+
+/* Checkbox spacing */
+.community-partners-page .cp-form-band input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Try common wrappers for the working-group list */
+.community-partners-page .cp-form-band .working-groups,
+.community-partners-page .cp-form-band .checkbox-group,
+.community-partners-page .cp-form-band fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 2rem;
+}
+
+/* Make labels align nicely in the grid */
+.community-partners-page .cp-form-band label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Collapse to 1 column on small screens */
+@media (max-width: 768px) {
+  .community-partners-page .cp-form-band .working-groups,
+  .community-partners-page .cp-form-band .checkbox-group,
+  .community-partners-page .cp-form-band fieldset {
+    grid-template-columns: 1fr;
+  }
 }
 
 .community-partners-page .cp-form-band .button--primary:hover {
