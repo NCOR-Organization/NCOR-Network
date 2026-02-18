@@ -1009,32 +1009,29 @@ div[class^='announcementBar_'] {
 
 /* =========================================
    Community Partners (page-scoped)
+   Clean white version — no striped sections
    ========================================= */
 
 :root {
   --ncor-gold: #b8860b;
   --cp-border: #e3e6eb;
   --cp-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-
-  /* Use ONE neutral family so the page doesn’t look tri-colored */
-  --cp-surface: #f6f6f3;     /* shared surface for hero + form band */
-  --cp-page: #ffffff;        /* main page white */
-  --cp-alert-bg: #fff8e6;    /* pale gold callout */
+  --cp-alert-bg: #fff8e6;  /* pale gold callout */
 }
 
+/* Container width */
 .community-partners-page .cp-container {
   max-width: 980px;
 }
 
-/* HERO (now same surface family as form band) */
+/* HERO — now white */
 .community-partners-page .cp-hero {
-  background: var(--cp-surface);
-  border-bottom: 1px solid var(--cp-border);
-  padding: 2.1rem 0 1.35rem;
+  background: #ffffff;
+  padding: 2rem 0 1.25rem;
 }
 
 .community-partners-page .cp-title {
-  font-size: 2.15rem;
+  font-size: 2.1rem;
   line-height: 1.15;
   margin: 0 0 0.6rem 0;
 }
@@ -1046,12 +1043,13 @@ div[class^='announcementBar_'] {
   margin: 0;
 }
 
-/* TOP SECTION */
+/* TOP SECTION — white */
 .community-partners-page .cp-top {
-  background: var(--cp-page);
-  padding: 1.6rem 0 1.15rem;
+  background: #ffffff;
+  padding: 1.6rem 0 2rem;
 }
 
+/* Grid layout */
 .community-partners-page .cp-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1065,7 +1063,7 @@ div[class^='announcementBar_'] {
   }
 }
 
-/* CARDS */
+/* Cards */
 .community-partners-page .cp-card {
   border: 1px solid var(--cp-border);
   box-shadow: var(--cp-shadow);
@@ -1073,6 +1071,7 @@ div[class^='announcementBar_'] {
   height: 100%;
 }
 
+/* Headings */
 .community-partners-page .cp-h2 {
   font-size: 1.3rem;
   margin: 0 0 0.85rem 0;
@@ -1083,11 +1082,11 @@ div[class^='announcementBar_'] {
   margin: 0 0 0.85rem 0;
 }
 
-/* LIST FIX: align bullets and reduce awkward indent */
+/* LIST FIX — cleaner bullet alignment */
 .community-partners-page .cp-list {
   list-style-position: outside;
-  padding-left: 1.1rem;   /* controls bullet indent */
-  margin: 0 0 1rem 0;     /* remove extra left margin */
+  padding-left: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .community-partners-page .cp-list li {
@@ -1108,25 +1107,24 @@ div[class^='announcementBar_'] {
   margin-top: 1rem;
 }
 
-/* APPLICATION BAND (same surface as hero, so it doesn’t feel like a third color) */
+/* FORM SECTION — white, no background band */
 .community-partners-page .cp-form-band {
-  background: var(--cp-surface);
-  border-top: 1px solid var(--cp-border);
-  padding: 1.6rem 0 2rem;
-  margin-top: 1.25rem;
+  background: #ffffff;
+  padding: 2rem 0 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .community-partners-page .cp-form-container {
   padding-top: 0.25rem;
 }
 
-/* Optional: bring the application heading closer to the band top */
+/* Remove excess margin from application heading */
 .community-partners-page .cp-form-band h2,
 .community-partners-page .cp-form-band h3 {
   margin-top: 0;
 }
 
-/* Optional: page-scoped primary button = gold */
+/* Page-scoped primary button = gold */
 .community-partners-page .cp-form-band .button--primary {
   background-color: var(--ncor-gold);
   border-color: var(--ncor-gold);
