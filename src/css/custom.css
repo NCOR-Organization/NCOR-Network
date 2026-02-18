@@ -1290,3 +1290,38 @@ div[class^='announcementBar_'] {
 .collaborators-page .col-form-band .button--primary:hover {
   filter: brightness(0.95);
 }
+
+/* ===============================
+   Shared gold accents + depth
+   Community + Collaborators
+   =============================== */
+
+/* Gold top accent on cards */
+.community-partners-page .cp-card,
+.collaborators-page .col-card {
+  border-top: 3px solid var(--ifm-color-warning-darkest);
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.04),
+    0 10px 28px rgba(0,0,0,0.06);
+  transition: all 0.18s ease;
+}
+
+/* Subtle hover lift */
+.community-partners-page .cp-card:hover,
+.collaborators-page .col-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.05),
+    0 14px 34px rgba(0,0,0,0.08);
+}
+
+/* Gold underline under page titles */
+.community-partners-page .cp-title::after,
+.collaborators-page .col-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--ifm-color-warning-darkest);
+  margin-top: 0.6rem;
+}
