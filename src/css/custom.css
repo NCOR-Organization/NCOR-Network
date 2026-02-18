@@ -1007,76 +1007,123 @@ div[class^='announcementBar_'] {
   background: rgba(0,0,0,0.04);
 }
 
-/* =========================
-   Community Partners — tighter layout
-   ========================= */
+/* =========================================
+   Community Partners (page-scoped)
+   ========================================= */
 
-.community-narrow-container {
+/* Use the site's gold tone for accents.
+   If NCOR has a CSS variable for gold, swap it in here. */
+:root {
+  --ncor-gold: #b8860b; /* safe gold default */
+  --cp-band: #f4f6f9;   /* light contrast band */
+  --cp-hero: #f7f6f2;   /* warm hero background */
+  --cp-border: #e3e6eb;
+  --cp-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.community-partners-page .cp-container {
   max-width: 980px;
-  margin: 2rem auto;
-  padding: 0 1rem;
 }
 
-.community-partners-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+/* HERO */
+.community-partners-page .cp-hero {
+  background: var(--cp-hero);
+  border-bottom: 1px solid var(--cp-border);
+  padding: 2.25rem 0 1.5rem;
 }
 
-.community-partners-subtitle {
+.community-partners-page .cp-title {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  margin: 0 0 0.75rem 0;
+}
+
+.community-partners-page .cp-subtitle {
   font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 1.75rem;
-  max-width: 65ch;
+  line-height: 1.65;
+  max-width: 70ch;
+  margin: 0;
 }
 
-.community-grid {
+/* TOP SECTION */
+.community-partners-page .cp-top {
+  padding: 1.75rem 0 1.25rem;
+}
+
+.community-partners-page .cp-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
+  align-items: stretch;
 }
 
-.community-card {
-  background: #ffffff;
-  border: 1px solid #e1e5ea;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+@media (max-width: 996px) {
+  .community-partners-page .cp-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.community-card.small {
-  padding: 1.25rem;
+/* CARDS */
+.community-partners-page .cp-card {
+  border: 1px solid var(--cp-border);
+  box-shadow: var(--cp-shadow);
+  border-radius: 10px;
+  height: 100%;
 }
 
-.community-card h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
+.community-partners-page .cp-h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.85rem 0;
 }
 
-.community-card h3 {
+.community-partners-page .cp-h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.85rem 0;
 }
 
-.community-card ul {
-  margin-bottom: 1rem;
+.community-partners-page .cp-list {
+  margin: 0 0 1rem 1.1rem;
 }
 
-.community-alert {
-  background: #eef4fa;
-  border-left: 4px solid #2b6cb0;
-  padding: 0.85rem 1rem;
-  border-radius: 4px;
+.community-partners-page .cp-list--tight {
+  margin-bottom: 0;
+}
+
+/* Gold-accent callout (replaces blue) */
+.community-partners-page .cp-alert {
+  background: #fff8e6; /* warm pale gold */
+  border-left: 4px solid var(--ncor-gold);
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
   font-size: 0.95rem;
+  margin-top: 1rem;
 }
 
-/* Form band — tighter + stronger contrast */
-.community-form-section {
-  background: #f4f6f9;
-  border-top: 1px solid #e3e6eb;
+/* FORM BAND */
+.community-partners-page .cp-form-band {
+  background: var(--cp-band);
+  border-top: 1px solid var(--cp-border);
   padding: 2rem 0;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
-.form-tight {
-  margin: 0 auto;
+/* Tighten the perceived whitespace above the application heading */
+.community-partners-page .cp-form-container {
+  padding-top: 0.5rem;
+}
+
+/* Optional: make the "Community Partner Application" heading feel connected */
+.community-partners-page .cp-form-band h2,
+.community-partners-page .cp-form-band h3 {
+  margin-top: 0;
+}
+
+/* Optional: make primary buttons feel on-brand if they inherit default blue */
+.community-partners-page .cp-form-band .button--primary {
+  background-color: var(--ncor-gold);
+  border-color: var(--ncor-gold);
+}
+
+.community-partners-page .cp-form-band .button--primary:hover {
+  filter: brightness(0.95);
 }
