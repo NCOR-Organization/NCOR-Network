@@ -1008,54 +1008,75 @@ div[class^='announcementBar_'] {
 }
 
 /* =========================
-   Community Partners page
+   Community Partners — tighter layout
    ========================= */
 
-.community-partners-header {
-  margin-bottom: 1.25rem;
+.community-narrow-container {
+  max-width: 980px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .community-partners-title {
-  font-size: 2.25rem; /* controls the gigantic H1 */
-  line-height: 1.15;
-  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .community-partners-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
-  max-width: 70ch;
-  margin-bottom: 0;
+  margin-bottom: 1.75rem;
+  max-width: 65ch;
 }
 
-.community-partners-h2 {
-  font-size: 1.35rem;
+.community-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.community-card {
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+}
+
+.community-card.small {
+  padding: 1.25rem;
+}
+
+.community-card h2 {
+  font-size: 1.3rem;
   margin-bottom: 0.75rem;
 }
 
-.community-partners-h3 {
+.community-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
 }
 
-.community-partners-list {
-  margin-top: 0.5rem;
+.community-card ul {
+  margin-bottom: 1rem;
 }
 
-.community-partners-card {
-  border: 1px solid #e0e4ea;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-}
-
-/* Stronger, cleaner info callout */
-.community-partners-alert.alert--info {
-  background-color: #e8f1fb;
+.community-alert {
+  background: #eef4fa;
   border-left: 4px solid #2b6cb0;
+  padding: 0.85rem 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
 }
 
-/* Contrast band behind the application section */
+/* Form band — tighter + stronger contrast */
 .community-form-section {
-  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
+  background: #f4f6f9;
   border-top: 1px solid #e3e6eb;
-  margin-top: 1.5rem;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.form-tight {
+  margin: 0 auto;
 }
