@@ -10,51 +10,57 @@ export default function CommunityPartners() {
     >
       <main className="community-partners-page">
 
-        <div className="community-narrow-container">
+        {/* HERO */}
+        <section className="cp-hero">
+          <div className="container cp-container">
+            <h1 className="cp-title">Community Partners</h1>
 
-          <header className="community-partners-header">
-            <h1 className="community-partners-title">
-              Community Partners
-            </h1>
-
-            <p className="community-partners-subtitle">
+            <p className="cp-subtitle">
               Community Partners engage in NCOR’s open scholarly ecosystem,
               including public working groups, seminars, and research discussions.
             </p>
-          </header>
+          </div>
+        </section>
 
-          <div className="community-grid">
+        {/* TOP CONTENT */}
+        <section className="cp-top">
+          <div className="container cp-container">
+            <div className="cp-grid">
+              <div className="card cp-card">
+                <div className="card__body">
+                  <h2 className="cp-h2">Application Requirements</h2>
 
-            <div className="community-card">
-              <h2 className="community-partners-h2">Application Requirements</h2>
+                  <ul className="cp-list">
+                    <li>Select one or more existing public working groups, or</li>
+                    <li>Propose a new public working group idea</li>
+                    <li>Describe how you would like to contribute</li>
+                    <li>Agree to participate in open, non-restricted collaboration</li>
+                  </ul>
 
-              <ul>
-                <li>Select one or more existing public working groups, or</li>
-                <li>Propose a new public working group idea</li>
-                <li>Describe how you would like to contribute</li>
-                <li>Agree to participate in open, non-restricted collaboration</li>
-              </ul>
+                  <div className="cp-alert" role="alert">
+                    Community participation does not confer authority to represent NCOR
+                    in contractual, governmental, or restricted contexts.
+                  </div>
+                </div>
+              </div>
 
-              <div className="community-alert">
-                Community participation does not confer authority to represent NCOR
-                in contractual, governmental, or restricted contexts.
+              <div className="card cp-card cp-card--aside">
+                <div className="card__body">
+                  <h3 className="cp-h3">What this pathway supports</h3>
+                  <ul className="cp-list cp-list--tight">
+                    <li>Open scholarly collaboration</li>
+                    <li>Public working groups</li>
+                    <li>Research discussions and seminars</li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-            <div className="community-card small">
-              <h3>What this pathway supports</h3>
-              <ul>
-                <li>Open scholarly collaboration</li>
-                <li>Public working groups</li>
-                <li>Research discussions and seminars</li>
-              </ul>
-            </div>
-
           </div>
-        </div>
+        </section>
 
-        <section className="community-form-section">
-          <div className="community-narrow-container form-tight">
+        {/* APPLICATION (contrast band) */}
+        <section className="cp-form-band">
+          <div className="container cp-container cp-form-container">
             <ApplicationSection mode="community" />
           </div>
         </section>
