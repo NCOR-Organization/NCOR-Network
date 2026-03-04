@@ -28,7 +28,7 @@ export default function Hero() {
         <div className={`${styles.container} ${styles.heroContent}`}>
 
           <h1 className={styles.heroTitle}>
-            Semantic Technology for Intelligence, Defense, and Security Conference (STIDS) 2025
+            Semantic Technology for Intelligence, Defense, and Security Conference (STIDS) 2026
           </h1>
 
           <div className={styles.heroDate}>May 27-28, 2026</div>

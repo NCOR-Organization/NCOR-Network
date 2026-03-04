@@ -105,7 +105,7 @@ export default function CallForPapers() {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Call for Papers</h2>
         <p className={styles.sectionSubtitle}>
-          Thirteenth International Conference on Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
+          Thirteenth International Conference on Semantic Technology for Intelligence, Defense, and Security (STIDS) 2026
         </p>
         
         <div className={styles.card}>

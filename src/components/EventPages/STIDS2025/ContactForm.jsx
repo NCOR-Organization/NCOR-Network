@@ -7,7 +7,7 @@ export default function ContactInfo() {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Contact Us</h2>
         <p className={styles.sectionSubtitle}>
-          Have questions about STIDS 2025? We're here to help.
+          Have questions about STIDS 2026? We're here to help.
         </p>
 
         <div style={{ 

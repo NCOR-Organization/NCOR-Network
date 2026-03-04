@@ -9,7 +9,7 @@ export default function EventsSection() {
   const upcomingEvents = [
     {
       id: 1,
-      title: 'STIDS 2025',
+      title: 'STIDS 2026',
       description: 'Semantic Technology for Intelligence, Defense, and Security Conference featuring cutting-edge research presentations, expert keynotes, and classified sessions.',
       date: 'May 27-28, 2026',
       location: 'George Mason University, Woodbridge, VA',
