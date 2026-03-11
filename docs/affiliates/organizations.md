@@ -83,23 +83,6 @@ NCOR partners with organizations across sectors to advance the development and i
     </div>
   </div>
 
-
-  <div className="col col--4 margin-bottom--lg">
-    <div className="card">
-      <div className="card__image">
-        <a href="https://oe.tradoc.army.mil/">
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://raw.githubusercontent.com/johnbeve/NCOR-Test/main/docs/assets/logos/tradoc.png" alt="TRADOC Operational Environment Center" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
-          </div>
-        </a>
-      </div>
-      <div className="card__body text--center">
-        <h3><a target="_blank" rel="noopener noreferrer" href="https://oe.tradoc.army.mil/">TRADOC Operational Environment Center</a></h3>
-        <p>Supporting the US Army with operational environment analysis and frameworks.</p>
-      </div>
-    </div>
-  </div>
-
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image">
