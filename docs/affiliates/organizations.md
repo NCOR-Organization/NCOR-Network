@@ -101,7 +101,7 @@ NCOR partners with organizations across sectors to advance the development and i
     <div className="card">
       <div className="card__image">
         <a target="_blank" rel="noopener noreferrer" href="https://aerospace.org/">
-          <img src="/img/organizations/aerospace.png" alt="The Aerospace Corporation" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+          <img src="/img/organizations/aerospace-new.png" alt="The Aerospace Corporation" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
         </a>
       </div>
       <div className="card__body text--center">
