@@ -251,6 +251,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://certuscore.com/">
+        <img src="/img/organizations/certusgroupinc_logo.jpeg" alt="Certus Core" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://certuscore.com/">Certus Core</a></h3>
+      <p>Data and analytics company delivering ontology-driven solutions for decision support and mission-critical systems.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://decisym.com/">
+        <img src="/img/organizations/decisym.png" alt="DeciSym" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://decisym.com/">DeciSym</a></h3>
+      <p>Engineering and analytics firm specializing in modeling, simulation, and ontology-based decision support systems.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.dia.mil/">
+        <img src="/img/organizations/dia.png" alt="Defense Intelligence Agency" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.dia.mil/">Defense Intelligence Agency</a></h3>
+      <p>U.S. Department of Defense agency providing intelligence on foreign militaries to support national security and defense operations.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
