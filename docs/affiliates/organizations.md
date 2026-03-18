@@ -111,6 +111,20 @@ NCOR partners with organizations across sectors to advance the development and i
     </div>
   </div>
 
+  <div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://acaciaks.com/">
+        <img src="/img/organizations/acacia.png" alt="Acacia Knowledge Systems" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://acaciaks.com/">Acacia Knowledge Systems</a></h3>
+      <p>Knowledge representation and AI company focused on ontology-driven systems for defense and intelligence applications.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
