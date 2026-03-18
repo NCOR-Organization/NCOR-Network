@@ -339,7 +339,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.faa.gov/">
-        <img src="/img/organizations/faa.png" alt="National Airspace System (NAS)" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/faa-new.jpg" alt="National Airspace System (NAS)" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -353,7 +353,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.forvismazars.com/">
-        <img src="/img/organizations/forvis-mazars.png" alt="Forvis Mazars" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/forvis-new.png" alt="Forvis Mazars" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
