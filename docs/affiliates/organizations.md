@@ -125,6 +125,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.afrl.af.mil/RI/">
+        <img src="/img/organizations/afrl.png" alt="Air Force Research Laboratory, Rome, New York" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.afrl.af.mil/RI/">Air Force Research Laboratory, Rome, New York</a></h3>
+      <p>AFRL’s Information Directorate in Rome, New York, advancing research in command, control, communications, intelligence, and cyber technologies.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.allotrope.org/">
+        <img src="/img/organizations/allotrope-foundation.png" alt="Allotrope Foundation" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.allotrope.org/">Allotrope Foundation</a></h3>
+      <p>Nonprofit community developing standards and linked-data frameworks for scientific data interoperability and reuse.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.astrazeneca.com/">
+        <img src="/img/organizations/astrazeneca.png" alt="AstraZeneca" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.astrazeneca.com/">AstraZeneca</a></h3>
+      <p>Global biopharmaceutical company leveraging data and advanced analytics, including ontologies, to drive scientific innovation.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
