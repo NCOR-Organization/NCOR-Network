@@ -209,6 +209,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.boeing.com/">
+        <img src="/img/organizations/boeing.jpg" alt="Boeing" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.boeing.com/">Boeing</a></h3>
+      <p>Global aerospace company developing and supporting commercial airplanes, defense systems, and space technologies.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.cambridgesemantics.com/">
+        <img src="/img/organizations/cambridge-semantics.jpeg" alt="Cambridge Semantics" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.cambridgesemantics.com/">Cambridge Semantics</a></h3>
+      <p>Semantic and graph-based data integration company focused on connecting enterprise data for analytics and AI applications.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.capitalone.com/">
+        <img src="/img/organizations/capital-one.jpeg" alt="Capital One" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.capitalone.com/">Capital One</a></h3>
+      <p>Financial services company offering banking, credit, and digital data capabilities across consumer and business platforms.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
