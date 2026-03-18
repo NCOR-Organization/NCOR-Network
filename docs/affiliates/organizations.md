@@ -338,6 +338,48 @@ NCOR partners with organizations across sectors to advance the development and i
 <div className="col col--4 margin-bottom--lg">
   <div className="card">
     <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.faa.gov/">
+        <img src="/img/organizations/faa.png" alt="National Airspace System (NAS)" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.faa.gov/">National Airspace System (NAS)</a></h3>
+      <p>U.S. aviation infrastructure system managed by the FAA, supporting safe and efficient air travel through integrated data and systems.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.forvismazars.com/">
+        <img src="/img/organizations/forvis-mazars.png" alt="Forvis Mazars" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.forvismazars.com/">Forvis Mazars</a></h3>
+      <p>Global professional services network providing audit, consulting, and data-driven advisory solutions.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.goldmansachs.com/">
+        <img src="/img/organizations/goldman-sachs.jpg" alt="Goldman Sachs" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.goldmansachs.com/">Goldman Sachs</a></h3>
+      <p>Global investment banking and financial services firm leveraging advanced data systems and analytics.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.ida.org/">
         <img src="/img/organizations/ida.png" alt="Institute for Defense Analyses" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
