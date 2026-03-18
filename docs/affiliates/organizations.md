@@ -167,6 +167,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.astrion.us/">
+        <img src="/img/organizations/astrion.jpeg" alt="Astrion" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.astrion.us/">Astrion</a></h3>
+      <p>Engineering and digital solutions company supporting government and commercial missions across defense, civilian, and public-sector domains.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://berkeleybop.org/">
+        <img src="/img/organizations/BBOP.png" alt="Berkeley Bioinformatics Open-Source Projects (BBOP)" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://berkeleybop.org/">Berkeley Bioinformatics Open-Source Projects (BBOP)</a></h3>
+      <p>Open-source bioinformatics initiative developing tools, standards, and infrastructure for ontology and biomedical data integration.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.bentley.com/">
+        <img src="/img/organizations/bentley.jpeg" alt="Bentley Software, Inc." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.bentley.com/">Bentley Software, Inc.</a></h3>
+      <p>Infrastructure engineering software company supporting digital twins, data interoperability, and information management across the built environment.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
