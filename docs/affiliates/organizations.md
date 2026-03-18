@@ -489,6 +489,104 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/">
+        <img src="/img/organizations/science-commons.png" alt="Science Commons" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/">Science Commons</a></h3>
+      <p>Initiative of Creative Commons supporting open access, data sharing, and interoperability in scientific research.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://sciencecast.org/">
+        <img src="/img/organizations/sciencecast.png" alt="ScienceCast" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://sciencecast.org/">ScienceCast</a></h3>
+      <p>Platform for sharing scientific findings and fostering collaboration through open and structured research communication.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.semanticarts.com/">
+        <img src="/img/organizations/semantic-arts.png" alt="Semantic Arts" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.semanticarts.com/">Semantic Arts</a></h3>
+      <p>Consulting firm specializing in semantic technologies, knowledge graphs, and ontology-driven enterprise solutions.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://summitks.com/">
+        <img src="/img/organizations/summit-knowledge-solutions.png" alt="Summit Knowledge Solutions" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://summitks.com/">Summit Knowledge Solutions</a></h3>
+      <p>Provider of knowledge management, ontology engineering, and semantic integration services.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.thermofisher.com/">
+        <img src="/img/organizations/thermo-fisher.png" alt="Thermo Fisher Scientific" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.thermofisher.com/">Thermo Fisher Scientific</a></h3>
+      <p>Global biotechnology company advancing scientific research through data, instrumentation, and knowledge systems.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.volley.com/">
+        <img src="/img/organizations/volley.png" alt="Volley" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.volley.com/">Volley</a></h3>
+      <p>AI-powered learning platform supporting interactive knowledge delivery and structured educational content.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.wtisolutions.com/">
+        <img src="/img/organizations/webworld_technologies_logo.jpeg" alt="WTI Solutions" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.wtisolutions.com/">WTI Solutions</a></h3>
+      <p>Technology solutions provider supporting ontology-driven systems, data integration, and enterprise software development.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
