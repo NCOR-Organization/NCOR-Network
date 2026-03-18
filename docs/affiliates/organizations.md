@@ -325,7 +325,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.elsevier.com/">
-        <img src="/img/organizations/elsevier.png" alt="Elsevier Smart Content Strategy" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/Elsevier.jpg" alt="Elsevier Smart Content Strategy" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
