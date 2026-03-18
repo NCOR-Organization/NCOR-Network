@@ -419,6 +419,76 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.patagonia.com/ownership/">
+        <img src="/img/organizations/patagonia.png" alt="Patagonia Purpose Trust" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.patagonia.com/ownership/">Patagonia Purpose Trust</a></h3>
+      <p>Ownership structure supporting Patagonia’s mission-driven approach to environmental sustainability and responsible governance.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://petrobras.com.br/">
+        <img src="/img/organizations/petrobras.png" alt="Petrobras" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://petrobras.com.br/">Petrobras</a></h3>
+      <p>Brazilian multinational energy corporation engaged in oil, gas, and energy research with advanced data integration efforts.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://goraft.tech/">
+        <img src="/img/organizations/raft.jpg" alt="Raft" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://goraft.tech/">Raft</a></h3>
+      <p>Technology company delivering data-centric and AI-enabled solutions for defense and national security applications.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://rocketurbiz.com/">
+        <img src="/img/organizations/rocketurbiz.jpeg" alt="RocketUrBiz" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://rocketurbiz.com/">RocketUrBiz</a></h3>
+      <p>Digital transformation and consulting firm supporting enterprise systems, data integration, and business process optimization.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.scania.com/">
+        <img src="/img/organizations/scania.png" alt="Scania" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.scania.com/">Scania</a></h3>
+      <p>Global transport solutions provider focused on sustainable mobility and data-driven vehicle systems.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
