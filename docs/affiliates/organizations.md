@@ -335,6 +335,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.ida.org/">
+        <img src="/img/organizations/ida.png" alt="Institute for Defense Analyses" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.ida.org/">Institute for Defense Analyses</a></h3>
+      <p>Nonprofit research organization providing objective analysis on national security and defense-related challenges.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.jpmorganchase.com/">
+        <img src="/img/organizations/jp-morgan.jpeg" alt="J.P. Morgan Chase & Co." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.jpmorganchase.com/">J.P. Morgan Chase & Co.</a></h3>
+      <p>Global financial services firm leveraging large-scale data, analytics, and knowledge systems to support banking and investment operations.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="#">
+        <img src="/img/organizations/Ontos-Cosmos.png" alt="Ontos Cosmos" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3>Ontos Cosmos</h3>
+      <p>Ontology-driven platform supporting knowledge integration, semantic interoperability, and advanced data analytics.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
