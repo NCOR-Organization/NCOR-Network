@@ -293,6 +293,48 @@ NCOR partners with organizations across sectors to advance the development and i
   </div>
 </div>
 
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://doqs.io/">
+        <img src="/img/organizations/doqs.png" alt="DOQS: Data-Oriented Quality Solutions" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://doqs.io/">DOQS: Data-Oriented Quality Solutions</a></h3>
+      <p>Company focused on improving data quality and interoperability through ontology-driven and data-centric approaches.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://dspace.lib.ntua.gr/">
+        <img src="/img/organizations/dspace-ntua.png" alt="DSpace at NTNUA" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://dspace.lib.ntua.gr/">DSpace at NTNUA</a></h3>
+      <p>Institutional repository of the National Technical University of Athens supporting open access to research and structured data.</p>
+    </div>
+  </div>
+</div>
+
+<div className="col col--4 margin-bottom--lg">
+  <div className="card">
+    <div className="card__image">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.elsevier.com/">
+        <img src="/img/organizations/elsevier.png" alt="Elsevier Smart Content Strategy" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+      </a>
+    </div>
+    <div className="card__body text--center">
+      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.elsevier.com/">Elsevier Smart Content Strategy</a></h3>
+      <p>Global information and analytics company advancing structured content, knowledge graphs, and ontology-based publishing systems.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 # Institutional Affiliates
