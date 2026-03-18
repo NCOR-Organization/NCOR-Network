@@ -8,9 +8,8 @@ sidebar_position: 2
 
 NCOR partners with organizations across sectors to advance the development and implementation of ontologies.
 
-
-
 <div className="row">
+
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image">
@@ -33,7 +32,7 @@ NCOR partners with organizations across sectors to advance the development and i
         </a>
       </div>
       <div className="card__body text--center">
-        <h3><a target="_blank" rel="noopener noreferrer" shref="https://www.rtx.com/">Raytheon Technologies</a></h3>
+        <h3><a target="_blank" rel="noopener noreferrer" href="https://www.rtx.com/">Raytheon Technologies</a></h3>
         <p>Aerospace and defense company partnering with NCOR on ontology-based system integration projects.</p>
       </div>
     </div>
@@ -96,7 +95,23 @@ NCOR partners with organizations across sectors to advance the development and i
       </div>
     </div>
   </div>
-</div> 
+
+  <!-- ✅ NEW ENTRY (Aerospace) -->
+  <div className="col col--4 margin-bottom--lg">
+    <div className="card">
+      <div className="card__image">
+        <a target="_blank" rel="noopener noreferrer" href="https://aerospace.org/">
+          <img src="/img/organizations/aerospace.png" alt="The Aerospace Corporation" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        </a>
+      </div>
+      <div className="card__body text--center">
+        <h3><a target="_blank" rel="noopener noreferrer" href="https://aerospace.org/">The Aerospace Corporation</a></h3>
+        <p>Independent nonprofit organization serving the space enterprise through technical research, engineering, and advisory support.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 # Institutional Affiliates
 
