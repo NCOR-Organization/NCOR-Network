@@ -594,6 +594,7 @@ NCOR partners with organizations across sectors to advance the development and i
 Academic and research institutions play a key role in NCOR's global network, contributing expertise and resources to ontology research and education.
 
 <div className="row">
+
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image">
@@ -621,9 +622,7 @@ Academic and research institutions play a key role in NCOR's global network, con
       </div>
     </div>
   </div>
-</div>
 
-<div className="row">
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image">
@@ -665,9 +664,7 @@ Academic and research institutions play a key role in NCOR's global network, con
       </div>
     </div>
   </div>
-</div>
 
-<div className="row">
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image">
@@ -681,5 +678,6 @@ Academic and research institutions play a key role in NCOR's global network, con
       </div>
     </div>
   </div>
-</div> 
+
+</div>
 
