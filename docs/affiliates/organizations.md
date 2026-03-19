@@ -157,7 +157,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.astrazeneca.com/">
-        <img src="/img/organizations/astrazeneca.png" alt="AstraZeneca" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/astrazeneca-new.png" alt="AstraZeneca" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -199,7 +199,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.bentley.com/">
-        <img src="/img/organizations/bentley.jpeg" alt="Bentley Software, Inc." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/bentley-systems-logo.png" alt="Bentley Software, Inc." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -213,7 +213,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.boeing.com/">
-        <img src="/img/organizations/boeing.jpg" alt="Boeing" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/Boeing-logo-1.jpg" alt="Boeing" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -241,7 +241,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.capitalone.com/">
-        <img src="/img/organizations/capital-one.jpeg" alt="Capital One" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/capital-one-logo.png" alt="Capital One" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -367,7 +367,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.goldmansachs.com/">
-        <img src="/img/organizations/goldman-sachs.jpg" alt="Goldman Sachs" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/goldman-sachs-new-logo.png" alt="Goldman Sachs" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -395,7 +395,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.jpmorganchase.com/">
-        <img src="/img/organizations/jp-morgan.jpeg" alt="J.P. Morgan Chase & Co." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/Jp_morgan_logo.jpg" alt="J.P. Morgan Chase & Co." style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
@@ -549,7 +549,7 @@ NCOR partners with organizations across sectors to advance the development and i
   <div className="card">
     <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://www.thermofisher.com/">
-        <img src="/img/organizations/thermo-fisher.png" alt="Thermo Fisher Scientific" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
+        <img src="/img/organizations/thermo-fisher-scientific-1.jpg" alt="Thermo Fisher Scientific" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
     </div>
     <div className="card__body text--center">
