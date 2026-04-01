@@ -197,6 +197,9 @@ export default function Speakers() {
     }
   ];
 
+   const soloTalks = talks.filter((talk) => talk.speakers.length === 1);
+  const groupTalks = talks.filter((talk) => talk.speakers.length > 1);
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
@@ -205,9 +208,9 @@ export default function Speakers() {
           Explore selected STIDS presentations and the speakers contributing to them.
         </p>
 
-        {talks.map((talk, index) => (
+        {groupTalks.map((talk, index) => (
           <div
-            key={index}
+            key={`group-${index}`}
             style={{
               background: '#fff',
               borderRadius: '18px',
@@ -238,29 +241,11 @@ export default function Speakers() {
               {talk.abstract}
             </p>
 
-            <div
-              className={styles.grid}
-              style={
-                talk.speakers.length === 1
-                  ? {
-                      display: 'flex',
-                      justifyContent: 'center'
-                    }
-                  : {}
-              }
-            >
+            <div className={styles.grid}>
               {talk.speakers.map((speaker, speakerIndex) => (
                 <div
                   key={speakerIndex}
                   className={`${styles.card} ${styles.speakerCard}`}
-                  style={
-                    talk.speakers.length === 1
-                      ? {
-                          maxWidth: '420px',
-                          width: '100%'
-                        }
-                      : {}
-                  }
                 >
                   <img
                     src={speaker.image}
@@ -287,6 +272,81 @@ export default function Speakers() {
             </div>
           </div>
         ))}
+
+        <div
+          style={{
+            background: '#fff',
+            borderRadius: '18px',
+            padding: '2rem',
+            marginBottom: '2rem',
+            boxShadow: '0 4px 18px rgba(0, 0, 0, 0.08)'
+          }}
+        >
+          <h3
+            style={{
+              fontSize: '1.75rem',
+              marginBottom: '1rem',
+              textAlign: 'center'
+            }}
+          >
+            Individual Presentations
+          </h3>
+
+          <p
+            style={{
+              maxWidth: '900px',
+              margin: '0 auto 2rem',
+              textAlign: 'center',
+              lineHeight: '1.7',
+              color: '#555'
+            }}
+          >
+            These presentations feature individual speakers contributing to this year’s STIDS program.
+          </p>
+
+          <div className={styles.grid}>
+            {soloTalks.map((talk, index) => {
+              const speaker = talk.speakers[0];
+              return (
+                <div
+                  key={`solo-${index}`}
+                  className={`${styles.card} ${styles.speakerCard}`}
+                >
+                  <h4
+                    style={{
+                      fontSize: '1.2rem',
+                      marginBottom: '1rem',
+                      textAlign: 'center'
+                    }}
+                  >
+                    {talk.title}
+                  </h4>
+
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className={styles.speakerImage}
+                    style={{
+                      width: '160px',
+                      height: '160px',
+                      objectFit: 'cover',
+                      borderRadius: '50%',
+                      margin: '0 auto 1rem',
+                      display: 'block'
+                    }}
+                  />
+                  <h4 className={styles.speakerName}>{speaker.name}</h4>
+                  <div className={styles.speakerTitle}>
+                    {speaker.title}
+                    <br />
+                    {speaker.organization}
+                  </div>
+                  <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
 
         <div
           style={{
