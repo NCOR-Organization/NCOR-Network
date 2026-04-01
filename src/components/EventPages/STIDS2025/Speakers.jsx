@@ -324,19 +324,21 @@ export default function Speakers() {
                     {talk.title}
                   </h4>
 
-                  <img
-                    src={speaker.image}
-                    alt={speaker.name}
-                    className={styles.speakerImage}
-                    style={{
-                      width: '160px',
-                      height: '160px',
-                      objectFit: 'cover',
-                      borderRadius: '50%',
-                      margin: '0 auto 1rem',
-                      display: 'block'
-                    }}
-                  />
+                 <img
+  src={speaker.image}
+  alt={speaker.name}
+  className={styles.speakerImage}
+  style={{
+    width: '160px',
+    height: '160px',
+    objectFit: 'cover',
+    borderRadius: '50%',
+    margin: '0 auto 1rem',
+    display: 'block',
+    objectPosition:
+      speaker.name === 'Gideon Zufan' ? 'center 45%' : 'center top'
+  }}
+/>
                   <h4 className={styles.speakerName}>{speaker.name}</h4>
                   <div className={styles.speakerTitle}>
                     {speaker.title}
