@@ -88,7 +88,7 @@ export default function Speakers() {
       ]
     },
     {
-      title: 'Ontology Development Workflows with Progressive Web Apps and Client-Side Processing Browser-Based Tools',
+      title: 'Edge Computing Ontology DevOps: Progressive Web Apps for Ontology Development Designed to Support Each Stage of Knowledge Engineering Workflows',
       abstract:
         'This presentation describes a fully local, edge-first approach to ontology development tooling through browser-based progressive web apps designed to support each stage of the knowledge engineering lifecycle.',
       speakers: [
@@ -105,6 +105,20 @@ export default function Speakers() {
           organization: 'U.S. Customs and Border Protection',
           image: '/img/speakers/aaron-damiano.jpeg',
           bio: 'Aaron Damiano is a semantic engineer, ontologist, and data scientist specializing in enterprise knowledge graphs and ontology-driven systems. He works at U.S. Customs and Border Protection, where he helps lead efforts to normalize, integrate, and operationalize data using formal ontologies and graph technologies.'
+        }
+      ]
+    },
+    {
+      title: 'Authoring Mission Threads with Semantic Technologies',
+      abstract:
+        'This talk shows how semantic technologies can turn mission threads from narrative artifacts into executable, explainable knowledge using ontology, SHACL validation, provenance-linked graphs, and reusable authoring patterns.',
+      speakers: [
+        {
+          name: 'David Kamien',
+          title: 'CEO and Founder',
+          organization: 'Mind-Alliance Systems, LLC',
+          image: '/img/speakers/david-kamien.jpeg',
+          bio: 'David Kamien is the CEO and Founder of Mind-Alliance Systems, LLC, and an innovation strategist with more than 25 years of experience spanning consulting, law, and national security. His work focuses on AI-powered solutions, knowledge graphs, retrieval-augmented generation, and decision-support systems for government, corporate, and legal contexts.'
         }
       ]
     },
@@ -130,7 +144,7 @@ export default function Speakers() {
       ]
     },
     {
-      title: 'SCRDF: Realizing the Semantics of Plans',
+      title: 'SCRDF - Realizing the Semantics of Plans',
       abstract:
         'This talk presents SCRDF, an RDF representation of a plan as a state machine using CCO for states and events and SHACL-AF for conditions and actions, bridging the gap between semantic models and software behavior.',
       speakers: [
@@ -149,6 +163,37 @@ export default function Speakers() {
           bio: 'Lenny Blum has been at JP Morgan Chase for the past nine years leading the delivery of governance and helping pioneer the use of semantic technologies to define and govern access patterns.'
         }
       ]
+    }
+  ];
+
+  const additionalSpeakers = [
+    {
+      name: 'Daniel Chapple',
+      title: 'Chief Executive Officer',
+      organization: 'Beskar',
+      image: '/img/speakers/daniel-chapple.jpeg',
+      bio: 'Daniel Chapple is the Chief Executive Officer of Beskar, a cybersecurity and full-stack technology company founded by former government technology and security leaders. He has authored U.S. and international patents on post-quantum encrypted distributed systems and artificial intelligence and previously held senior security and counterintelligence roles in government.'
+    },
+    {
+      name: 'Alec Sculley',
+      title: 'Knowledge Engineer',
+      organization: 'Summit Knowledge Solutions',
+      image: '/img/speakers/alec-sculley.jpeg',
+      bio: 'Alec Sculley is a knowledge engineer at Summit Knowledge Solutions specializing in ontology engineering. He has contributed to projects aligning W3C ontologies such as PROV-O and SSN/SOSA with the Basic Formal Ontology ecosystem and currently chairs IEEE Working Group P3195.1.1 on a cyber ontology standard.'
+    },
+    {
+      name: 'Amy Morris',
+      title: 'Senior Geodetic Earth Scientist',
+      organization: 'National Geospatial-Intelligence Agency (NGA)',
+      image: '/img/speakers/amy-morris.jpeg',
+      bio: 'Amy Morris is a professionally licensed geotechnical engineer with more than 20 years of experience in consulting and federal service. Her work has focused extensively on levee infrastructure, risk assessment, and specialized analyses, and she is now engaged in research aimed at improving infrastructure documentation and detection.'
+    },
+    {
+      name: 'Steve Wartik',
+      title: 'Adjunct Research Staff Member',
+      organization: 'Institute for Defense Analyses',
+      image: '/img/speakers/steve-wartik.jpeg',
+      bio: 'Steve Wartik studies the nature and structure of data and information as they relate to systems engineering, especially software-intensive systems. Over nearly three decades at the Institute for Defense Analyses, he has worked across domains including cybersecurity, C4ISR, generative AI, first responders, and interoperability.'
     }
   ];
 
@@ -193,11 +238,29 @@ export default function Speakers() {
               {talk.abstract}
             </p>
 
-            <div className={styles.grid}>
+            <div
+              className={styles.grid}
+              style={
+                talk.speakers.length === 1
+                  ? {
+                      display: 'flex',
+                      justifyContent: 'center'
+                    }
+                  : {}
+              }
+            >
               {talk.speakers.map((speaker, speakerIndex) => (
                 <div
                   key={speakerIndex}
                   className={`${styles.card} ${styles.speakerCard}`}
+                  style={
+                    talk.speakers.length === 1
+                      ? {
+                          maxWidth: '420px',
+                          width: '100%'
+                        }
+                      : {}
+                  }
                 >
                   <img
                     src={speaker.image}
@@ -224,6 +287,81 @@ export default function Speakers() {
             </div>
           </div>
         ))}
+
+        <div
+          style={{
+            background: '#fff',
+            borderRadius: '18px',
+            padding: '2rem',
+            marginBottom: '2rem',
+            boxShadow: '0 4px 18px rgba(0, 0, 0, 0.08)'
+          }}
+        >
+          <h3
+            style={{
+              fontSize: '1.75rem',
+              marginBottom: '1rem',
+              textAlign: 'center'
+            }}
+          >
+            Additional Featured Speakers
+          </h3>
+
+          <p
+            style={{
+              maxWidth: '900px',
+              margin: '0 auto 2rem',
+              textAlign: 'center',
+              lineHeight: '1.7',
+              color: '#555'
+            }}
+          >
+            These speakers are part of the developing STIDS program. Additional presentation details will be added as they are confirmed.
+          </p>
+
+          <div className={styles.grid}>
+            {additionalSpeakers.map((speaker, index) => (
+              <div key={index} className={`${styles.card} ${styles.speakerCard}`}>
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className={styles.speakerImage}
+                  style={{
+                    width: '160px',
+                    height: '160px',
+                    objectFit: 'cover',
+                    borderRadius: '50%',
+                    margin: '0 auto 1rem',
+                    display: 'block'
+                  }}
+                />
+                <h4 className={styles.speakerName}>{speaker.name}</h4>
+                <div className={styles.speakerTitle}>
+                  {speaker.title}
+                  <br />
+                  {speaker.organization}
+                </div>
+                <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div
+          style={{
+            textAlign: 'center',
+            marginTop: '3rem',
+            padding: '2rem',
+            background: '#f9f9f9',
+            borderRadius: '16px'
+          }}
+        >
+          <h3 style={{ marginBottom: '1rem' }}>More Speakers to Be Announced</h3>
+          <p style={{ maxWidth: '700px', margin: '0 auto', color: '#555' }}>
+            Additional speakers and presentations will be announced as the program is finalized.
+            Please check back for updates as we continue to expand this year’s STIDS lineup.
+          </p>
+        </div>
       </div>
     </div>
   );
