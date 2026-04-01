@@ -6,6 +6,7 @@ import CallForPapers from '@site/src/components/EventPages/STIDS2025/CallForPape
 import ImportantDates from '@site/src/components/EventPages/STIDS2025/ImportantDates';
 import Registration from '@site/src/components/EventPages/STIDS2025/Registration';
 import ContactForm from '@site/src/components/EventPages/STIDS2025/ContactForm';
+import Speakers from '@site/src/components/EventPages/STIDS2025/Speakers';
 
 const SEO = {
   title: 'STIDS 2026 – Semantic Technologies for Intelligence, Defense, and Security',
@@ -30,6 +31,7 @@ export default function STIDS2025() {
     <Layout title={SEO.title} description={SEO.description}>
       <STIDS2025Hero />
       <Overview />
+  <Speakers />
       <CallForPapers />
       <ImportantDates />
       <Registration />
