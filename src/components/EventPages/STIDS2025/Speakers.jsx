@@ -307,49 +307,62 @@ export default function Speakers() {
           </p>
 
           <div className={styles.grid}>
-            {soloTalks.map((talk, index) => {
-              const speaker = talk.speakers[0];
-              return (
-                <div
-                  key={`solo-${index}`}
-                  className={`${styles.card} ${styles.speakerCard}`}
-                >
-                  <h4
-                    style={{
-                      fontSize: '1.2rem',
-                      marginBottom: '1rem',
-                      textAlign: 'center'
-                    }}
-                  >
-                    {talk.title}
-                  </h4>
+  {soloTalks.map((talk, index) => {
+    const speaker = talk.speakers[0];
+    return (
+      <div
+        key={`solo-${index}`}
+        className={`${styles.card} ${styles.speakerCard}`}
+      >
+        <h4
+          style={{
+            fontSize: '1.2rem',
+            marginBottom: '1rem',
+            textAlign: 'center'
+          }}
+        >
+          {talk.title}
+        </h4>
 
-                 <img
-  src={speaker.image}
-  alt={speaker.name}
-  className={styles.speakerImage}
-  style={{
-    width: '160px',
-    height: '160px',
-    objectFit: 'cover',
-    borderRadius: '50%',
-    margin: '0 auto 1rem',
-    display: 'block',
-    objectPosition:
-      speaker.name === 'Gideon Zufan' ? 'center 45%' : 'center top'
-  }}
-/>
-                  <h4 className={styles.speakerName}>{speaker.name}</h4>
-                  <div className={styles.speakerTitle}>
-                    {speaker.title}
-                    <br />
-                    {speaker.organization}
-                  </div>
-                  <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
-                </div>
-              );
-            })}
-          </div>
+        <img
+          src={speaker.image}
+          alt={speaker.name}
+          className={styles.speakerImage}
+          style={{
+            width: '160px',
+            height: '160px',
+            objectFit: 'cover',
+            borderRadius: '50%',
+            margin: '0 auto 1rem',
+            display: 'block',
+            objectPosition:
+              speaker.name === 'Gideon Zufan' ? 'center 45%' : 'center top'
+          }}
+        />
+
+        <h4 className={styles.speakerName}>{speaker.name}</h4>
+
+        <div className={styles.speakerTitle}>
+          {speaker.title}
+          <br />
+          {speaker.organization}
+        </div>
+
+        <p
+          style={{
+            marginTop: '1rem',
+            color: '#555',
+            lineHeight: '1.7'
+          }}
+        >
+          {talk.abstract}
+        </p>
+
+        <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+      </div>
+    );
+  })}
+</div>
         </div>
 
         <div
