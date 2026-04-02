@@ -306,23 +306,37 @@ export default function Speakers() {
             These presentations feature individual speakers contributing to this year’s STIDS program.
           </p>
 
-          <div className={styles.grid}>
+<div className={styles.grid}>
   {soloTalks.map((talk, index) => {
     const speaker = talk.speakers[0];
+
     return (
       <div
         key={`solo-${index}`}
         className={`${styles.card} ${styles.speakerCard}`}
+        style={{ maxWidth: '500px', margin: '0 auto' }}
       >
         <h4
           style={{
-            fontSize: '1.2rem',
-            marginBottom: '1rem',
+            fontSize: '1.3rem',
+            marginBottom: '0.75rem',
             textAlign: 'center'
           }}
         >
           {talk.title}
         </h4>
+
+        {/* ABSTRACT AT TOP */}
+        <p
+          style={{
+            textAlign: 'center',
+            color: '#555',
+            lineHeight: '1.6',
+            marginBottom: '1.5rem'
+          }}
+        >
+          {talk.abstract}
+        </p>
 
         <img
           src={speaker.image}
@@ -347,16 +361,6 @@ export default function Speakers() {
           <br />
           {speaker.organization}
         </div>
-
-        <p
-          style={{
-            marginTop: '1rem',
-            color: '#555',
-            lineHeight: '1.7'
-          }}
-        >
-          {talk.abstract}
-        </p>
 
         <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
       </div>
