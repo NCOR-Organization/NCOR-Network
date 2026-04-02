@@ -241,7 +241,7 @@ export default function Speakers() {
               {talk.abstract}
             </p>
 
-            <div className={styles.grid}>
+            <div className={styles.soloGrid}>
               {talk.speakers.map((speaker, speakerIndex) => (
                 <div
                   key={speakerIndex}
