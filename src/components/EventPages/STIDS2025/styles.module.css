@@ -111,6 +111,12 @@
   align-items: stretch;
 }
 
+.soloGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 /* Speakers */
 .speakerCard {
   text-align: center;
