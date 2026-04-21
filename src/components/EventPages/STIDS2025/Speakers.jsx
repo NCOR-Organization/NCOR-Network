@@ -163,7 +163,21 @@ export default function Speakers() {
           bio: 'Lenny Blum has been at JP Morgan Chase for the past nine years leading the delivery of governance and helping pioneer the use of semantic technologies to define and govern access patterns.'
         }
       ]
+    },
+{
+  title: 'Ontology for Attacks in Cyber Risk Assessment',
+  abstract:
+  'This paper presents the Ontology for Attacks in Cyber Risk Assessment (OACRA), supporting cyber risk assessments through improved collaboration, structured attack modeling, and enhanced efficiency in cyber testing environments.',
+  speakers: [
+    {
+      name: 'Brian A. Haugh',
+      title: 'Research Staff Member',
+      organization: 'Institute for Defense Analyses',
+      image: '/img/speakers/brian-haugh.jpeg',
+      bio: 'Dr. Brian A. Haugh has worked extensively on national security information modeling and reasoning at the Institute for Defense Analyses. His work spans ontology development across domains including cyber risk, emergency management, and psychological operations, and he is currently contributing to research on testing and evaluating agentic AI systems.'
     }
+  ]
+}
   ];
 
   const additionalSpeakers = [
