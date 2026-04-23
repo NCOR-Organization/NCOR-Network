@@ -164,54 +164,61 @@ export default function Speakers() {
         }
       ]
     },
-{
-  title: 'Ontology for Attacks in Cyber Risk Assessment',
-  abstract:
-  'This paper presents the Ontology for Attacks in Cyber Risk Assessment (OACRA), supporting cyber risk assessments through improved collaboration, structured attack modeling, and enhanced efficiency in cyber testing environments.',
-  speakers: [
     {
-      name: 'Brian A. Haugh',
-      title: 'Research Staff Member',
-      organization: 'Institute for Defense Analyses',
-      image: '/img/speakers/brian-haugh.jpeg',
-      bio: 'Dr. Brian A. Haugh has worked extensively on national security information modeling and reasoning at the Institute for Defense Analyses. His work spans ontology development across domains including cyber risk, emergency management, and psychological operations, and he is currently contributing to research on testing and evaluating agentic AI systems.'
+      title: 'Ontology for Attacks in Cyber Risk Assessment',
+      abstract:
+        'This paper presents the Ontology for Attacks in Cyber Risk Assessment (OACRA), supporting cyber risk assessments through improved collaboration, structured attack modeling, and enhanced efficiency in cyber testing environments.',
+      speakers: [
+        {
+          name: 'Brian A. Haugh',
+          title: 'Research Staff Member',
+          organization: 'Institute for Defense Analyses',
+          image: '/img/speakers/brian-haugh.jpeg',
+          bio: 'Dr. Brian A. Haugh has worked extensively on national security information modeling and reasoning at the Institute for Defense Analyses. His work spans ontology development across domains including cyber risk, emergency management, and psychological operations, and he is currently contributing to research on testing and evaluating agentic AI systems.'
+        },
+        {
+          name: 'Steve Wartik',
+          title: 'Adjunct Research Staff Member',
+          organization: 'Institute for Defense Analyses',
+          image: '/img/speakers/steve-wartik.jpeg',
+          bio: 'Steve Wartik studies the nature and structure of data and information as they relate to systems engineering, especially software-intensive systems. Over nearly three decades at the Institute for Defense Analyses, he has worked across domains including cybersecurity, C4ISR, generative AI, first responders, and interoperability.'
+        }
+      ]
+    },
+    {
+      title: 'Helix: A Secure, Provenance-Based, Distributed Ledger System for Storing and Querying Ontology-Driven Knowledge Graphs',
+      abstract:
+        'Helix is a first-of-its-kind software for storing and querying ontology-driven knowledge graphs on a distributed ledger. This presentation presents Helix and demonstrates its basic functionality.',
+      speakers: [
+        {
+          name: 'Alec Sculley',
+          title: 'Knowledge Engineer',
+          organization: 'Summit Knowledge Solutions',
+          image: '/img/speakers/alec-sculley.jpeg',
+          bio: 'Alec Sculley is a knowledge engineer at Summit Knowledge Solutions specializing in ontology engineering. He has contributed to projects aligning W3C ontologies such as PROV-O and SSN/SOSA with the Basic Formal Ontology ecosystem and currently chairs IEEE Working Group P3195.1.1 on a cyber ontology standard.'
+        },
+        {
+          name: 'Daniel Chapple',
+          title: 'Chief Executive Officer',
+          organization: 'Beskar',
+          image: '/img/speakers/daniel-chapple.jpeg',
+          bio: 'Daniel Chapple is the Chief Executive Officer of Beskar, a cybersecurity and full-stack technology company founded by former government technology and security leaders. He has authored U.S. and international patents on post-quantum encrypted distributed systems and artificial intelligence and previously held senior security and counterintelligence roles in government.'
+        }
+      ]
     }
-  ]
-}
   ];
 
   const additionalSpeakers = [
-    {
-      name: 'Daniel Chapple',
-      title: 'Chief Executive Officer',
-      organization: 'Beskar',
-      image: '/img/speakers/daniel-chapple.jpeg',
-      bio: 'Daniel Chapple is the Chief Executive Officer of Beskar, a cybersecurity and full-stack technology company founded by former government technology and security leaders. He has authored U.S. and international patents on post-quantum encrypted distributed systems and artificial intelligence and previously held senior security and counterintelligence roles in government.'
-    },
-    {
-      name: 'Alec Sculley',
-      title: 'Knowledge Engineer',
-      organization: 'Summit Knowledge Solutions',
-      image: '/img/speakers/alec-sculley.jpeg',
-      bio: 'Alec Sculley is a knowledge engineer at Summit Knowledge Solutions specializing in ontology engineering. He has contributed to projects aligning W3C ontologies such as PROV-O and SSN/SOSA with the Basic Formal Ontology ecosystem and currently chairs IEEE Working Group P3195.1.1 on a cyber ontology standard.'
-    },
     {
       name: 'Amy Morris',
       title: 'Senior Geodetic Earth Scientist',
       organization: 'National Geospatial-Intelligence Agency (NGA)',
       image: '/img/speakers/amy-morris.jpeg',
       bio: 'Amy Morris is a professionally licensed geotechnical engineer with more than 20 years of experience in consulting and federal service. Her work has focused extensively on levee infrastructure, risk assessment, and specialized analyses, and she is now engaged in research aimed at improving infrastructure documentation and detection.'
-    },
-    {
-      name: 'Steve Wartik',
-      title: 'Adjunct Research Staff Member',
-      organization: 'Institute for Defense Analyses',
-      image: '/img/speakers/steve-wartik.jpeg',
-      bio: 'Steve Wartik studies the nature and structure of data and information as they relate to systems engineering, especially software-intensive systems. Over nearly three decades at the Institute for Defense Analyses, he has worked across domains including cybersecurity, C4ISR, generative AI, first responders, and interoperability.'
     }
   ];
 
-   const soloTalks = talks.filter((talk) => talk.speakers.length === 1);
+  const soloTalks = talks.filter((talk) => talk.speakers.length === 1);
   const groupTalks = talks.filter((talk) => talk.speakers.length > 1);
 
   return (
@@ -261,21 +268,21 @@ export default function Speakers() {
                   key={speakerIndex}
                   className={`${styles.card} ${styles.speakerCard}`}
                 >
-               <img
-  src={speaker.image}
-  alt={speaker.name}
-  className={styles.speakerImage}
-  style={{
-    width: '160px',
-    height: '160px',
-    objectFit: 'cover',
-    borderRadius: '50%',
-    margin: '0 auto 1rem',
-    display: 'block',
-    objectPosition:
-      speaker.name === 'Gideon Zufan' ? 'center 35%' : 'center top'
-  }}
-/>
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className={styles.speakerImage}
+                    style={{
+                      width: '160px',
+                      height: '160px',
+                      objectFit: 'cover',
+                      borderRadius: '50%',
+                      margin: '0 auto 1rem',
+                      display: 'block',
+                      objectPosition:
+                        speaker.name === 'Gideon Zufan' ? 'center 35%' : 'center top'
+                    }}
+                  />
                   <h4 className={styles.speakerName}>{speaker.name}</h4>
                   <div className={styles.speakerTitle}>
                     {speaker.title}
@@ -320,67 +327,67 @@ export default function Speakers() {
             These presentations feature individual speakers contributing to this year’s STIDS program.
           </p>
 
-<div className={styles.grid}>
-  {soloTalks.map((talk, index) => {
-    const speaker = talk.speakers[0];
+          <div className={styles.grid}>
+            {soloTalks.map((talk, index) => {
+              const speaker = talk.speakers[0];
 
-    return (
-      <div
-        key={`solo-${index}`}
-        className={`${styles.card} ${styles.speakerCard}`}
-        style={{ maxWidth: '500px', margin: '0 auto' }}
-      >
-        <h4
-          style={{
-            fontSize: '1.3rem',
-            marginBottom: '0.75rem',
-            textAlign: 'center'
-          }}
-        >
-          {talk.title}
-        </h4>
+              return (
+                <div
+                  key={`solo-${index}`}
+                  className={`${styles.card} ${styles.speakerCard}`}
+                  style={{ maxWidth: '500px', margin: '0 auto' }}
+                >
+                  <h4
+                    style={{
+                      fontSize: '1.3rem',
+                      marginBottom: '0.75rem',
+                      textAlign: 'center'
+                    }}
+                  >
+                    {talk.title}
+                  </h4>
 
-        {/* ABSTRACT AT TOP */}
-        <p
-          style={{
-            textAlign: 'center',
-            color: '#555',
-            lineHeight: '1.6',
-            marginBottom: '1.5rem'
-          }}
-        >
-          {talk.abstract}
-        </p>
+                  {/* ABSTRACT AT TOP */}
+                  <p
+                    style={{
+                      textAlign: 'center',
+                      color: '#555',
+                      lineHeight: '1.6',
+                      marginBottom: '1.5rem'
+                    }}
+                  >
+                    {talk.abstract}
+                  </p>
 
-        <img
-          src={speaker.image}
-          alt={speaker.name}
-          className={styles.speakerImage}
-          style={{
-            width: '160px',
-            height: '160px',
-            objectFit: 'cover',
-            borderRadius: '50%',
-            margin: '0 auto 1rem',
-            display: 'block',
-            objectPosition:
-              speaker.name === 'Gideon Zufan' ? 'center 45%' : 'center top'
-          }}
-        />
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className={styles.speakerImage}
+                    style={{
+                      width: '160px',
+                      height: '160px',
+                      objectFit: 'cover',
+                      borderRadius: '50%',
+                      margin: '0 auto 1rem',
+                      display: 'block',
+                      objectPosition:
+                        speaker.name === 'Gideon Zufan' ? 'center 45%' : 'center top'
+                    }}
+                  />
 
-        <h4 className={styles.speakerName}>{speaker.name}</h4>
+                  <h4 className={styles.speakerName}>{speaker.name}</h4>
 
-        <div className={styles.speakerTitle}>
-          {speaker.title}
-          <br />
-          {speaker.organization}
-        </div>
+                  <div className={styles.speakerTitle}>
+                    {speaker.title}
+                    <br />
+                    {speaker.organization}
+                  </div>
 
-        <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
-      </div>
-    );
-  })}
-</div>
+                  <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div
