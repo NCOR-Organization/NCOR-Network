@@ -240,20 +240,6 @@ NCOR partners with organizations across sectors to advance the development and i
 <div className="col col--4 margin-bottom--lg">
   <div className="card">
     <div className="card__image">
-      <a target="_blank" rel="noopener noreferrer" href="https://www.capitalone.com/">
-        <img src="/img/organizations/capital-one-logo.png" alt="Capital One" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
-      </a>
-    </div>
-    <div className="card__body text--center">
-      <h3><a target="_blank" rel="noopener noreferrer" href="https://www.capitalone.com/">Capital One</a></h3>
-      <p>Financial services company offering banking, credit, and digital data capabilities across consumer and business platforms.</p>
-    </div>
-  </div>
-</div>
-
-<div className="col col--4 margin-bottom--lg">
-  <div className="card">
-    <div className="card__image">
       <a target="_blank" rel="noopener noreferrer" href="https://certuscore.com/">
         <img src="/img/organizations/certusgroupinc_logo.jpeg" alt="Certus Core" style={{height: '180px', padding: '20px', objectFit: 'contain'}} />
       </a>
