@@ -294,7 +294,7 @@ export default function Speakers() {
   className={styles.soloGrid}
   style={{
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gridTemplateColumns: `repeat(${talk.speakers.length}, minmax(0, 1fr))`,
     gap: '1.25rem'
   }}
 >
