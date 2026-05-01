@@ -205,6 +205,34 @@ export default function Speakers() {
           bio: 'Daniel Chapple is the Chief Executive Officer of Beskar, a cybersecurity and full-stack technology company founded by former government technology and security leaders. He has authored U.S. and international patents on post-quantum encrypted distributed systems and artificial intelligence and previously held senior security and counterintelligence roles in government.'
         }
       ]
+    },
+        {
+      title: 'Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber',
+      abstract:
+        'Cybersecurity data is fragmented across organizations, standards, and formats, making semantic interoperability a critical challenge. This paper presents gistCyber, an ontology that extends the minimalist enterprise framework gist into the cybersecurity domain. By harmonizing reference datasets such as MITRE ATT&CK, CAPEC, CVE, and NIST SP 800-53, gistCyber enables unified reasoning, federated querying, and scalable threat analysis. We demonstrate its utility through a practical use case involving SPARQL-based integration of vulnerabilities, weaknesses, attack patterns, and controls. The results show that semantic alignment is not only feasible but essential for intelligent cyber defense.',
+      speakers: [
+        {
+          name: 'Ryan E. Hohimer',
+          title: 'Principal Architect and Founder',
+          organization: 'Hohimer Intelligence Strategies LLC',
+          image: '/img/speakers/ryan-hohimer.png',
+          bio: 'Ryan Earl Hohimer is a semantic architect, ontology engineer, and ecosystem builder known for advancing knowledge representation and reasoning in cybersecurity and semantic data systems. He is the Principal Architect and Founder of Hohimer Intelligence Strategies LLC and formerly served as a journeyperson ontologist and knowledge engineer at Semantic Arts.'
+        },
+        {
+          name: 'Jannes “Jans” Aasman',
+          title: 'CEO',
+          organization: 'Franz Inc.',
+          image: '/img/speakers/jans-aasman.png',
+          bio: 'Jannes “Jans” Aasman is a Dutch psychologist and cognitive science expert who serves as CEO of Franz Inc., the company behind AllegroGraph. He is recognized for pioneering work in semantic AI, knowledge graphs, and hybrid neuro-symbolic architectures that combine machine learning with logical reasoning.'
+        },
+        {
+          name: 'Dave McComb',
+          title: 'CEO and Co-Founder',
+          organization: 'Semantic Arts',
+          image: '/img/speakers/dave-mccomb.png',
+          bio: 'Dave McComb is the CEO and co-founder of Semantic Arts. He and his team help organizations uncover the meaning in data from their information systems. He is also the author of “The Data-Centric Revolution,” “Software Wasteland,” and “Semantics in Business Systems.”'
+        }
+      ]
     }
   ];
 
