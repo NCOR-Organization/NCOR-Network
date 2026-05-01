@@ -215,21 +215,21 @@ export default function Speakers() {
           name: 'Ryan E. Hohimer',
           title: 'Principal Architect and Founder',
           organization: 'Hohimer Intelligence Strategies LLC',
-          image: '/img/speakers/ryan-hohimer.png',
+          image: '/img/speakers/hohimer.png',
           bio: 'Ryan Earl Hohimer is a semantic architect, ontology engineer, and ecosystem builder known for advancing knowledge representation and reasoning in cybersecurity and semantic data systems. He is the Principal Architect and Founder of Hohimer Intelligence Strategies LLC and formerly served as a journeyperson ontologist and knowledge engineer at Semantic Arts.'
         },
         {
           name: 'Jannes “Jans” Aasman',
           title: 'CEO',
           organization: 'Franz Inc.',
-          image: '/img/speakers/jans-aasman.png',
+          image: '/img/speakers/aasman.png',
           bio: 'Jannes “Jans” Aasman is a Dutch psychologist and cognitive science expert who serves as CEO of Franz Inc., the company behind AllegroGraph. He is recognized for pioneering work in semantic AI, knowledge graphs, and hybrid neuro-symbolic architectures that combine machine learning with logical reasoning.'
         },
         {
           name: 'Dave McComb',
           title: 'CEO and Co-Founder',
           organization: 'Semantic Arts',
-          image: '/img/speakers/dave-mccomb.png',
+          image: '/img/speakers/mccomb.png',
           bio: 'Dave McComb is the CEO and co-founder of Semantic Arts. He and his team help organizations uncover the meaning in data from their information systems. He is also the author of “The Data-Centric Revolution,” “Software Wasteland,” and “Semantics in Business Systems.”'
         }
       ]
