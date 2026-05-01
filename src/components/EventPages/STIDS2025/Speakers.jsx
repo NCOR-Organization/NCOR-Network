@@ -290,7 +290,14 @@ export default function Speakers() {
               {talk.abstract}
             </p>
 
-            <div className={styles.soloGrid}>
+            <div
+  className={styles.soloGrid}
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gap: '1.25rem'
+  }}
+>
               {talk.speakers.map((speaker, speakerIndex) => (
                 <div
                   key={speakerIndex}
@@ -301,8 +308,8 @@ export default function Speakers() {
                     alt={speaker.name}
                     className={styles.speakerImage}
                     style={{
-                      width: '160px',
-                      height: '160px',
+                      width: '130px',
+                      height: '130px',
                       objectFit: 'cover',
                       borderRadius: '50%',
                       margin: '0 auto 1rem',
