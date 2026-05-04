@@ -12,7 +12,7 @@ const SEO = {
   title: 'STIDS 2026 – Semantic Technologies for Intelligence, Defense, and Security',
   description:
     'Join us for the International Conference on Semantic Technologies for Intelligence, Defense, and Security (STIDS 2026), co-hosted with KGOIDS and the DOD-IC Ontology Working Group.',
-  url: 'https://ncor-network.org/events/stids2025',
+  url: 'https://ncor-network.org/events/stids2026',
   image: '/img/stids2025-banner.png',
   keywords: [
     'STIDS 2026',
