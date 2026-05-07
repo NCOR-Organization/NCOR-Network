@@ -50,14 +50,14 @@ export default function Registration() {
   ];
 
   return (
-    <div className={styles.section} id="registration">
+    <div className={styles.section} id="unclassified-registration">
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Registration</h2>
         <p className={styles.sectionSubtitle}>
           Select the registration type that best fits your profile
         </p>
 
-        <div id="unclassified-registration" className={styles.pricingGrid}>
+        <div className={styles.pricingGrid}>
           {pricingOptions.map((option, index) => (
             <div key={index} className={styles.pricingCard}>
               <div className={styles.pricingType}>{option.type}</div>
