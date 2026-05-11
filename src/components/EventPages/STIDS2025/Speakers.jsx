@@ -237,14 +237,38 @@ export default function Speakers() {
   ];
 
   const additionalSpeakers = [
-    {
-      name: 'Amy Morris',
-      title: 'Senior Geodetic Earth Scientist',
-      organization: 'National Geospatial-Intelligence Agency (NGA)',
-      image: '/img/speakers/amy-morris.jpeg',
-      bio: 'Amy Morris is a professionally licensed geotechnical engineer with more than 20 years of experience in consulting and federal service. Her work has focused extensively on levee infrastructure, risk assessment, and specialized analyses, and she is now engaged in research aimed at improving infrastructure documentation and detection.'
-    }
-  ];
+  {
+    name: 'Amy Morris',
+    title: 'Senior Geodetic Earth Scientist',
+    organization: 'National Geospatial-Intelligence Agency (NGA)',
+    image: '/img/speakers/amy-morris.jpeg',
+    bio: 'Amy Morris is a professionally licensed geotechnical engineer with more than 20 years of experience in consulting and federal service. Her work has focused extensively on levee infrastructure, risk assessment, and specialized analyses, and she is now engaged in research aimed at improving infrastructure documentation and detection.'
+  },
+  {
+    name: 'Jaime L. Stieler',
+    title: 'Director of Advanced Programs',
+    organization: '480th ISR Wing, United States Air Force',
+    bio: 'Jaime L. Stieler is the Director of Advanced Programs for the 480th ISR Wing, where she supports intelligence mission modernization and operational integration across joint and coalition environments. Her work focuses on advancing ISR capabilities, improving data usability and interoperability, and aligning emerging semantic technologies with real-world operational requirements.',
+    talkTitle: 'From Data to Decision Advantage: A Warfighter’s Requirements for Semantic Technology in 21st Century Intelligence',
+    abstract: 'This keynote challenges the semantic technology community to move beyond elegant data architectures and confront the operational realities of modern warfare. From the warfighter’s perspective, the true measure of advances in data management, structured relational representation, and AI is whether they can transform overwhelming volumes of disconnected data into trusted decision advantage before the adversary acts.'
+  },
+  {
+    name: 'James G. “Snake” Clark',
+    title: 'Retired Colonel, United States Air Force',
+    organization: 'Former ISR and UAV Operations Leader',
+    bio: 'Retired Colonel James G. “Snake” Clark is widely known as the “Godfather of the Predator” for his role in accelerating the deployment of unmanned aerial capabilities that reshaped modern military operations. Across three decades of service, he championed rapid operational innovation, near-real-time intelligence delivery, and deployable satellite downlink capabilities in support of the warfighter.',
+    talkTitle: 'Innovation in Three Decades',
+    abstract: 'Retired Colonel James G. “Snake” Clark’s career offers a powerful case study in mission-driven innovation under bureaucratic constraint. This keynote examines Clark’s example as a model of practical resilience, ethical risk-taking, and leadership under pressure. It explores what it means to challenge slow systems responsibly while remaining focused on delivering critical capabilities to those operating in harm’s way.'
+  },
+  {
+    name: 'Joe Blankenship',
+    title: 'Founder and CEO',
+    organization: 'A Valid Company',
+    bio: 'Joe Blankenship is the Founder and CEO of A Valid Company and works at the intersection of ontology engineering, semantic technologies, and artificial intelligence. His work focuses on applying ontologies to knowledge representation, explainable AI, and enterprise-scale intelligent systems.',
+    talkTitle: 'Ontology Engineering in the Era of Generative AI: Current Trends and Future Trajectories',
+    abstract: 'Ontology engineering is rapidly evolving within generative AI, shaping knowledge representation and reasoning. This session explores emerging tools, techniques, and methodologies for effective ontology development, including integration with agentic AI, explainable AI, and governance concerns such as bias mitigation, information security, and privacy preservation.'
+  }
+];
 
   const soloTalks = talks.filter((talk) => talk.speakers.length === 1);
   const groupTalks = talks.filter((talk) => talk.speakers.length > 1);
@@ -457,32 +481,61 @@ export default function Speakers() {
           </p>
 
           <div className={styles.grid}>
-            {additionalSpeakers.map((speaker, index) => (
-              <div key={index} className={`${styles.card} ${styles.speakerCard}`}>
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className={styles.speakerImage}
-                  style={{
-                    width: '160px',
-                    height: '160px',
-                    objectFit: 'cover',
-                    borderRadius: '50%',
-                    margin: '0 auto 1rem',
-                    display: 'block'
-                  }}
-                />
-                <h4 className={styles.speakerName}>{speaker.name}</h4>
-                <div className={styles.speakerTitle}>
-                  {speaker.title}
-                  <br />
-                  {speaker.organization}
-                </div>
-                <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  {additionalSpeakers.map((speaker, index) => (
+    <div key={index} className={`${styles.card} ${styles.speakerCard}`}>
+      {speaker.image && (
+        <img
+          src={speaker.image}
+          alt={speaker.name}
+          className={styles.speakerImage}
+          style={{
+            width: '160px',
+            height: '160px',
+            objectFit: 'cover',
+            borderRadius: '50%',
+            margin: '0 auto 1rem',
+            display: 'block'
+          }}
+        />
+      )}
+
+      <h4 className={styles.speakerName}>{speaker.name}</h4>
+
+      <div className={styles.speakerTitle}>
+        {speaker.title}
+        <br />
+        {speaker.organization}
+      </div>
+
+      {speaker.talkTitle && (
+        <h4
+          style={{
+            marginTop: '1rem',
+            marginBottom: '0.5rem',
+            textAlign: 'center',
+            fontSize: '1.1rem'
+          }}
+        >
+          {speaker.talkTitle}
+        </h4>
+      )}
+
+      {speaker.abstract && (
+        <p
+          style={{
+            color: '#555',
+            lineHeight: '1.6',
+            marginBottom: '1rem'
+          }}
+        >
+          {speaker.abstract}
+        </p>
+      )}
+
+      <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+    </div>
+  ))}
+</div>
 
         <div
           style={{
