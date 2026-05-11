@@ -532,10 +532,11 @@ export default function Speakers() {
         </p>
       )}
 
-      <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+            <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
     </div>
   ))}
 </div>
+        </div>
 
         <div
           style={{
