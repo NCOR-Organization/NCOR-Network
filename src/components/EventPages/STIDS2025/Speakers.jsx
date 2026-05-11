@@ -264,7 +264,7 @@ export default function Speakers() {
     name: 'Joe Blankenship',
     title: 'Founder and CEO',
     organization: 'A Valid Company',
-    bio: 'Joe Blankenship is the Founder and CEO of A Valid Company and works at the intersection of ontology engineering, semantic technologies, and artificial intelligence. His work focuses on applying ontologies to knowledge representation, explainable AI, and enterprise-scale intelligent systems.',
+    bio: 'Joe Blankenship is the founder of A Valid Company and a veteran with more than 20 years of experience spanning data science, geospatial analysis, and AI engineering. His work across government, nonprofit, academic, and commercial sectors focuses on building validated data and AI solutions tailored to operational and organizational needs.',
     talkTitle: 'Ontology Engineering in the Era of Generative AI: Current Trends and Future Trajectories',
     abstract: 'Ontology engineering is rapidly evolving within generative AI, shaping knowledge representation and reasoning. This session explores emerging tools, techniques, and methodologies for effective ontology development, including integration with agentic AI, explainable AI, and governance concerns such as bias mitigation, information security, and privacy preservation.'
   }
