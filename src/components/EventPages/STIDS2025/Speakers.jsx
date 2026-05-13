@@ -488,28 +488,39 @@ export default function Speakers() {
             These speakers are part of the developing STIDS program. Additional presentation details will be added as they are confirmed.
           </p>
 
-          <div className={styles.grid}>
+          <div style={{ display: 'grid', gap: '1.5rem' }}>
   {additionalSpeakers.map((speaker, index) => (
-    <div key={index} className={`${styles.card} ${styles.speakerCard}`}>
+    <div
+      key={index}
+      className={styles.card}
+      style={{
+        maxWidth: '950px',
+        margin: '0 auto',
+        padding: '2rem',
+        textAlign: 'left'
+      }}
+    >
       {speaker.image && (
         <img
           src={speaker.image}
           alt={speaker.name}
           className={styles.speakerImage}
           style={{
-            width: '160px',
-            height: '160px',
+            width: '140px',
+            height: '140px',
             objectFit: 'cover',
             borderRadius: '50%',
-            margin: '0 auto 1rem',
+            margin: '0 auto 1.5rem',
             display: 'block'
           }}
         />
       )}
 
-      <h4 className={styles.speakerName}>{speaker.name}</h4>
+      <h4 className={styles.speakerName} style={{ textAlign: 'center' }}>
+        {speaker.name}
+      </h4>
 
-      <div className={styles.speakerTitle}>
+      <div className={styles.speakerTitle} style={{ textAlign: 'center' }}>
         {speaker.title}
         <br />
         {speaker.organization}
@@ -518,10 +529,10 @@ export default function Speakers() {
       {speaker.talkTitle && (
         <h4
           style={{
-            marginTop: '1rem',
-            marginBottom: '0.5rem',
+            marginTop: '1.5rem',
+            marginBottom: '0.75rem',
             textAlign: 'center',
-            fontSize: '1.1rem'
+            fontSize: '1.15rem'
           }}
         >
           {speaker.talkTitle}
@@ -532,7 +543,7 @@ export default function Speakers() {
         <p
           style={{
             color: '#555',
-            lineHeight: '1.6',
+            lineHeight: '1.7',
             marginBottom: '1rem'
           }}
         >
@@ -540,7 +551,11 @@ export default function Speakers() {
         </p>
       )}
 
-            <p style={{ marginTop: '1rem' }}>{speaker.bio}</p>
+      {speaker.bio && (
+        <p style={{ marginTop: '1rem', lineHeight: '1.7' }}>
+          {speaker.bio}
+        </p>
+      )}
     </div>
   ))}
 </div>
