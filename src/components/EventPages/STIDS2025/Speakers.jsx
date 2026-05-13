@@ -267,6 +267,14 @@ export default function Speakers() {
     bio: 'Joe Blankenship is the founder of A Valid Company and a veteran with more than 20 years of experience spanning data science, geospatial analysis, and AI engineering. His work across government, nonprofit, academic, and commercial sectors focuses on building validated data and AI solutions tailored to operational and organizational needs.',
     talkTitle: 'Ontology Engineering in the Era of Generative AI: Current Trends and Future Trajectories',
     abstract: 'Ontology engineering is rapidly evolving within generative AI, shaping knowledge representation and reasoning. This session explores emerging tools, techniques, and methodologies for effective ontology development, including integration with agentic AI, explainable AI, and governance concerns such as bias mitigation, information security, and privacy preservation.'
+  },
+      {
+    name: 'Armita Davarpanah',
+    title: 'Assistant Professor of Environmental & Health Sciences',
+    organization: 'Spelman College',
+    bio: 'Armita Davarpanah is an Assistant Professor at Spelman College whose research focuses on ontology engineering, semantic technologies, and AI-enabled infrastructure analysis. Her recent work integrates BFO- and CCO-aligned ontologies with knowledge graphs and GraphRAG systems to support flood risk governance and levee infrastructure decision-making.',
+    talkTitle: 'Flood Risk Governance through Hybrid LLM–GraphRAG: A Query Framework for the National Levee Database',
+    abstract: 'This presentation introduces an ontology-driven, AI-enabled framework for integrating and analyzing levee infrastructure data. The approach combines the Levee System Ontology (LSO), built on BFO and CCO, with a Neo4j-based knowledge graph aligned with the National Levee Database to enable a consistent representation of levee systems, components, and failure processes. Building on this semantic foundation, a GraphRAG layer supports hybrid retrieval, natural language question answering, and automated translation of user queries into graph-based operations. Using data from the USACE Rock Island District, the framework demonstrates scalable integration, traceable reasoning, and enhanced accessibility for both technical and non-technical users.'
   }
 ];
 
