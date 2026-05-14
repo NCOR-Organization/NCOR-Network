@@ -283,22 +283,66 @@
     padding: 3rem 0;
   }
 
+  .container {
+    padding: 0 0.75rem;
+  }
+
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
   .heroSubtitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 
   .sectionTitle {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
-  .grid {
+  .sectionSubtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .grid,
+  .soloGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+
+  .card,
+  .speakerCard {
+    padding: 1.25rem !important;
+  }
+
+  .speakerImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .speakerName {
+    font-size: 1.3rem;
+  }
+
+  .speakerTitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .pricingGrid,
+  .topicsGrid {
     grid-template-columns: 1fr;
   }
-}
+
+  .dateCard {
+    flex-direction: column;
+    text-align: center;
+  }
+} 
 
 /* Topics of Interest */
 .topicItem {
