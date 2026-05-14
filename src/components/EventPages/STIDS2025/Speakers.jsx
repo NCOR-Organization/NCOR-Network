@@ -301,12 +301,13 @@ export default function Speakers() {
             }}
           >
             <h3
-              style={{
-                fontSize: '1.75rem',
-                marginBottom: '1rem',
-                textAlign: 'center'
-              }}
-            >
+  style={{
+    fontSize: 'clamp(1.2rem, 4vw, 1.75rem)',
+    lineHeight: '1.3',
+    marginBottom: '1rem',
+    textAlign: 'center'
+  }}
+>
               {talk.title}
             </h3>
 
