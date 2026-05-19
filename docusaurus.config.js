@@ -121,6 +121,7 @@ const config = {
             items: [
               { label: 'Areas', to: '/docs/research/areas' },
               { label: 'Projects', to: '/docs/research/projects' },
+              { label: 'Cyber Ontology Foundry', to: '/docs/research/cyber-ontology-foundry' },
               { label: 'Publications', to: '/docs/research/publications' },
             ],
           },
