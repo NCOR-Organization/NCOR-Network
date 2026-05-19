@@ -38,10 +38,15 @@ const sidebars = {
      items: ['events/calendar', 'events/office-hours', 'events/meetings-workshops', 'events/ontology-101', 'events/semantic-mapping', 'events/common-core'],
     },
     {
-      type: 'category',
-      label: 'Research',
-      items: ['research/areas', 'research/projects', 'research/publications'],
-    },
+  type: 'category',
+  label: 'Research',
+  items: [
+    'research/areas',
+    'research/projects',
+    'research/cyber-ontology-foundry',
+    'research/publications',
+  ],
+},
 {
   type: 'category',
   label: 'Affiliates',
