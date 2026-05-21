@@ -81,26 +81,26 @@ const agenda = [
         time: '9:00 - 9:10',
         topic: 'Introductions',
         presenters: 'John Beverley',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:10 - 9:30',
         topic: 'Cyber Ontology Foundry',
         presenters: 'Peter Kaloroumakis\nRyan Hohimer\nJohn Beverley',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:30 - 9:55',
         topic: 'Track A Talk: Introducing D3FEND-CCO',
         presenters: 'Peter Kaloroumakis\nGiacomo De Colle',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:30 - 9:55',
         topic:
           'Track B Talk: BFO-Aligned Ontologies as the Semantic Backbone of Tool-Agnostic MBSE',
         presenters: 'Gideon Zufan\nDenise Ferniza\nJohn Sayoun',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '9:55 - 10:10',
@@ -112,26 +112,26 @@ const agenda = [
         time: '10:10 - 10:35',
         topic: 'Track A Talk: Ontology for Attacks in Cyber Risk Assessment',
         presenters: 'Brian Haugh\nSteve Wartik',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '10:10 - 10:35',
         topic: 'Track B Talk: My Ontologist: Evaluating BFO-Based AI for Definition Support',
         presenters: 'Carter Benson\nAustin Leibers\nAlec Sculley',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '10:35 - 11:00',
         topic:
           'Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber',
         presenters: 'Ryan Hohimer\nDave McComb\nJans Aasman',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '10:35 - 11:00',
         topic: 'Track B Talk: Ontology-Driven Test Strategy Optimization',
         presenters: 'Joe Gregory\nAlejandro Salado',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '11:00 - 11:15',
@@ -143,7 +143,7 @@ const agenda = [
         time: '11:15 - 12:00',
         topic: 'Keynote: Innovation in Three Decades',
         presenters: 'Colonel James “Snake” Clark',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '12:00 - 13:00',
@@ -156,14 +156,14 @@ const agenda = [
         topic:
           'Demo A: Ontology Development Workflows with Progressive Web Apps and Client-Side Processing Browser-Based Tools',
         presenters: 'Jonathan Vajda\nAaron Damiano',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '13:00 - 14:30',
         topic: 'Demo B: Interactive Tool for Ontology Building',
         presenters:
           'Roman Ilin\nSimon Streltsov\nDan Schleigel\nCarrie Corcoran\nLiel Shkap\nAli Hasanzazeh',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '14:30 - 15:00',
@@ -175,27 +175,27 @@ const agenda = [
         time: '15:00 - 16:00',
         topic: 'Track A Panel: Ontology Engineering Implementation Challenges',
         presenters: 'Neil Otte\nMark Jensen\nJohn Gugliotti',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '15:00 - 15:30',
         topic:
           'Track B Talk: Flood-Risk Governance through Hybrid LLM-Graph RAG: A Query Framework for the National Levee Database',
         presenters: 'Armita Davarpanah',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '15:30 - 16:00',
         topic: 'Track B Talk: Ensuring Object Singularity in an Integrated Knowledge Graph Ecosystem',
         presenters: 'Forrest Hare',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '16:00 - 17:00',
         topic:
           'Keynote: From Data to Decision Advantage: A Warfighter’s Requirements for Semantic Technology in 21st\u00A0Century Intelligence',
         presenters: 'Jamie Steiler',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '17:00 - 18:00',
@@ -218,32 +218,32 @@ const agenda = [
         time: '9:00 - 09:15',
         topic: 'Summary of Day 1',
         presenters: 'John Beverley',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:15 - 9:40',
         topic: 'National Security Ontology Foundry',
         presenters: 'Neil Otte',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:40 - 10:30',
         topic: 'Track A Talk: TBD',
         presenters: 'Eric Merrell\nAmanda Demour',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '9:40 - 10:05',
         topic: 'Track B Talk: Ontology Engineering as a Tradecraft',
         presenters: 'John Beverley',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '10:05 - 10:30',
         topic:
           'Track B Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
         presenters: 'David Kamien\nChinmay Mantravadi',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '10:30 - 10:45',
@@ -256,62 +256,62 @@ const agenda = [
         topic:
           'Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control',
         presenters: 'Lowell Vizenor\nWen Zhu\nJay Desai\nJohn Price',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '10:45 - 11:10',
         topic:
           'Track B Talk: Pangea CLP-PSL: Making Time Explicit in OWL-Centric Knowledge Graphs for Defense and Intelligence Applications',
         presenters: 'Amanda Hicks\nTheresa Swift\nAlex Memory',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '11:10 - 11:35',
         topic:
           'Track A Talk: Helix: A Secure, Provenance-Based, Distributed Ledger System for Storing and Querying Ontology-Driven Knowledge Graphs',
         presenters: 'Alec Sculley\nDaniel Chapple',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '11:10 - 11:35',
         topic:
           'Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis: Towards Trustworthy and Explainable Judgment',
         presenters: 'Thomas Bittner',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '11:35 - 12:00',
         topic:
           'Track A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory',
         presenters: 'Dan Maxwell\nWesley J. Wildman\nAndreas Tolk',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '11:35 - 12:00',
         topic: 'Track B Talk: Bridging Ontology Engineering to Agentic AI',
         presenters: 'Jeremy Ravenel',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '12:00 - 13:00',
         topic:
           'Lunch (Provided)\n\nBonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
         presenters: '\n\nJames Adam',
-        location: 'Exchange Lobby\n\nVan Metre Hall 113',
+        location: 'Exchange Lobby\n\nFUSE Conference Center',
       },
       {
         time: '13:00 - 14:30',
         topic: 'Working Session A: FVEY Ontology Working Group',
         presenters:
           'Nigel D (Chair)\nPaul Cripps\nChris Partridge\nRebecca Rafferty\nBarry Smith\nDerek Weber\nJohn Beverley',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '13:00 - 14:30',
         topic:
           'Working Session B: Ontology Engineering in the Era of Generative AI: Current Trends and Future Trajectories',
         presenters: 'Joe Blankenship (Chair)\nAaron Damiano\nJonathan Vajda',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '14:30 - 15:00',
@@ -323,19 +323,19 @@ const agenda = [
         time: '15:00 - 16:00',
         topic: 'Keynote:',
         presenters: 'Lieutenant General Robert "Bob" Elder',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '16:00 - 17:00',
         topic: 'Demo A: Ontos Cosmos',
         presenters: 'Denise Ferniza',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '16:00 - 17:00',
         topic: 'Demo B: SCRDF - Realizing the Semantics of Plans',
         presenters: 'Michael Norman\nLenny Blum',
-        location: 'Fuse 2416',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '17:00 - 18:00',
