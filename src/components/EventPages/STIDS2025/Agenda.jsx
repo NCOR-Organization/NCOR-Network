@@ -294,10 +294,9 @@ const agenda = [
       },
       {
         time: '12:00 - 13:00',
-        topic:
-          'Lunch (Provided)\n\nBonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
-        presenters: '\n\nJames Adam',
-        location: 'Exchange Lobby\n\nFUSE Conference Center',
+        topic: 'Lunch (Provided)',
+        presenters: '',
+        location: 'Exchange Lobby',
       },
       {
         time: '13:00 - 14:30',
@@ -327,8 +326,8 @@ const agenda = [
       },
       {
         time: '16:00 - 17:00',
-        topic: 'Demo A: Ontos Cosmos',
-        presenters: 'Denise Ferniza',
+        topic: 'Demo A: Bonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
+        presenters: 'James Adam',
         location: 'FUSE Conference Center',
       },
       {
