@@ -222,28 +222,22 @@ const agenda = [
       },
       {
         time: '9:15 - 9:40',
-        topic: 'National Security Ontology Foundry',
+        topic: 'Track A Talk: National Security Ontology Foundry',
         presenters: 'Neil Otte',
         location: 'FUSE Conference Center',
       },
       {
-        time: '9:40 - 10:30',
-        topic: 'Track A Talk: TBD',
-        presenters: 'Eric Merrell\nAmanda Demour',
-        location: 'FUSE Conference Center',
-      },
-      {
         time: '9:40 - 10:05',
-        topic: 'Track B Talk: Ontology Engineering as a Tradecraft',
+        topic: 'Track A Talk: Ontology Engineering as a Tradecraft',
         presenters: 'John Beverley',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '10:05 - 10:30',
         topic:
-          'Track B Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
+          'Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
         presenters: 'David Kamien\nChinmay Mantravadi',
-        location: 'Van Metre Hall 113',
+        location: 'FUSE Conference Center',
       },
       {
         time: '10:30 - 10:45',
@@ -294,9 +288,10 @@ const agenda = [
       },
       {
         time: '12:00 - 13:00',
-        topic: 'Lunch (Provided)',
-        presenters: '',
-        location: 'Exchange Lobby',
+        topic:
+          'Lunch (Provided)\n\nBonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
+        presenters: '\n\nJames Adams',
+        location: 'Exchange Lobby\n\nVan Metre Hall 113',
       },
       {
         time: '13:00 - 14:30',
@@ -326,8 +321,8 @@ const agenda = [
       },
       {
         time: '16:00 - 17:00',
-        topic: 'Demo A: Bonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
-        presenters: 'James Adam',
+        topic: 'Track A Talk: Beyond Model Construction:  Operationalizing Ontologies at Enterprise Scale',
+        presenters: 'Denise Ferniza',
         location: 'FUSE Conference Center',
       },
       {
