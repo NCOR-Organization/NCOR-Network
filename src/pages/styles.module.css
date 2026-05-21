@@ -48,3 +48,58 @@
   transform: translateX(5px);
   transition: transform 0.3s ease;
 } 
+
+/* Packet Downloads */
+
+.packetDownloadGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.packetDownloadCard {
+  align-items: flex-start;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.055);
+  color: inherit;
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.packetDownloadCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.packetDownloadCard h3 {
+  margin: 0 0 0.35rem;
+}
+
+.packetDownloadCard p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.packetDownloadIcon {
+  align-items: center;
+  background: var(--ifm-color-primary);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex: 0 0 54px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  width: 54px;
+}

@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import STIDS2025Hero from '@site/src/components/EventPages/STIDS2025/Hero';
 import Overview from '@site/src/components/EventPages/STIDS2025/Overview';
 import Registration from '@site/src/components/EventPages/STIDS2025/Registration';
+import PacketDownloads from '@site/src/components/EventPages/STIDS2025/PacketDownloads';
 import Agenda from '@site/src/components/EventPages/STIDS2025/Agenda';
 import Speakers from '@site/src/components/EventPages/STIDS2025/Speakers';
 import ContactForm from '@site/src/components/EventPages/STIDS2025/ContactForm';
@@ -34,6 +35,8 @@ export default function STIDS2026() {
       <section id="registration">
         <Registration />
       </section>
+
+      <PacketDownloads />
 
       <Agenda />
 
