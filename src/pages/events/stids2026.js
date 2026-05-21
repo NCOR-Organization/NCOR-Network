@@ -2,11 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import STIDS2025Hero from '@site/src/components/EventPages/STIDS2025/Hero';
 import Overview from '@site/src/components/EventPages/STIDS2025/Overview';
-import CallForPapers from '@site/src/components/EventPages/STIDS2025/CallForPapers';
-import ImportantDates from '@site/src/components/EventPages/STIDS2025/ImportantDates';
 import Registration from '@site/src/components/EventPages/STIDS2025/Registration';
-import ContactForm from '@site/src/components/EventPages/STIDS2025/ContactForm';
+import Agenda from '@site/src/components/EventPages/STIDS2025/Agenda';
 import Speakers from '@site/src/components/EventPages/STIDS2025/Speakers';
+import ContactForm from '@site/src/components/EventPages/STIDS2025/ContactForm';
 
 const SEO = {
   title: 'STIDS 2026 – Semantic Technologies for Intelligence, Defense, and Security',
@@ -26,15 +25,22 @@ const SEO = {
   ],
 };
 
-export default function STIDS2025() {
+export default function STIDS2026() {
   return (
     <Layout title={SEO.title} description={SEO.description}>
       <STIDS2025Hero />
       <Overview />
-  <Speakers />
-      <CallForPapers />
-      <ImportantDates />
-      <Registration />
+
+      <section id="registration">
+        <Registration />
+      </section>
+
+      <Agenda />
+
+      <section id="speakers">
+        <Speakers />
+      </section>
+
       <ContactForm />
     </Layout>
   );

@@ -430,3 +430,139 @@
   width: 20px;
   height: 20px;
 } 
+
+/* Agenda */
+
+.agendaDay {
+  margin-top: 2.5rem;
+}
+
+.agendaDate {
+  background: var(--ifm-color-primary);
+  border-radius: 14px 14px 0 0;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 1rem 1.25rem;
+}
+
+.agendaTableWrap {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.agendaTable {
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 0;
+  width: 100%;
+}
+
+.agendaTable th {
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.agendaTable td {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.95rem 1rem;
+  vertical-align: top;
+}
+
+.agendaTable tbody tr:nth-child(even) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.agendaTable tbody tr:hover {
+  background: rgba(0, 0, 0, 0.035);
+}
+
+.agendaTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.agendaTime {
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 800;
+  text-align: left;
+  white-space: pre-line;
+  width: 145px;
+}
+
+.agendaTopic {
+  color: var(--ifm-heading-color);
+  font-weight: 400;
+  line-height: 1.4;
+  min-width: 360px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.agendaTopicText {
+  display: block;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.agendaPresenters {
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.45;
+  min-width: 220px;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.agendaLocation {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 600;
+  line-height: 1.45;
+  min-width: 190px;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.agendaTopic a,
+.agendaPresenters a,
+.agendaLocation a {
+  border-bottom: 1px dotted var(--ifm-color-primary);
+  color: var(--ifm-color-primary-dark);
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.agendaTopic a:hover,
+.agendaPresenters a:hover,
+.agendaLocation a:hover {
+  border-bottom-style: solid;
+  color: var(--ifm-color-primary-darker);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .agendaTable {
+    font-size: 0.88rem;
+    min-width: 850px;
+  }
+
+  .agendaTable th,
+  .agendaTable td {
+    padding: 0.8rem;
+  }
+
+  .agendaTime {
+    width: 130px;
+  }
+}
