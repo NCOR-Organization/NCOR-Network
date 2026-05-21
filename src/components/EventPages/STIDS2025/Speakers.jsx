@@ -53,6 +53,20 @@ export default function Speakers() {
       ]
     },
     {
+      title: 'Ontology Tradecraft',
+      abstract:
+        'I defend best practices for ontology engineering in support of simultaneously addressing interoperability and data quality challenges through a standardized tradecraft. This is presented against historical cycles of ontology engineering, comparing past interest in ontologies with the current AI era.',
+      speakers: [
+        {
+          name: 'John Beverley',
+          title: 'Assistant Professor',
+          organization: 'University at Buffalo',
+          image: '/img/speakers/JB-Ontobras.png',
+          bio: 'Dr. John Beverley is director of the MS and PhD programs in Applied Ontology programs University at Buffalo (UB). He is one of the developers of the ISO/IEC 21838-2 top-level standard Basic Formal Ontology (BFO), chair of the IEEE P3195 Mid-Level Ontology standard working group, and core developer on numerous BFO-based ontology projects.'
+        }
+      ]
+    },
+    {
       title: 'Ontology-Driven Test Strategy Optimization',
       abstract:
         'This presentation introduces an ontology-driven pipeline for test strategy generation and optimization, integrating semantic web technologies with digital engineering tools to reduce cost and improve traceability across test environments.',
@@ -248,14 +262,25 @@ export default function Speakers() {
     name: 'Jaime L. Stieler',
     title: 'Director of Advanced Programs',
     organization: '480th ISR Wing, United States Air Force',
+    image: '/img/speakers/steiler.jpeg',
     bio: 'Jaime L. Stieler is the Director of Advanced Programs for the 480th ISR Wing, where she supports intelligence mission modernization and operational integration across joint and coalition environments. Her work focuses on advancing ISR capabilities, improving data usability and interoperability, and aligning emerging semantic technologies with real-world operational requirements.',
     talkTitle: 'From Data to Decision Advantage: A Warfighter’s Requirements for Semantic Technology in 21st Century Intelligence',
     abstract: 'This keynote challenges the semantic technology community to move beyond elegant data architectures and confront the operational realities of modern warfare. From the warfighter’s perspective, the true measure of advances in data management, structured relational representation, and AI is whether they can transform overwhelming volumes of disconnected data into trusted decision advantage before the adversary acts.'
   },
   {
+    name: 'Lieutenant General Robert J. "Bob" Elder Jr',
+    title: 'Research Faculty',
+    organization: 'at George Mason University',
+    image: '/img/speakers/elder.jpeg',
+    bio: 'Lieutenant General Robert J. "Bob" Elder Jr. (born October 15, 1952)[1] is the former Commander, 8th Air Force;[2] Commander, Barksdale Air Force Base, Louisiana; and Commander, Joint Functional Component Command for Space and Global Strike, U.S. Strategic Command, Offutt AFB, Nebraska. He is now a member of the research faculty at George Mason University. ',
+    talkTitle: 'TBD',
+    abstract: 'TBD'
+  },
+  {
     name: 'James G. “Snake” Clark',
     title: 'Retired Colonel, United States Air Force',
     organization: 'Former ISR and UAV Operations Leader',
+    image: '/img/speakers/snake.jpeg',
     bio: 'Retired Colonel James G. “Snake” Clark is widely known as the “Godfather of the Predator” for his role in accelerating the deployment of unmanned aerial capabilities that reshaped modern military operations. Across three decades of service, he championed rapid operational innovation, near-real-time intelligence delivery, and deployable satellite downlink capabilities in support of the warfighter.',
     talkTitle: 'Innovation in Three Decades',
     abstract: 'Retired Colonel James G. “Snake” Clark’s career offers a powerful case study in mission-driven innovation under bureaucratic constraint. This keynote examines Clark’s example as a model of practical resilience, ethical risk-taking, and leadership under pressure. It explores what it means to challenge slow systems responsibly while remaining focused on delivering critical capabilities to those operating in harm’s way.'
@@ -264,6 +289,7 @@ export default function Speakers() {
     name: 'Joe Blankenship',
     title: 'Founder and CEO',
     organization: 'A Valid Company',
+    image: '/img/speakers/blankenship.jpeg',
     bio: 'Joe Blankenship is the founder of A Valid Company and a veteran with more than 20 years of experience spanning data science, geospatial analysis, and AI engineering. His work across government, nonprofit, academic, and commercial sectors focuses on building validated data and AI solutions tailored to operational and organizational needs.',
     talkTitle: 'Ontology Engineering in the Era of Generative AI: Current Trends and Future Trajectories',
     abstract: 'Ontology engineering is rapidly evolving within generative AI, shaping knowledge representation and reasoning. This session explores emerging tools, techniques, and methodologies for effective ontology development, including integration with agentic AI, explainable AI, and governance concerns such as bias mitigation, information security, and privacy preservation.'
@@ -272,6 +298,7 @@ export default function Speakers() {
     name: 'Armita Davarpanah',
     title: 'Assistant Professor of Environmental & Health Sciences',
     organization: 'Spelman College',
+    image: '/img/speakers/armita.jpeg',
     bio: 'Armita Davarpanah is an Assistant Professor at Spelman College whose research focuses on ontology engineering, semantic technologies, and AI-enabled infrastructure analysis. Her recent work integrates BFO- and CCO-aligned ontologies with knowledge graphs and GraphRAG systems to support flood risk governance and levee infrastructure decision-making.',
     talkTitle: 'Flood Risk Governance through Hybrid LLM–GraphRAG: A Query Framework for the National Levee Database',
     abstract: 'This presentation introduces an ontology-driven, AI-enabled framework for integrating and analyzing levee infrastructure data. The approach combines the Levee System Ontology (LSO), built on BFO and CCO, with a Neo4j-based knowledge graph aligned with the National Levee Database to enable a consistent representation of levee systems, components, and failure processes. Building on this semantic foundation, a GraphRAG layer supports hybrid retrieval, natural language question answering, and automated translation of user queries into graph-based operations. Using data from the USACE Rock Island District, the framework demonstrates scalable integration, traceable reasoning, and enhanced accessibility for both technical and non-technical users.'
@@ -571,11 +598,6 @@ export default function Speakers() {
             borderRadius: '16px'
           }}
         >
-          <h3 style={{ marginBottom: '1rem' }}>More Speakers to Be Announced</h3>
-          <p style={{ maxWidth: '700px', margin: '0 auto', color: '#555' }}>
-            Additional speakers and presentations will be announced as the program is finalized.
-            Please check back for updates as we continue to expand this year’s STIDS lineup.
-          </p>
         </div>
       </div>
     </div>

@@ -141,8 +141,8 @@ const config = {
   type: 'dropdown',
   label: 'Events',
   position: 'right',
-  activeBasePath: '/docs/events',
   items: [
+    { label: 'STIDS 2026', to: '/events/stids2026' },
     { label: 'Calendar', to: '/docs/events/calendar' },
     { label: 'Office Hours', to: '/docs/events/office-hours' },
     { label: 'Meetings and Workshops', to: '/docs/events/meetings-workshops' },
