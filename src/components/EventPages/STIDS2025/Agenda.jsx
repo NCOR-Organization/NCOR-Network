@@ -315,7 +315,7 @@ const agenda = [
       },
       {
         time: '15:00 - 16:00',
-        topic: 'Keynote:',
+        topic: 'Keynote: Operational Benefits of Standardization and Open Architectures',
         presenters: 'Lieutenant General Robert "Bob" Elder',
         location: 'FUSE Conference Center',
       },
