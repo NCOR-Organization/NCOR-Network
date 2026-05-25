@@ -272,9 +272,9 @@ export default function Speakers() {
     title: 'Research Faculty',
     organization: 'at George Mason University',
     image: '/img/speakers/elder.jpeg',
-    bio: 'Lieutenant General Robert J. "Bob" Elder Jr. (born October 15, 1952)[1] is the former Commander, 8th Air Force;[2] Commander, Barksdale Air Force Base, Louisiana; and Commander, Joint Functional Component Command for Space and Global Strike, U.S. Strategic Command, Offutt AFB, Nebraska. He is now a member of the research faculty at George Mason University. ',
-    talkTitle: 'TBD',
-    abstract: 'TBD'
+    bio: 'Lieutenant General Robert J. "Bob" Elder Jr. is the former Commander, 8th Air Force; Commander, Barksdale Air Force Base, Louisiana; and Commander, Joint Functional Component Command for Space and Global Strike, U.S. Strategic Command, Offutt AFB, Nebraska. He is now a member of the research faculty at George Mason University. ',
+    talkTitle: 'Operational Benefits of Standardization and Open Architectures',
+    abstract: ''
   },
   {
     name: 'James G. “Snake” Clark',
@@ -283,7 +283,7 @@ export default function Speakers() {
     image: '/img/speakers/snake.jpeg',
     bio: 'Retired Colonel James G. “Snake” Clark is widely known as the “Godfather of the Predator” for his role in accelerating the deployment of unmanned aerial capabilities that reshaped modern military operations. Across three decades of service, he championed rapid operational innovation, near-real-time intelligence delivery, and deployable satellite downlink capabilities in support of the warfighter.',
     talkTitle: 'Innovation in Three Decades',
-    abstract: 'Retired Colonel James G. “Snake” Clark’s career offers a powerful case study in mission-driven innovation under bureaucratic constraint. This keynote examines Clark’s example as a model of practical resilience, ethical risk-taking, and leadership under pressure. It explores what it means to challenge slow systems responsibly while remaining focused on delivering critical capabilities to those operating in harm’s way.'
+    abstract: 'Mr. Clark’s career offers a powerful case study in mission-driven innovation under bureaucratic constraint. This keynote examines Clark’s example as a model of practical resilience, ethical risk-taking, and leadership under pressure. It explores what it means to challenge slow systems responsibly while remaining focused on delivering critical capabilities to those operating in harm’s way.'
   },
   {
     name: 'Joe Blankenship',
