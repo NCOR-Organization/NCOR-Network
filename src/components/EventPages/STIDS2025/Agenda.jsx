@@ -70,7 +70,7 @@ const locationLinks = {
 const agenda = [
   {
     date: 'May 27',
-    rows: [
+    rows: [ 
       {
         time: '8:00 - 9:00',
         topic: 'Registration',
