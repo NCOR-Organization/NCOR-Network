@@ -274,7 +274,7 @@ export default function Speakers() {
     image: '/img/speakers/elder.jpeg',
     bio: 'Lieutenant General Robert J. "Bob" Elder Jr. is the former Commander, 8th Air Force; Commander, Barksdale Air Force Base, Louisiana; and Commander, Joint Functional Component Command for Space and Global Strike, U.S. Strategic Command, Offutt AFB, Nebraska. He is now a member of the research faculty at George Mason University. ',
     talkTitle: 'Operational Benefits of Standardization and Open Architectures',
-    abstract: ''
+    abstract: 'The Operational Benefits of Standardization and Open Architectures presentation illustrates how the use of ontology engineering’s conceptual structure underpins DoD Architectural Framework (DODAF) views and makes them coherent and machine-interpretable.   DODAF’s organized views of capabilities,  operations, systems, standards, projects, services, and data supports detailed analysis from multiple perspectives while providing decision-makers a “big picture” view.'
   },
   {
     name: 'James G. “Snake” Clark',

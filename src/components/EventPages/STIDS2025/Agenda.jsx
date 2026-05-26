@@ -39,7 +39,7 @@ const speakerLinks = {
   'Rebecca Rafferty': 'https://www.linkedin.com/in/rebecca-r-650975308/',
   'Jamie Steiler': 'https://www.linkedin.com/in/jstieler',
   'Eric Merrell': 'https://philpeople.org/profiles/eric-merrell',
-  'Amanda Hicks': 'https://www.linkedin.com/in/amanda-hicks-9aa48765',
+  'Amanda Hicks': 'https://www.linkedin.com/in/amanda-hicks-17b35966/',
   'Theresa Swift': 'https://www.linkedin.com/in/theresa-swift-0194131',
   'Thomas Bittner': 'https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/bittner.html',
   'Jeremy Ravenel': 'https://www.linkedin.com/in/jeremyravenel/',
