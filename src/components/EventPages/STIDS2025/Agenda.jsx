@@ -53,7 +53,7 @@ const speakerLinks = {
   'Joe Blankenship': 'https://thejoeblankenship.com/',
   'Lieutenant General Robert "Bob" Elder': 'https://www.af.mil/About-Us/Biographies/Display/Article/104897/lieutenant-general-robert-j-bob-elder-jr/',
   'David Kamien': 'https://www.linkedin.com/in/davidkamien',
-  'Chinmay Mantravadi': 'https://www.linkedin.com/in/chinmay-mantravadi-87740835a',
+  'Paul Wach': ' https://www.linkedin.com/in/paul-wach-a4374131',
   'Michael Norman': 'https://www.linkedin.com/in/michael-g-norman',
   'Lenny Blum': 'https://www.linkedin.com/in/lennyblum',
   'Summit Knowledge Solutions Hosted': 'https://sks.ai/',
@@ -236,7 +236,7 @@ const agenda = [
         time: '10:05 - 10:30',
         topic:
           'Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
-        presenters: 'David Kamien\nChinmay Mantravadi',
+        presenters: 'David Kamien\nPaul Wach',
         location: 'FUSE Conference Center',
       },
       {
@@ -291,7 +291,7 @@ const agenda = [
         topic:
           'Lunch (Provided)\n\nBonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
         presenters: '\n\nJames Adams',
-        location: 'Exchange Lobby\n\nVan Metre Hall 113',
+        location: 'Exchange Lobby\n\nFUSE Conference Center',
       },
       {
         time: '13:00 - 14:30',
@@ -321,14 +321,14 @@ const agenda = [
       },
       {
         time: '16:00 - 17:00',
-        topic: 'Track A Talk: Beyond Model Construction:  Operationalizing Ontologies at Enterprise Scale',
-        presenters: 'Denise Ferniza',
+        topic: 'Demo B: SCRDF - Realizing the Semantics of Plans',
+        presenters: 'Michael Norman\nLenny Blum',
         location: 'FUSE Conference Center',
       },
       {
         time: '16:00 - 17:00',
-        topic: 'Demo B: SCRDF - Realizing the Semantics of Plans',
-        presenters: 'Michael Norman\nLenny Blum',
+        topic: 'Track B Talk: Beyond Model Construction:  Operationalizing Ontologies at Enterprise Scale',
+        presenters: 'Denise Ferniza',
         location: 'Van Metre Hall 113',
       },
       {
