@@ -276,8 +276,8 @@ const agenda = [
       {
         time: '12:00 - 13:00',
         topic:
-          'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory\n\nDemo A: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
-        presenters: '\n\nDan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJames Adams\n\nJeremy Ravenel',
+          'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
+        presenters: '\n\nDan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJeremy Ravenel',
         location: 'Exchange Lobby\n\nFUSE Conference Center\n\nVan Metre Hall 113',
       },
       {
@@ -305,6 +305,13 @@ const agenda = [
         topic: 'Keynote: Operational Benefits of Standardization and Open Architectures',
         presenters: 'Lieutenant General Robert "Bob" Elder',
         location: 'FUSE Conference Center',
+      },
+      {
+        time: '15:00 - 16:00',
+        topic: 'Demo A: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
+        presenters:
+          'James Adams',
+        location: 'Van Metre Hall 113',
       },
       {
         time: '16:00 - 17:00',
