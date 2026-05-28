@@ -328,7 +328,7 @@ const agenda = [
         time: '18:00 - 20:00',
         topic: 'Mixer and Dinner\n(Open)',
         presenters: 'Ballston Local',
-        location: '900 N Glebe Rd, Arlington, VA 22203',
+        location: 'Veron Smith Hall\n\n900 N Glebe Rd, Arlington, VA 22203',
       },
     ],
   },
