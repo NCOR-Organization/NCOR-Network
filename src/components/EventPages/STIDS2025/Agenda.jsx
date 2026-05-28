@@ -277,7 +277,7 @@ const agenda = [
         time: '12:00 - 13:00',
         topic:
           'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory\n\nDemo A: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
-        presenters: 'Dan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJames Adams\n\nJeremy Ravenel',
+        presenters: '\n\nDan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJames Adams\n\nJeremy Ravenel',
         location: 'Exchange Lobby\n\nFUSE Conference Center\n\nVan Metre Hall 113',
       },
       {
