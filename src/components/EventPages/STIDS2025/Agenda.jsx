@@ -308,7 +308,7 @@ const agenda = [
       },
       {
         time: '15:00 - 16:00',
-        topic: 'Demo A: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
+        topic: 'Demo B: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
         presenters:
           'James Adams',
         location: 'Van Metre Hall 113',
