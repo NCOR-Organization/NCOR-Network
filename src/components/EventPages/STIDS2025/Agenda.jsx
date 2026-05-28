@@ -321,7 +321,7 @@ const agenda = [
       },
       {
         time: '16:00 - 17:00',
-        topic: 'Demo B: SCRDF - Realizing the Semantics of Plans',
+        topic: 'Demo A: SCRDF - Realizing the Semantics of Plans',
         presenters: 'Michael Norman\nLenny Blum',
         location: 'FUSE Conference Center',
       },
