@@ -227,71 +227,58 @@ const agenda = [
         location: 'FUSE Conference Center',
       },
       {
-        time: '9:40 - 10:05',
+        time: '9:40 - 10:15',
         topic: 'Track A Talk: Ontology Engineering as a Tradecraft',
         presenters: 'John Beverley',
         location: 'FUSE Conference Center',
       },
       {
-        time: '10:05 - 10:30',
+        time: '10:15 - 10:50',
         topic:
           'Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
         presenters: 'David Kamien\nPaul Wach',
         location: 'FUSE Conference Center',
       },
       {
-        time: '10:30 - 10:45',
+        time: '10:50 - 11:10',
         topic: 'Break',
         presenters: '',
         location: 'Exchange Lobby',
       },
       {
-        time: '10:45 - 11:10',
+        time: '11:10 - 11:35',
         topic:
           'Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control',
         presenters: 'Lowell Vizenor\nWen Zhu\nJay Desai\nJohn Price',
         location: 'FUSE Conference Center',
       },
       {
-        time: '10:45 - 11:10',
+        time: '11:10 - 11:35',
         topic:
           'Track B Talk: Pangea CLP-PSL: Making Time Explicit in OWL-Centric Knowledge Graphs for Defense and Intelligence Applications',
         presenters: 'Amanda Hicks\nTheresa Swift\nAlex Memory',
         location: 'Van Metre Hall 113',
       },
       {
-        time: '11:10 - 11:35',
+        time: '11:35 - 11:50',
         topic:
           'Track A Talk: Helix: A Secure, Provenance-Based, Distributed Ledger System for Storing and Querying Ontology-Driven Knowledge Graphs',
         presenters: 'Alec Sculley\nDaniel Chapple',
         location: 'FUSE Conference Center',
       },
       {
-        time: '11:10 - 11:35',
+        time: '11:35 - 11:50',
         topic:
           'Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis: Towards Trustworthy and Explainable Judgment',
         presenters: 'Thomas Bittner',
         location: 'Van Metre Hall 113',
       },
       {
-        time: '11:35 - 12:00',
-        topic:
-          'Track A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory',
-        presenters: 'Dan Maxwell\nWesley J. Wildman\nAndreas Tolk',
-        location: 'FUSE Conference Center',
-      },
-      {
-        time: '11:35 - 12:00',
-        topic: 'Track B Talk: Bridging Ontology Engineering to Agentic AI',
-        presenters: 'Jeremy Ravenel',
-        location: 'Van Metre Hall 113',
-      },
-      {
         time: '12:00 - 13:00',
         topic:
-          'Lunch (Provided)\n\nBonus Demo: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
-        presenters: '\n\nJames Adams',
-        location: 'Exchange Lobby\n\nFUSE Conference Center',
+          'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory\n\nDemo A: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
+        presenters: 'Dan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJames Adams\n\nJeremy Ravenel',
+        location: 'Exchange Lobby\n\nFUSE Conference Center\n\nVan Metre Hall 113',
       },
       {
         time: '13:00 - 14:30',
