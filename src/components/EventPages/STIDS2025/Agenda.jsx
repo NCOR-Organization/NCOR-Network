@@ -53,6 +53,7 @@ const speakerLinks = {
   'Joe Blankenship': 'https://thejoeblankenship.com/',
   'Lieutenant General Robert "Bob" Elder': 'https://www.af.mil/About-Us/Biographies/Display/Article/104897/lieutenant-general-robert-j-bob-elder-jr/',
   'David Kamien': 'https://www.linkedin.com/in/davidkamien',
+  'Chinmay Mantravadi': 'https://www.linkedin.com/in/chinmay-mantravadi-87740835a/',
   'Paul Wach': ' https://www.linkedin.com/in/paul-wach-a4374131',
   'Michael Norman': 'https://www.linkedin.com/in/michael-g-norman',
   'Lenny Blum': 'https://www.linkedin.com/in/lennyblum',
@@ -236,7 +237,7 @@ const agenda = [
         time: '10:15 - 10:50',
         topic:
           'Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge',
-        presenters: 'David Kamien\nPaul Wach',
+        presenters: 'David Kamien\nPaul Wach\nChinmay Mantravadi',
         location: 'FUSE Conference Center',
       },
       {
