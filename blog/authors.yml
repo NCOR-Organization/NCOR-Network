@@ -1,0 +1,14 @@
+john:
+  name: John Beverley
+  title: President, National Center for Ontological Research
+  url: https://ncor-network.org
+  image_url: /img/people/john-beverley.jpg
+  socials:
+    linkedin: https://www.linkedin.com/in/john-beverley-869445a0/
+    x: https://x.com/johnbeverley201
+
+ncor:
+  name: NCOR Editorial Team
+  title: National Center for Ontological Research
+  url: https://ncor-network.org
+  image_url: /static/img/ncor-network-logo.png

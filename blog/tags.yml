@@ -1,0 +1,24 @@
+ontology:
+  label: Ontology
+  permalink: /ontology
+  description: Ontology theory, engineering, and applications
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Ontology, knowledge graphs, and artificial intelligence
+
+standards:
+  label: Standards
+  permalink: /standards
+  description: Standards, governance, certification, and best practices
+
+events:
+  label: Events
+  permalink: /events
+  description: NCOR events, conferences, workshops, and community updates
+
+government:
+  label: Government
+  permalink: /government
+  description: Ontology for public sector, defense, intelligence, and security

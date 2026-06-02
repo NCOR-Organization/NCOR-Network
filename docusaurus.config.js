@@ -36,7 +36,18 @@ const config = {
           editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
           exclude: ['resources/**'],
         },
-        blog: false,
+        blog: {
+        routeBasePath: 'blog',
+        blogTitle: 'NCOR Blog',
+        blogDescription:
+          'Field notes, best practices, and commentary from the National Center for Ontological Research.',
+        showReadingTime: true,
+        postsPerPage: 9,
+        feedOptions: {
+          type: ['rss', 'atom'],
+          xslt: true,
+         },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -85,6 +96,11 @@ const config = {
           srcDark: 'img/ncor-network-logo.png',
         },
         items: [
+          {
+        to: '/blog',
+        label: 'Blog',
+        position: 'left',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
