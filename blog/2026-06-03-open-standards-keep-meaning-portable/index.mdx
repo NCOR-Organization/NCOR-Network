@@ -1,0 +1,196 @@
+---
+title: "Open Standards Keep Meaning Portable"
+description: "Open semantic standards are not nostalgia. They are leverage against semantic lock-in."
+slug: open-standards-keep-meaning-portable
+authors: [john]
+tags: [ontology, semantic-interoperability, standards, data-governance]
+keywords:
+  - open semantic standards
+  - semantic lock-in
+  - ontology standards
+  - RDF
+  - OWL
+  - SHACL
+  - SPARQL
+  - JSON-LD
+---
+
+import styles from './styles.module.css';
+
+<div className={styles.hero}>
+  <div className={styles.heroText}>
+    <p className={styles.kicker}>Meaning Matters · Part 2</p>
+    <h1>Open Standards Keep Meaning Portable</h1>
+    <p>
+      Open semantic standards are not nostalgia. They are a way to keep
+      meaning visible, inspectable, testable, and independent of any one platform.
+    </p>
+  </div>
+</div>
+
+<div className={styles.coreClaim}>
+  <span>Core claim</span>
+  <p>
+    A data platform helps you manage data. A semantic standard helps you govern
+    what the data means. Confuse those two roles, and organizations risk
+    surrendering semantic independence.
+  </p>
+</div>
+
+Every few years, someone declares that open semantic standards are obsolete.
+
+The argument usually sounds practical. The market has moved on. Developers prefer simpler formats. Operational platforms need speed and scale. Business users need dashboards, workflows, and applications, not formal models.
+
+There is a grain of truth to this.
+
+Operational platforms should not be judged only by whether they use a semantic standard as their native runtime architecture. Serious systems are layered. They combine SQL, JSON, APIs, graph stores, search indexes, workflow engines, code, and user interfaces.
+
+No one should expect one standard to do every job.
+
+But that does not mean open semantic standards are irrelevant. It means we need to understand what job they are supposed to do.
+
+Open semantic standards give organizations a transparent, inspectable, machine-readable way to represent shared meaning.
+
+{/* truncate */}
+
+## Data platforms manage data. Semantic standards govern meaning.
+
+<div className={styles.comparison}>
+  <div className={styles.compareCard}>
+    <p className={styles.smallLabel}>Data platform</p>
+    <h3>Manages execution</h3>
+    <p>
+      Moves data, builds workflows, powers dashboards, exposes APIs, runs
+      applications, and helps users get work done.
+    </p>
+  </div>
+
+  <div className={styles.compareCardStrong}>
+    <p className={styles.smallLabel}>Semantic standard</p>
+    <h3>Governs meaning</h3>
+    <p>
+      Makes definitions, identifiers, relationships, constraints, mappings,
+      provenance, and assumptions explicit and portable.
+    </p>
+  </div>
+</div>
+
+Organizations increasingly rely on ecosystems rather than single systems. Data moves across teams, vendors, departments, products, partners, analytic tools, and AI systems. If the meaning of the data is trapped in one platform’s internal model, the organization becomes dependent on that platform not only for execution but also for interpretation.
+
+That is a deeper form of lock-in.
+
+The issue is not whether a platform can export data. The issue is whether it can export meaning in a form that other tools and independent experts can inspect, test, validate, and reuse.
+
+<div className={styles.statusStrip}>
+  <span>CSV moves rows.</span>
+  <span>JSON moves objects.</span>
+  <span>APIs expose endpoints.</span>
+</div>
+
+A CSV file can move rows.  
+A JSON document can move objects.  
+A Parquet file can move columns efficiently.  
+An API can expose endpoints.
+
+But none of these, by themselves, guarantees preservation of meaning.
+
+They may preserve the data while leaving behind the definitions, axioms, relationships, constraints, provenance, version history, and inference rules that made the data intelligible.
+
+<div className={styles.semanticChecklist}>
+  <h3>What ordinary exports often leave behind</h3>
+  <ul>
+    <li>Definitions</li>
+    <li>Axioms</li>
+    <li>Relationships</li>
+    <li>Constraints</li>
+    <li>Provenance</li>
+    <li>Inference rules</li>
+  </ul>
+</div>
+
+## Do not confuse the platform with the semantic model
+
+A platform is not a strategy.
+
+Platforms help organizations integrate data, build workflows, run analytics, create applications, manage access, automate processes, and deliver useful interfaces to real users.
+
+But a platform should not be confused with the organization’s semantic model.
+
+The semantic model is the organization’s account of what its important things mean. It defines the categories that matter, the relationships among them, the identifiers used to track them, the constraints that govern them, and the assumptions that make them usable.
+
+<div className={styles.locationCard}>
+  <div>
+    <p className={styles.smallLabel}>Semantic model</p>
+    <h2><code>meaning</code></h2>
+  </div>
+
+  <div className={styles.locationMeanings}>
+    <span>Categories</span>
+    <span>Relations</span>
+    <span>Identifiers</span>
+    <span>Definitions</span>
+    <span>Constraints</span>
+    <span>Assumptions</span>
+  </div>
+</div>
+
+A platform may implement parts of that model. It may visualize it, operationalize it, transform it, query it, or enrich it.
+
+But the platform should not silently become the only place where meaning lives.
+
+When that happens, the organization loses independence. Meaning becomes embedded in proprietary configuration, workflow logic, transformation code, application behavior, or undocumented platform conventions.
+
+At first, this may look efficient. The platform team moves quickly. The demos are impressive. Users see integrated views and working applications.
+
+But over time, the organization may discover that its most important semantic commitments are no longer easy to inspect, export, validate, or reconstruct outside the platform.
+
+<div className={styles.questionBlock}>
+  <p className={styles.badQuestion}>Visible lock-in</p>
+  <blockquote>We cannot get the data out.</blockquote>
+
+  <p className={styles.goodQuestion}>Deeper lock-in</p>
+  <blockquote>We can get the data out, but not the meaning that made it reliable.</blockquote>
+</div>
+
+This is more subtle than data lock-in; it is semantic lock-in.
+
+## Open standards create leverage
+
+Open semantic standards give organizations a vendor-independent baseline for representing important meanings. They allow teams to define classes, relationships, identifiers, definitions, constraints, mappings, and versioned commitments in ways that are more transparent than platform-specific configuration.
+
+The point is not that every application must run natively on RDF, OWL, SKOS, SHACL, SPARQL, or JSON-LD. The point is that organizations need a standards-backed semantic layer that can survive beyond any one product.
+
+<div className={styles.lossGrid}>
+  <div>RDF for structured graph representation</div>
+  <div>OWL for explicit ontological commitments</div>
+  <div>SKOS for controlled vocabularies and schemes</div>
+  <div>SHACL for validation and constraints</div>
+  <div>SPARQL for query and inspection</div>
+  <div>JSON-LD for web-friendly linked data exchange</div>
+</div>
+
+A mature architecture can use open semantic standards for governance, validation, mapping, enrichment, documentation, and exchange while allowing operational systems to use whatever internal representations are best for performance and usability.
+
+Open standards let organizations ask better questions:
+
+<div className={styles.semanticChecklist}>
+  <h3>Questions open standards make harder to avoid</h3>
+  <ul>
+    <li>Can we inspect the model outside the platform?</li>
+    <li>Can we validate data against explicit constraints?</li>
+    <li>Can we compare versions of meaning over time?</li>
+    <li>Can we preserve identifiers across systems?</li>
+    <li>Can we explain why a query returned an answer?</li>
+    <li>Can we migrate without reconstructing meaning from scratch?</li>
+  </ul>
+</div>
+
+These questions become more important as organizations adopt AI. AI systems need context, structure, provenance, and constraints. Without them, they produce confident answers over unstable foundations.
+
+Open semantic standards are not a silver bullet. They do not solve data quality, security, workflow, latency, or user experience by themselves.
+
+But they provide something every serious organization needs: a way to keep meaning visible, portable, and governable.
+
+<div className={styles.pullQuote}>
+  That is leverage against semantic lock-in.
+</div>
