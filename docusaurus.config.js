@@ -38,6 +38,7 @@ const config = {
         },
         blog: {
         routeBasePath: 'blog',
+        sortPosts: 'ascending',
         blogTitle: 'NCOR Blog',
         blogDescription:
           'Field notes, best practices, and commentary from the National Center for Ontological Research.',
