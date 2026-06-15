@@ -368,6 +368,47 @@ function renderLinkedLines(text, linkMap) {
   });
 }
 
+const nonSlideTopics = new Set([
+  'Registration',
+  'Introductions',
+  'Break',
+  'Lunch (Provided)',
+  'Dinner: Maggiano’s Little Italy',
+  'Summit Knowledge Solutions Hosted Mixer',
+  'Mixer and Dinner',
+  '(Open)',
+]);
+
+function getPdfFileName(title) {
+  return `${title
+    .normalize('NFKC')
+    .replace(/\u00A0/g, ' ')
+    .replace(/[–—]/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\//g, '-')}.pdf`;
+}
+
+function getSlidesPageUrl(title) {
+  const pdfFileName = getPdfFileName(title);
+
+  return `/events/stids2026/slides?file=${encodeURIComponent(pdfFileName)}`;
+}
+
+function shouldShowSlidesLink(line) {
+  const trimmed = line.trim();
+
+  if (!trimmed) {
+    return false;
+  }
+
+  if (nonSlideTopics.has(trimmed)) {
+    return false;
+  }
+
+  return true;
+}
+
 function AgendaRow({ row }) {
   const topicLines = row.topic.split('\n');
 
@@ -378,10 +419,12 @@ function AgendaRow({ row }) {
       <td className={styles.agendaTopic}>
         {topicLines.map((line, index) => {
           const colonIndex = line.indexOf(':');
+          const showSlidesLink = shouldShowSlidesLink(line);
 
           return (
             <React.Fragment key={`${row.time}-${index}`}>
               {index > 0 && <br />}
+
               {colonIndex > -1 ? (
                 <>
                   <strong>{line.slice(0, colonIndex + 1)}</strong>
@@ -390,10 +433,23 @@ function AgendaRow({ row }) {
               ) : (
                 line
               )}
+
+              {showSlidesLink && (
+                <>
+                  {' '}
+                  <a
+                    href={getSlidesPageUrl(line)}
+                    className={styles.slidesLink}
+                  >
+                    SLIDES
+                  </a>
+                </>
+              )}
             </React.Fragment>
           );
         })}
       </td>
+      
 
       <td className={styles.agendaPresenters}>
         {renderLinkedLines(row.presenters, speakerLinks)}

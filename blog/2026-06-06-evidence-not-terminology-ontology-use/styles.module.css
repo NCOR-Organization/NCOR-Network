@@ -1,0 +1,402 @@
+.hero {
+  position: relative;
+  margin: 0 0 2.5rem 0;
+  padding: 4.35rem 2.8rem;
+  border-radius: 36px;
+  color: white;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(96, 165, 250, 0.44), transparent 24%),
+    radial-gradient(circle at 88% 12%, rgba(45, 212, 191, 0.25), transparent 27%),
+    radial-gradient(circle at 72% 88%, rgba(168, 85, 247, 0.28), transparent 30%),
+    linear-gradient(135deg, #06111f 0%, #0a2342 44%, #13385e 100%);
+  box-shadow:
+    0 30px 86px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+  opacity: 0.55;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -105px;
+  top: -110px;
+  width: 385px;
+  height: 385px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  box-shadow:
+    0 0 0 42px rgba(255, 255, 255, 0.035),
+    0 0 0 92px rgba(255, 255, 255, 0.024),
+    0 0 100px rgba(45, 212, 191, 0.38);
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+  max-width: 880px;
+}
+
+.kicker,
+.smallLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  font-weight: 900;
+  opacity: 0.9;
+  margin-bottom: 0.75rem;
+}
+
+.kicker::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: #5eead4;
+  box-shadow: 0 0 22px rgba(94, 234, 212, 0.82);
+}
+
+.hero h1 {
+  font-size: clamp(2.55rem, 6vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.058em;
+  margin: 0 0 1.25rem 0;
+}
+
+.hero p {
+  font-size: clamp(1.12rem, 2vw, 1.38rem);
+  line-height: 1.55;
+  max-width: 760px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.coreClaim {
+  position: relative;
+  margin: 2.35rem 0;
+  padding: 1.75rem 1.9rem 1.75rem 2rem;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(20, 184, 166, 0.1)),
+    var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.08);
+}
+
+.coreClaim::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  bottom: 1.2rem;
+  width: 7px;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #3b82f6, #14b8a6);
+}
+
+.coreClaim span,
+.ruleBox span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.coreClaim p {
+  margin: 0;
+  font-size: 1.23rem;
+  line-height: 1.55;
+  font-weight: 650;
+}
+
+.claimGrid,
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 2.4rem 0;
+}
+
+.claimCard,
+.claimCardStrong,
+.compareCard,
+.compareCardStrong {
+  position: relative;
+  padding: 1.65rem;
+  border-radius: 30px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.07);
+}
+
+.claimCard::after,
+.claimCardStrong::after,
+.compareCard::after,
+.compareCardStrong::after {
+  position: absolute;
+  right: 1rem;
+  top: 0.45rem;
+  font-size: 5.4rem;
+  font-weight: 950;
+  line-height: 1;
+  opacity: 0.055;
+}
+
+.claimCard::after {
+  content: "?";
+}
+
+.claimCardStrong::after {
+  content: "✓";
+}
+
+.compareCard::after {
+  content: "ops";
+}
+
+.compareCardStrong::after {
+  content: "sem";
+}
+
+.claimCardStrong,
+.compareCardStrong {
+  border: 2px solid var(--ifm-color-primary);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.17), transparent 32%),
+    var(--ifm-background-surface-color);
+  transform: translateY(-4px);
+}
+
+.claimCard h3,
+.claimCardStrong h3,
+.compareCard h3,
+.compareCardStrong h3 {
+  margin-top: 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+.claimCard p,
+.claimCardStrong p,
+.compareCard p,
+.compareCardStrong p {
+  margin-bottom: 0;
+}
+
+.pullQuote {
+  position: relative;
+  margin: 2.7rem 0;
+  padding: 2.05rem 2.25rem;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.23), transparent 28%),
+    linear-gradient(135deg, var(--ifm-color-primary), #0f766e);
+  color: white;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 1.14;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.18);
+}
+
+.pullQuote::before {
+  content: "“";
+  position: absolute;
+  top: -0.55rem;
+  left: 1.15rem;
+  font-size: 7rem;
+  opacity: 0.18;
+  line-height: 1;
+}
+
+.questionStack {
+  display: grid;
+  gap: 0.85rem;
+  margin: 2.35rem 0;
+}
+
+.questionItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 1rem 1.15rem;
+  border-radius: 22px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.055);
+}
+
+.questionItem span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.14);
+  color: var(--ifm-color-primary);
+  font-weight: 950;
+}
+
+.questionItem p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.artifactPanel,
+.ruleBox {
+  margin: 2.55rem 0;
+  padding: 1.75rem;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(20, 184, 166, 0.14), transparent 34%),
+    var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.075);
+}
+
+.artifactPanel h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.artifactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.artifactGrid span {
+  padding: 0.68rem 0.95rem;
+  border-radius: 999px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-weight: 850;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.055);
+}
+
+.evidenceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+  margin: 2.4rem 0;
+}
+
+.evidenceCard {
+  position: relative;
+  padding: 1.15rem 1.15rem 1.15rem 1.25rem;
+  border-radius: 22px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.evidenceCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  bottom: 1rem;
+  width: 5px;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #3b82f6, #14b8a6);
+}
+
+.evidenceCard h4 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.1rem;
+}
+
+.evidenceCard p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.ruleBox {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.15), transparent 34%),
+    linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(20, 184, 166, 0.07)),
+    var(--ifm-background-surface-color);
+}
+
+.ruleBox p {
+  margin: 0;
+  font-size: 1.18rem;
+  line-height: 1.52;
+  font-weight: 750;
+}
+
+.finalLine {
+  position: relative;
+  margin: 3rem 0 1rem 0;
+  padding: 2.1rem;
+  text-align: center;
+  border-radius: 34px;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1.16;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(94, 234, 212, 0.2), transparent 32%),
+    linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(20, 184, 166, 0.1)),
+    var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+}
+
+.finalLine::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  margin: 1rem auto 0 auto;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), #14b8a6);
+}
+
+@media screen and (max-width: 996px) {
+  .claimGrid,
+  .comparison,
+  .evidenceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .claimCardStrong,
+  .compareCardStrong {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 1.45rem;
+    border-radius: 24px;
+  }
+
+  .questionItem {
+    align-items: start;
+  }
+}

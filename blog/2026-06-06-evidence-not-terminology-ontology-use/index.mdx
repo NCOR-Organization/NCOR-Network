@@ -1,0 +1,292 @@
+---
+title: "Evidence, Not Terminology: How to Tell Whether a System Really Uses an Ontology"
+description: "A system does not meaningfully use an ontology just because it says it does. The question is whether it can preserve, govern, validate, export, and reconstruct meaning."
+slug: evidence-not-terminology-ontology-use
+authors: [john]
+tags: [ontology, semantic-interoperability, data-governance, ai]
+keywords:
+  - ontology use
+  - semantic interoperability
+  - ontology validation
+  - semantic layer
+  - knowledge graph
+  - AI-ready data
+  - semantic governance
+  - evidence package
+---
+
+import styles from './styles.module.css';
+
+<div className={styles.hero}>
+  <div className={styles.heroText}>
+    <p className={styles.kicker}>Semantic Infrastructure · Part 1</p>
+    <h1>Evidence, Not Terminology</h1>
+    <p>
+      How to tell whether a system really uses an ontology — and why labels like
+      “knowledge graph,” “semantic layer,” and “AI-ready” are not enough.
+    </p>
+  </div>
+</div>
+
+<div className={styles.coreClaim}>
+  <span>Core claim</span>
+  <p>
+    A system should not receive credit for meaningful ontology use because it
+    contains domain labels, graph nodes, schemas, dashboards, workflows, AI
+    summaries, or an internal model called an “ontology.” It should receive
+    credit only when it can show how meaning is represented, governed, tested,
+    exported, and reconstructed.
+  </p>
+</div>
+
+Every few years, a new platform category promises to solve interoperability.
+
+Sometimes the phrase is “ontology.” Sometimes it is “knowledge graph.” Sometimes it is “semantic layer,” “data fabric,” “AI-ready knowledge infrastructure,” or “enterprise knowledge model.”
+
+The labels change. The evaluation problem remains the same.
+
+A system does not meaningfully use an ontology merely because it says it does.
+
+It may contain domain labels. It may have entity types. It may expose a graph. It may generate AI summaries. It may organize data into objects, workflows, dashboards, reports, APIs, schemas, and metadata. It may even have an internal model called an “ontology.”
+
+Those things may be useful.
+
+They are not, by themselves, evidence that meaning is preserved.
+
+{/* truncate */}
+
+## The problem with terminology-first evaluation
+
+Terminology is cheap.
+
+A vendor can call a model an ontology. A product team can call a graph a knowledge graph. A platform can describe its data layer as semantic. An AI system can claim to be grounded in domain knowledge.
+
+But serious semantic evaluation cannot stop at the label.
+
+The real question is whether the system makes important meanings explicit, governed, testable, inspectable, reusable, exportable, and reconstructable outside the implementation environment.
+
+<div className={styles.claimGrid}>
+  <div className={styles.claimCard}>
+    <p className={styles.smallLabel}>Weak evidence</p>
+    <h3>“We have an ontology.”</h3>
+    <p>
+      The system uses the right word, but the evaluator still does not know where
+      meaning resides or how it is governed.
+    </p>
+  </div>
+
+  <div className={styles.claimCardStrong}>
+    <p className={styles.smallLabel}>Stronger evidence</p>
+    <h3>“Here is the governed model.”</h3>
+    <p>
+      The system identifies the authoritative model, its identifiers, definitions,
+      relations, constraints, mappings, provenance, validation rules, and export path.
+    </p>
+  </div>
+</div>
+
+The difference matters because semantic claims often hide inside operational success.
+
+A platform may integrate data. It may power dashboards. It may run workflows. It may enable search, analytics, visualization, AI-assisted discovery, and application delivery.
+
+That operational value may be real.
+
+But operational value is not the same as semantic authority.
+
+A system can be operationally useful and still fail to preserve the meanings needed for validation, inference, reuse, migration, audit, or independent implementation.
+
+## What should evaluators ask?
+
+A better evaluation begins with a simple discipline:
+
+<div className={styles.pullQuote}>
+  Do not ask what the system calls its model. Ask what the system can prove about meaning.
+</div>
+
+Any system claiming meaningful ontology use should be able to answer six basic questions.
+
+<div className={styles.questionStack}>
+  <div className={styles.questionItem}>
+    <span>1</span>
+    <p>Where do the relevant semantic meanings reside?</p>
+  </div>
+
+  <div className={styles.questionItem}>
+    <span>2</span>
+    <p>How are those meanings represented?</p>
+  </div>
+
+  <div className={styles.questionItem}>
+    <span>3</span>
+    <p>Who governs them?</p>
+  </div>
+
+  <div className={styles.questionItem}>
+    <span>4</span>
+    <p>How are changes approved?</p>
+  </div>
+
+  <div className={styles.questionItem}>
+    <span>5</span>
+    <p>How can the meanings be validated, exported, and reconstructed outside the platform?</p>
+  </div>
+
+  <div className={styles.questionItem}>
+    <span>6</span>
+    <p>What semantic commitments are lost, approximated, or embedded in implementation logic?</p>
+  </div>
+</div>
+
+These questions turn vague semantic claims into concrete engineering obligations.
+
+They also prevent a common failure mode: treating the visible user-facing model as if it were the authoritative semantic model.
+
+The user interface may show useful labels. The platform may expose useful objects. The graph may contain useful nodes and edges. The AI system may generate useful explanations.
+
+But the evaluator still needs to know whether the underlying meanings are governed and recoverable.
+
+## Useful artifacts are not always semantic authority
+
+Many representation artifacts can support semantic work without being authoritative semantic models.
+
+A controlled vocabulary can standardize names.  
+A taxonomy can organize categories.  
+A schema can specify fields and data shapes.  
+A property graph can support traversal and analytics.  
+A workflow can encode operational behavior.  
+An AI pipeline can retrieve, summarize, classify, or recommend.
+
+All of these can be useful.
+
+None of them automatically establishes meaningful ontology use.
+
+<div className={styles.artifactPanel}>
+  <h3>Useful does not mean authoritative</h3>
+
+  <div className={styles.artifactGrid}>
+    <span>Controlled vocabulary</span>
+    <span>Taxonomy</span>
+    <span>Schema</span>
+    <span>Data model</span>
+    <span>Object model</span>
+    <span>Property graph</span>
+    <span>Knowledge graph</span>
+    <span>AI pipeline</span>
+  </div>
+</div>
+
+The question is whether these artifacts preserve the relevant semantic commitments: identifiers, definitions, relations, axioms, constraints, mappings, provenance, validation behavior, inference expectations, and query-answer explanations.
+
+If they do, they should show how.
+
+If they do not, they may still be acceptable for operational use, but they should not be treated as the authoritative home of meaning.
+
+## The evidence package
+
+Evidence-based evaluation requires artifacts that can be inspected.
+
+The point is to make meaning testable.
+
+A serious evidence package should show the model, the mappings, the governance process, the validation procedure, and the known semantic gaps.
+
+<div className={styles.evidenceGrid}>
+  <div className={styles.evidenceCard}>
+    <h4>Authoritative model</h4>
+    <p>The approved semantic model for the relevant scope.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Standards-aligned export</h4>
+    <p>A representation that can be inspected outside the implementation environment.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Identifier policy</h4>
+    <p>Rules for stable identifiers, namespaces, deprecation, replacement, and versioning.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Mapping matrix</h4>
+    <p>Explicit correspondences between authoritative semantics and platform-specific artifacts.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Traceability matrix</h4>
+    <p>Evidence that workflows, code, outputs, and AI behavior trace back to governed meaning.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Validation profile</h4>
+    <p>Tests showing which data, mappings, or derived products satisfy semantic constraints.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Semantic gap report</h4>
+    <p>Disclosure of loss, approximation, unsupported constructs, or implementation-specific reinterpretation.</p>
+  </div>
+
+  <div className={styles.evidenceCard}>
+    <h4>Round-trip fidelity report</h4>
+    <p>Evidence that meaning survives ingestion, use, export, comparison, and reconstruction.</p>
+  </div>
+</div>
+
+The practical standard is simple: if the system claims semantic authority, the evaluator should be able to inspect the evidence without relying on the platform’s internal interpretation.
+
+## Operational acceptance is not semantic acceptance
+
+A system may be good at operations and weak at semantics.
+
+That distinction is important.
+
+Operational acceptance asks whether the system is useful, performant, secure, usable, cost-effective, and mission-effective for its intended purpose.
+
+Semantic acceptance asks a different set of questions. Does the system preserve governed meaning? Are identifiers stable? Are definitions explicit? Are relations represented correctly? Are mappings versioned? Are constraints testable? Is provenance preserved? Can semantic loss be identified and accepted? Can the model be exported and reconstructed outside the platform?
+
+<div className={styles.comparison}>
+  <div className={styles.compareCard}>
+    <p className={styles.smallLabel}>Operational acceptance</p>
+    <h3>Can the system do useful work?</h3>
+    <p>
+      Data integration, workflows, dashboards, analytics, applications, access
+      control, and AI-enabled support may all be valuable.
+    </p>
+  </div>
+
+  <div className={styles.compareCardStrong}>
+    <p className={styles.smallLabel}>Semantic acceptance</p>
+    <h3>Does the system preserve meaning?</h3>
+    <p>
+      Semantic authority requires governed meaning that is inspectable,
+      testable, traceable, exportable, reconstructable, and reusable.
+    </p>
+  </div>
+</div>
+
+A system can pass the first test and fail the second.
+
+That does not mean the system is useless. It means the system should not be credited as the authoritative semantic layer unless the relevant criteria are satisfied or the residual risk is explicitly accepted.
+
+## The rule
+
+The rule for evaluation is straightforward:
+
+<div className={styles.ruleBox}>
+  <span>Evaluation rule</span>
+  <p>
+    Vendor assertions, platform labels, AI demonstrations, dashboards, and internal
+    terminology should be evaluated against evidence artifacts.
+  </p>
+</div>
+
+This rule lets vendors compete on operational excellence while preventing operational convenience from silently becoming semantic authority.
+
+It lets platform teams build useful tools while keeping the organization’s meaning governable.
+
+It lets AI systems consume semantic structure without pretending that model behavior replaces authoritative definitions, identifiers, constraints, or provenance.
+
+Most importantly, it gives decision-makers a way to separate marketing language from architectural fact.
+
+<div className={styles.finalLine}>
+  If a system really uses an ontology, it should be able to prove it.
+</div>

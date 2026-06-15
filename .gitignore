@@ -28,4 +28,4 @@ echo '!.yarn/patches' >> .gitignore
 echo '!.yarn/plugins' >> .gitignore
 echo '!.yarn/releases' >> .gitignore
 echo '!.yarn/sdks' >> .gitignore
-echo '!.yarn/versions' >> .gitignore
+echo '!.yarn/versions' >> .gitignorestatic/presentations/stids2026/Keynote: Innovation in Three Decades.pdf
