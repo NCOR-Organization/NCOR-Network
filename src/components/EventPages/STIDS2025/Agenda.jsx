@@ -17,7 +17,6 @@ const speakerLinks = {
   'Carter Benson': 'https://www.linkedin.com/in/carterbeaubenson',
   'Austin Leibers': 'https://philpeople.org/profiles/austin-c-liebers',
   'Alec Sculley': 'https://scholar.google.com/citations?hl=en&user=p2ZGxhUAAAAJ',
-  'Ryan Hohimer': 'https://www.linkedin.com/in/ryan-hohimer-6b9a1b3a',
   'Dave McComb': 'https://www.semanticarts.com/about-us/',
   'Jans Aasman': 'https://franz.com/about/bios/jaasman.lhtml',
   'Joe Gregory': 'https://academicaffairs.arizona.edu/person/joe-gregory',
@@ -54,7 +53,7 @@ const speakerLinks = {
   'Lieutenant General Robert "Bob" Elder': 'https://www.af.mil/About-Us/Biographies/Display/Article/104897/lieutenant-general-robert-j-bob-elder-jr/',
   'David Kamien': 'https://www.linkedin.com/in/davidkamien',
   'Chinmay Mantravadi': 'https://www.linkedin.com/in/chinmay-mantravadi-87740835a/',
-  'Paul Wach': ' https://www.linkedin.com/in/paul-wach-a4374131',
+  'Paul Wach': 'https://www.linkedin.com/in/paul-wach-a4374131',
   'Michael Norman': 'https://www.linkedin.com/in/michael-g-norman',
   'Lenny Blum': 'https://www.linkedin.com/in/lennyblum',
   'Summit Knowledge Solutions Hosted': 'https://sks.ai/',
@@ -71,7 +70,7 @@ const locationLinks = {
 const agenda = [
   {
     date: 'May 27',
-    rows: [ 
+    rows: [
       {
         time: '8:00 - 9:00',
         topic: 'Registration',
@@ -310,8 +309,7 @@ const agenda = [
       {
         time: '15:00 - 16:00',
         topic: 'Demo B: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
-        presenters:
-          'James Adams',
+        presenters: 'James Adams',
         location: 'Van Metre Hall 113',
       },
       {
@@ -368,45 +366,79 @@ function renderLinkedLines(text, linkMap) {
   });
 }
 
-const nonSlideTopics = new Set([
-  'Registration',
-  'Introductions',
-  'Break',
-  'Lunch (Provided)',
-  'Dinner: Maggiano’s Little Italy',
-  'Summit Knowledge Solutions Hosted Mixer',
-  'Mixer and Dinner',
-  '(Open)',
-]);
-
-function getPdfFileName(title) {
-  return `${title
+function normalizeText(text) {
+  return text
     .normalize('NFKC')
     .replace(/\u00A0/g, ' ')
     .replace(/[–—]/g, '-')
     .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/\//g, '-')}.pdf`;
+    .trim();
 }
 
-function getSlidesPageUrl(title) {
-  const pdfFileName = getPdfFileName(title);
+/**
+ * Add a row here ONLY when that agenda item has a real PDF.
+ *
+ * Left side: exact agenda topic title.
+ * Right side: exact PDF filename in static/presentations/stids2026/.
+ */
+const slidesByTopic = {
+  [normalizeText('Cyber Ontology Foundry')]:
+    'STIDS 2026 Cyber Ontology Foundry.pdf',
 
+  [normalizeText(
+    'Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber'
+  )]:
+    'Day1_10-35_Hohimer_McComb_Aasman_gistCyber.pdf',
+
+  [normalizeText('Keynote: Innovation in Three Decades')]:
+    'Keynote: Innovation in Three Decades.pdf',
+
+  [normalizeText('Demo B: Interactive Tool for Ontology Building')]:
+    'Day1_1300_ILIN-DBOL_DEMO.pdf',
+
+  [normalizeText(
+    'Track B Talk: Ensuring Object Singularity in an Integrated Knowledge Graph Ecosystem'
+  )]:
+    'day1_1530_trackB_hare_ID.pdf',
+
+  [normalizeText('Track A Talk: Ontology Engineering as a Tradecraft')]:
+    'Beverley - Ontology Engineering Tradecraft.pdf',
+
+  [normalizeText(
+    'Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control'
+  )]:
+    'Day2_1045_Vizenor_Zenia.pdf',
+
+  [normalizeText(
+    'Track B Talk: Pangea CLP-PSL: Making Time Explicit in OWL-Centric Knowledge Graphs for Defense and Intelligence Applications'
+  )]:
+    'Day2_STIDS_Hicks_Pangea.pdf',
+
+  [normalizeText(
+    'Track A Talk: Transdisciplinary Research Implementation:'
+  )]:
+    '20260522 Transdisicplinary Methods STIDS.pdf',
+
+  [normalizeText('Working Session A: FVEY Ontology Working Group')]:
+    'FVEY STIDS.pdf',
+
+  [normalizeText(
+    'Demo B: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying'
+  )]:
+    'Day2_1200_Adam_Trivyn.pdf',
+
+  [normalizeText(
+    'Track B Talk: Beyond Model Construction: Operationalizing Ontologies at Enterprise Scale'
+  )]:
+    'Day2_1300_Weber_AppliedSemantics-v1.pdf',
+};
+
+function getSlidesFileName(title) {
+  return slidesByTopic[normalizeText(title)] || null;
+}
+
+function getSlidesPageUrl(pdfFileName) {
   return `/events/stids2026/slides?file=${encodeURIComponent(pdfFileName)}`;
-}
-
-function shouldShowSlidesLink(line) {
-  const trimmed = line.trim();
-
-  if (!trimmed) {
-    return false;
-  }
-
-  if (nonSlideTopics.has(trimmed)) {
-    return false;
-  }
-
-  return true;
 }
 
 function AgendaRow({ row }) {
@@ -419,7 +451,7 @@ function AgendaRow({ row }) {
       <td className={styles.agendaTopic}>
         {topicLines.map((line, index) => {
           const colonIndex = line.indexOf(':');
-          const showSlidesLink = shouldShowSlidesLink(line);
+          const slidesFileName = getSlidesFileName(line);
 
           return (
             <React.Fragment key={`${row.time}-${index}`}>
@@ -434,11 +466,11 @@ function AgendaRow({ row }) {
                 line
               )}
 
-              {showSlidesLink && (
+              {slidesFileName && (
                 <>
                   {' '}
                   <a
-                    href={getSlidesPageUrl(line)}
+                    href={getSlidesPageUrl(slidesFileName)}
                     className={styles.slidesLink}
                   >
                     SLIDES
@@ -449,7 +481,6 @@ function AgendaRow({ row }) {
           );
         })}
       </td>
-      
 
       <td className={styles.agendaPresenters}>
         {renderLinkedLines(row.presenters, speakerLinks)}
