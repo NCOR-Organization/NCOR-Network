@@ -383,7 +383,7 @@ function normalizeText(text) {
  */
 const slidesByTopic = {
   [normalizeText('Cyber Ontology Foundry')]:
-    'STIDS 2026 Cyber Ontology Foundry.pdf',
+    'Cyber Ontology Foundry.pdf',
 
   [normalizeText(
     'Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber'
