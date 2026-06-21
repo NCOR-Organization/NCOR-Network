@@ -1,4 +1,5 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const restaurantUrl =
@@ -269,14 +270,14 @@ const agenda = [
       {
         time: '11:35 - 11:50',
         topic:
-          'Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis: Towards Trustworthy and Explainable Judgment',
+          'Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis',
         presenters: 'Thomas Bittner',
         location: 'Van Metre Hall 113',
       },
       {
         time: '12:00 - 13:00',
         topic:
-          'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary\u00A0Research Implementation:\u00A0\nHybrid Models,\u00A0Hybrid Teams\u00A0& Big Theory\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
+          'Lunch (Provided)\n\nTrack A Talk: Transdisciplinary Research Implementation, Hybrid Models, Hybrid Teams and Big Theory\n\n\nTrack B Talk: Bridging Ontology Engineering to Agentic AI',
         presenters: '\n\nDan Maxwell\nWesley J. Wildman\nAndreas Tolk\n\nJeremy Ravenel',
         location: 'Exchange Lobby\n\nFUSE Conference Center\n\nVan Metre Hall 113',
       },
@@ -308,7 +309,7 @@ const agenda = [
       },
       {
         time: '15:00 - 16:00',
-        topic: 'Demo B: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying',
+        topic: 'Demo B: Trivyn, AI Augmented BFO-CCO Ontology Generation and Neurosymbolic Querying',
         presenters: 'James Adams',
         location: 'Van Metre Hall 113',
       },
@@ -385,60 +386,78 @@ const slidesByTopic = {
   [normalizeText('Cyber Ontology Foundry')]:
     'Cyber Ontology Foundry.pdf',
 
-  [normalizeText(
-    'Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber'
-  )]:
-    'Day1_10-35_Hohimer_McComb_Aasman_gistCyber.pdf',
+  [normalizeText('Track A Talk: National Security Ontology Foundry')]:
+    'Track A Talk: National Security Ontology Foundry.pdf',
+
+  [normalizeText('Track A Talk: Ontology Engineering as a Tradecraft')]:
+    'Track A Talk: Ontology Engineering as a Tradecraft.pdf',
+
+  [normalizeText('Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge')]:
+    'Track A Talk: Authoring Mission Threads with Semantic Technologies: From Narrative Workflows to Executable, Explainable Knowledge.pdf',
+
+  [normalizeText('Working Session A: FVEY Ontology Working Group')]:
+    'Working Session A: FVEY Ontology Working Group.pdf',
+
+  [normalizeText('Track B Talk: Ontology-Driven Test Strategy Optimization')]:
+    'Track B Talk: Ontology-Driven Test Strategy Optimization.pdf',
 
   [normalizeText('Keynote: Innovation in Three Decades')]:
     'Keynote: Innovation in Three Decades.pdf',
 
+  [normalizeText('Keynote: Operational Benefits of Standardization and Open Architectures')]:
+    'Keynote: Operational Benefits of Standardization and Open Architectures.pdf',
+
   [normalizeText('Demo B: Interactive Tool for Ontology Building')]:
-    'Day1_1300_ILIN-DBOL_DEMO.pdf',
+    'Demo B: Interactive Tool for Ontology Building.pdf',
 
-  [normalizeText(
-    'Track B Talk: Ensuring Object Singularity in an Integrated Knowledge Graph Ecosystem'
-  )]:
-    'day1_1530_trackB_hare_ID.pdf',
+  [normalizeText('Demo B: Trivyn, AI Augmented BFO-CCO Ontology Generation and Neurosymbolic Querying')]:
+    'Demo B: Trivyn, AI Augmented BFO-CCO Ontology Generation and Neurosymbolic Querying.pdf',
 
-  [normalizeText('Track A Talk: Ontology Engineering as a Tradecraft')]:
-    'Beverley - Ontology Engineering Tradecraft.pdf',
+  [normalizeText('Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis')]:
+    'Track B Talk: A Formal Framework for Ontological Vagueness in Intelligence Analysis.pdf',
 
-  [normalizeText(
-    'Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control'
-  )]:
-    'Day2_1045_Vizenor_Zenia.pdf',
+  [normalizeText('Demo A: SCRDF - Realizing the Semantics of Plans')]:
+    'Demo A: SCRDF - Realizing the Semantics of Plans.pdf',
 
-  [normalizeText(
-    'Track B Talk: Pangea CLP-PSL: Making Time Explicit in OWL-Centric Knowledge Graphs for Defense and Intelligence Applications'
-  )]:
-    'Day2_STIDS_Hicks_Pangea.pdf',
+  [normalizeText('Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control')]:
+    'Track A Talk: Zenia - An RDF-Native, Graph RAG, and Multi-Agent Reference Architecture for Explainable Zero Trust Access Control.pdf',
 
-  [normalizeText(
-    'Track A Talk: Transdisciplinary Research Implementation:'
-  )]:
-    '20260522 Transdisicplinary Methods STIDS.pdf',
+  [normalizeText('Track A Talk: Ontology for Attacks in Cyber Risk Assessment')]:
+    'Track A Talk: Ontology for Attacks in Cyber Risk Assessment.pdf',
 
-  [normalizeText('Working Session A: FVEY Ontology Working Group')]:
-    'FVEY STIDS.pdf',
+  [normalizeText('Demo B: Interactive Tool for Ontology Building')]:
+    'Demo B: Interactive Tool for Ontology Building.pdf',
 
-  [normalizeText(
-    'Demo B: Trivyn - AI-Augmented BFO/CCO Ontology Generation & Neurosymbolic Querying'
-  )]:
-    'Day2_1200_Adam_Trivyn.pdf',
+  [normalizeText('Track B Talk: Ensuring Object Singularity in an Integrated Knowledge Graph Ecosystem')]:
+    'Track B Talk: Ensuring Object Singularity in an Integrated Knowledge Graph Ecosystem.pdf',
+  
+  [normalizeText('Track A Talk: Transdisciplinary Research Implementation, Hybrid Models, Hybrid Teams and Big Theory')]:
+    'Track A Talk: Transdisciplinary Research Implementation, Hybrid Models, Hybrid Teams and Big Theory.pdf',
 
-  [normalizeText(
-    'Track B Talk: Beyond Model Construction: Operationalizing Ontologies at Enterprise Scale'
-  )]:
-    'Day2_1300_Weber_AppliedSemantics-v1.pdf',
+  [normalizeText('Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber')]:
+    'Track A Talk: Semantic Interoperability in Cybersecurity: Harmonizing Threat Intelligence with gist and gistCyber.pdf',
+
 };
 
 function getSlidesFileName(title) {
   return slidesByTopic[normalizeText(title)] || null;
 }
 
-function getSlidesPageUrl(pdfFileName) {
-  return `/events/stids2026/slides?file=${encodeURIComponent(pdfFileName)}`;
+function SlidesLink({ pdfFileName }) {
+  const pdfUrl = useBaseUrl(
+    `/presentations/stids2026/${encodeURIComponent(pdfFileName)}`
+  );
+
+  return (
+    <a
+      href={pdfUrl}
+      className={styles.slidesLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      SLIDES
+    </a>
+  );
 }
 
 function AgendaRow({ row }) {
@@ -469,12 +488,7 @@ function AgendaRow({ row }) {
               {slidesFileName && (
                 <>
                   {' '}
-                  <a
-                    href={getSlidesPageUrl(slidesFileName)}
-                    className={styles.slidesLink}
-                  >
-                    SLIDES
-                  </a>
+                  <SlidesLink pdfFileName={slidesFileName} />
                 </>
               )}
             </React.Fragment>

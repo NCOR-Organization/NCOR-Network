@@ -32,10 +32,6 @@ export default function STIDS2026() {
       <STIDS2025Hero />
       <Overview />
 
-      <section id="registration">
-        <Registration />
-      </section>
-
       <PacketDownloads />
 
       <Agenda />
