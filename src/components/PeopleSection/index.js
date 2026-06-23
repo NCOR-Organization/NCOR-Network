@@ -7,7 +7,7 @@ const PeopleList = [
   // Leadership
   {
     name: 'Dr. Barry Smith',
-    title: 'Director of NCOR',
+    title: 'Chair, Board of Directors',
     initials: 'BS',
     image: '/img/people/barry_smith.jpeg',
     affiliation: 'University at Buffalo',
@@ -16,13 +16,15 @@ const PeopleList = [
   },
   {
     name: 'Dr. John Beverley',
-    title: 'Vice President of NCOR',
+    title: 'President and member of Board of Directors',
     initials: 'JB',
     image: '/img/people/john_beverley.jpeg',
     affiliation: 'University at Buffalo',
     profileLink: 'https://www.linkedin.com/in/john-beverley-869445a0/',
     group: 'Leadership',
   },
+
+  // Core Contributors
   {
     name: 'Alan Ruttenberg',
     title: 'Ontologist, OBO Foundry',
@@ -30,10 +32,8 @@ const PeopleList = [
     image: 'https://ubwp.buffalo.edu/ncor/wp-content/uploads/sites/40/2015/10/Alan-Ruttenberg-300x225.jpg',
     affiliation: 'University at Buffalo',
     profileLink: 'https://creativecommons.org/about/program-areas/open-science',
-    group: 'Leadership',
+    group: 'Core Contributors',
   },
-
-  // Core Contributors
   {
     name: 'Mark Jensen',
     title: 'Data Scientist',
@@ -54,7 +54,7 @@ const PeopleList = [
   },
 ];
 
-function PersonCard({name, title, initials, image, affiliation, profileLink}) {
+function PersonCard({ name, title, initials, image, affiliation, profileLink }) {
   return (
     <div className={styles.personCard}>
       {image ? (
@@ -66,9 +66,11 @@ function PersonCard({name, title, initials, image, affiliation, profileLink}) {
           {initials}
         </div>
       )}
+
       <h3 className={styles.personName}>{name}</h3>
       <div className={styles.personTitle}>{title}</div>
       <div className={styles.personAffiliation}>{affiliation}</div>
+
       <Link to={profileLink} className={styles.viewProfileLink}>
         View Profile <span style={{ marginLeft: '4px' }}>→</span>
       </Link>
@@ -88,26 +90,27 @@ export default function PeopleSection() {
             Meet the researchers and contributors behind our ontological projects
           </p>
         </div>
-        
-  {['Leadership', 'Core Contributors'].map((group) => (
-  <div key={group} className={styles.peopleGroup}>
-    <h3 className={styles.groupHeading}>{group}</h3>
-    <div className={styles.peopleGrid}>
-      {PeopleList.filter((person) => person.group === group).map((props, idx) => (
-        <PersonCard key={`${group}-${idx}`} {...props} />
-      ))}
-    </div>
-  </div>
-))}
-        
+
+        {['Leadership', 'Core Contributors'].map((group) => (
+          <div key={group} className={styles.peopleGroup}>
+            <h3 className={styles.groupHeading}>{group}</h3>
+            <div className={styles.peopleGrid}>
+              {PeopleList.filter((person) => person.group === group).map((props, idx) => (
+                <PersonCard key={`${group}-${idx}`} {...props} />
+              ))}
+            </div>
+          </div>
+        ))}
+
         <div className={styles.joinSection}>
           <div className={styles.joinContent}>
             <h3 className={styles.joinTitle}>Join Our Network</h3>
             <p className={styles.joinDescription}>
-              Become part of our international community of researchers and 
+              Become part of our international community of researchers and
               practitioners advancing the field of ontology.
             </p>
           </div>
+
           <div className={styles.joinButtons}>
             <Link className={styles.button} to="/join">
               Join NCOR
@@ -117,4 +120,4 @@ export default function PeopleSection() {
       </div>
     </section>
   );
-} 
+}

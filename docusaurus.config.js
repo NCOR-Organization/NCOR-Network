@@ -127,10 +127,12 @@ const config = {
   position: 'right',
   items: [
     { label: 'Overview', to: '/docs/credentialing/overview' },
-    { label: 'Why Certification?', to: '/docs/credentialing/why-certification' },
     { label: 'What Are Ontologies?', to: '/docs/credentialing/what-ontologies-are' },
+    { label: 'Why Certification?', to: '/docs/credentialing/why-certification' },
     { label: 'Ontology Vetting & Certification', to: '/docs/credentialing/ontology-vetting' },
     { label: 'Registry', to: '/docs/credentialing/registry' },
+    { label: 'Barry Smith Courses', to: '/wiki/courses/barry-smith' },
+    { label: 'John Beverley Courses', to: '/wiki/courses/john-beverley' },
   ],
 },
           {
@@ -142,18 +144,8 @@ const config = {
               { label: 'Projects', to: '/docs/research/projects' },
               { label: 'Cyber Ontology Foundry', to: '/docs/research/cyber-ontology-foundry' },
               { label: 'Publications', to: '/docs/research/publications' },
-            ],
-          },
-          {
-            type: 'dropdown',
-            label: 'Wiki',
-            position: 'right',
-            items: [
-              { label: 'Ontology 101', to: '/wiki/main-page' },
-              { label: 'Courses', to: '/wiki/courses/barry-smith' },
-              { label: 'Ontologies', to: '/wiki/ontologies/basic-formal-ontology' },
               { label: 'Books', to: '/wiki/books/why-machines-will-never-rule-the-world' },
-              { label: 'Glossary', to: '/wiki/glossary' },
+              { label: 'Ontologies', to: '/wiki/ontologies/basic-formal-ontology' },
             ],
           },
 {
@@ -161,13 +153,12 @@ const config = {
   label: 'Events',
   position: 'right',
   items: [
-    { label: 'STIDS 2026', to: '/events/stids2026' },
     { label: 'Calendar', to: '/docs/events/calendar' },
-    { label: 'Office Hours', to: '/docs/events/office-hours' },
-    { label: 'Meetings and Workshops', to: '/docs/events/meetings-workshops' },
+    { label: 'BFO-CCO Office Hours', to: '/docs/events/office-hours' },
     { label: 'Ontology 101 Working Group', to: '/docs/events/ontology-101' },
-    { label: 'Semantic Mappings Working Group', to: '/docs/events/semantic-mapping' },
     { label: 'Common Core Ontologies Working Groups', to: '/docs/events/common-core-ontologies' },
+    { label: 'STIDS 2026', to: '/events/stids2026' },
+    { label: 'Past Meetings and Workshops', to: '/docs/events/meetings-workshops' },
   ],
 },
           {
