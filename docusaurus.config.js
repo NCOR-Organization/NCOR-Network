@@ -158,6 +158,7 @@ const config = {
     { label: 'Ontology 101 Working Group', to: '/docs/events/ontology-101' },
     { label: 'Common Core Ontologies Working Groups', to: '/docs/events/common-core-ontologies' },
     { label: 'STIDS 2026', to: '/events/stids2026' },
+    { label: 'Summer School 2026', to: '/docs/events/summer-school-2026' },
     { label: 'Past Meetings and Workshops', to: '/docs/events/meetings-workshops' },
   ],
 },
