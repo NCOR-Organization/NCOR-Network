@@ -1,0 +1,700 @@
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 5rem;
+  font-size: 1.04rem;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border-radius: 24px;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(103, 177, 255, 0.28),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 20% 90%,
+      rgba(87, 236, 196, 0.16),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #071a32 0%, #0d3157 54%, #154f75 100%);
+  box-shadow: 0 24px 60px rgba(7, 26, 50, 0.2);
+}
+
+.heroGlow {
+  position: absolute;
+  top: -210px;
+  right: -150px;
+  width: 430px;
+  height: 430px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.heroGlow::before,
+.heroGlow::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.heroGlow::before {
+  inset: 65px;
+}
+
+.heroGlow::after {
+  inset: 130px;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 920px;
+}
+
+.eyebrow,
+.draftBadge,
+.freeBadge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin-bottom: 1.2rem;
+  padding: 0.45rem 0.8rem;
+  color: #dffbf2;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.courseCode {
+  margin: 0 0 0.35rem;
+  color: #b9d8f1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.heroTitle {
+  max-width: 900px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.heroTitle span {
+  display: block;
+  color: #7ee3c4;
+}
+
+.heroSubtitle {
+  margin: 1rem 0 0.5rem;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+}
+
+.heroDescription {
+  max-width: 760px;
+  margin: 0;
+  color: #d7e7f4;
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 9px;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    transform 150ms ease,
+    background 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.primaryButton {
+  color: #09223c;
+  background: #7ee3c4;
+  box-shadow: 0 8px 24px rgba(126, 227, 196, 0.18);
+}
+
+.primaryButton:hover {
+  color: #09223c;
+  text-decoration: none;
+  transform: translateY(-2px);
+  background: #a2efd7;
+}
+
+.secondaryButton {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.secondaryButton:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.factGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.fact {
+  min-height: 76px;
+  padding: 0.85rem 1rem;
+  background: rgba(5, 29, 52, 0.56);
+}
+
+.factLabel {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #9fc0d9;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fact strong {
+  color: #ffffff;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   SHARED SECTION STYLES
+   ========================================================= */
+
+.intro,
+.audienceSection,
+.syllabusSection {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.intro {
+  margin-bottom: 4.5rem;
+}
+
+.intro h2,
+.highlightSection h2,
+.audienceSection h2,
+.instructorSection h2,
+.syllabusSection h2,
+.moreInfo h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.introText {
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.sectionLabel,
+.sectionLabelLight {
+  margin-bottom: 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.sectionLabel {
+  color: var(--ifm-color-primary);
+}
+
+.sectionLabelLight {
+  color: #8ce7ca;
+}
+
+/* =========================================================
+   PROGRAM HIGHLIGHTS
+   ========================================================= */
+
+.highlightSection,
+.instructorSection {
+  margin-bottom: 4.5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  margin-top: 2rem;
+}
+
+.card {
+  min-height: 220px;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 30px rgba(20, 40, 70, 0.05);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(20, 40, 70, 0.1);
+}
+
+.cardNumber {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.card h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   AUDIENCE AND FORMAT
+   ========================================================= */
+
+.audienceSection {
+  margin-bottom: 4.5rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: 24px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.audienceContent > p {
+  line-height: 1.75;
+}
+
+.checkList {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkList li {
+  position: relative;
+  margin: 0.75rem 0;
+  padding-left: 1.75rem;
+}
+
+.checkList li::before {
+  position: absolute;
+  left: 0;
+  content: "✓";
+  color: var(--ifm-color-primary);
+  font-weight: 900;
+}
+
+.formatCard {
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 12px 35px rgba(20, 40, 70, 0.07);
+}
+
+.formatCard h3 {
+  margin-bottom: 0.35rem;
+}
+
+.formatDate {
+  color: var(--ifm-color-primary);
+  font-weight: 800;
+}
+
+.divider {
+  height: 1px;
+  margin: 1.6rem 0;
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* =========================================================
+   INSTRUCTORS
+   ========================================================= */
+
+.instructorGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  margin-top: 2rem;
+}
+
+.instructor {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+}
+
+.initials {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: linear-gradient(135deg, #143d68, #177899);
+  font-weight: 850;
+}
+
+.instructor h3,
+.instructor p {
+  margin: 0;
+}
+
+.instructor p {
+  margin-top: 0.3rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* =========================================================
+   REGISTRATION
+   ========================================================= */
+
+.registrationSection {
+  scroll-margin-top: 90px;
+  margin-bottom: 4.5rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: 25px;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(126, 227, 196, 0.14),
+      transparent 25%
+    ),
+    linear-gradient(145deg, #081d35, #0e385d);
+  box-shadow: 0 25px 65px rgba(8, 29, 53, 0.22);
+}
+
+.registrationHeading {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.registrationHeading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: -0.04em;
+}
+
+.freeBadge {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.9rem;
+  color: #09223c;
+  background: #7ee3c4;
+}
+
+.registrationIntro {
+  max-width: 770px;
+  color: #d7e7f4;
+  font-size: 1.12rem;
+  line-height: 1.75;
+}
+
+.registrationNotes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.registrationNotes > div {
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.registrationNotes strong,
+.registrationNotes span {
+  display: block;
+}
+
+.registrationNotes strong {
+  margin-bottom: 0.55rem;
+  color: #ffffff;
+}
+
+.registrationNotes span {
+  color: #c9dceb;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.registrationNotes a,
+.formAlternative a {
+  color: #8ce7ca;
+}
+
+.formWrapper {
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.formFrame {
+  display: block;
+  width: 100%;
+  height: 980px;
+  border: 0;
+  background: #ffffff;
+}
+
+.formAlternative,
+.privacyNotice {
+  color: #c9dceb;
+  font-size: 0.91rem;
+}
+
+.formAlternative {
+  margin-top: 1rem;
+}
+
+.privacyNotice {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   SYLLABUS
+   ========================================================= */
+
+.syllabusSection {
+  align-items: center;
+  margin-bottom: 4.5rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 22px;
+}
+
+.draftBadge {
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.75rem;
+  color: #744f00;
+  background: #fff0b3;
+}
+
+.downloadCard {
+  display: flex;
+  gap: 1.15rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+  transition: transform 150ms ease;
+}
+
+.downloadCard:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.downloadIcon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: var(--ifm-color-primary);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.downloadCard strong,
+.downloadCard small {
+  display: block;
+}
+
+.downloadCard small {
+  margin-top: 0.25rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* =========================================================
+   ADDITIONAL INFORMATION
+   ========================================================= */
+
+.moreInfo {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.moreInfo p {
+  max-width: 680px;
+  margin: 0 auto 1.25rem;
+}
+
+.moreInfo a {
+  font-weight: 800;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .factGrid,
+  .cardGrid,
+  .registrationNotes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro,
+  .audienceSection,
+  .syllabusSection {
+    grid-template-columns: 1fr;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.6rem, 8vw, 4rem);
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .page {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .hero {
+    margin-bottom: 3.5rem;
+    padding: 2rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .heroGlow {
+    top: -260px;
+    right: -220px;
+  }
+
+  .eyebrow {
+    margin-bottom: 1rem;
+    font-size: 0.68rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.5rem, 12vw, 3.25rem);
+    line-height: 1;
+  }
+
+  .heroSubtitle {
+    font-size: 1.3rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .factGrid,
+  .cardGrid,
+  .instructorGrid,
+  .registrationNotes {
+    grid-template-columns: 1fr;
+  }
+
+  .fact {
+    min-height: auto;
+  }
+
+  .registrationSection {
+    padding: 2rem 1.2rem;
+    border-radius: 18px;
+  }
+
+  .registrationHeading {
+    display: block;
+  }
+
+  .freeBadge {
+    margin-top: 1rem;
+  }
+
+  .formFrame {
+    height: 1100px;
+  }
+}
