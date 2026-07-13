@@ -1,6 +1,6 @@
 ---
 title: Intensive Ontology Summer School
-description: PHI 605SEM-SMI (13336), The World's Ontology Ecosystem, August 3–7, 2026.
+description: PHI 605SEM (13336), The World's Ontology Ecosystem, August 3–7, 2026. Co-sponsored by the University at Buffalo and the National Center for Ontological Research.
 hide_title: true
 hide_table_of_contents: true
 ---
@@ -13,8 +13,6 @@ import styles from './styles.module.css';
   <div className={styles.heroGlow}></div>
 
   <div className={styles.heroContent}>
-    
-
     <p className={styles.courseCode}>
       PHI 605SEM (13336)
     </p>
@@ -31,8 +29,12 @@ import styles from './styles.module.css';
     <p className={styles.heroDescription}>
       An intensive five-day introduction to Basic Formal Ontology,
       ontology engineering, knowledge graphs, semantic interoperability,
-      and ontology-driven applications.
+      and ontology-driven applications. All instructional content will be
+      available live online and as recordings, allowing participants to join
+      synchronously or review sessions asynchronously.
     </p>
+
+    
 
     <div className={styles.heroActions}>
       <a
@@ -46,7 +48,7 @@ import styles from './styles.module.css';
         className={styles.secondaryButton}
         href="/documents/summer-school-2026/PHI605_Ontology_Ecosystem_Syllabus.docx"
       >
-        Download Syllabus
+        Download syllabus
       </a>
     </div>
 
@@ -57,18 +59,27 @@ import styles from './styles.module.css';
       </div>
 
       <div className={styles.fact}>
-        <span className={styles.factLabel}>Location</span>
-        <strong>Washington, DC</strong>
+        <span className={styles.factLabel}>Daily schedule</span>
+        <strong>
+          [START TIME]–[END TIME]{' '}
+          <span className={styles.keepTogether}>
+            Eastern Time<sup className={styles.footnoteRef}><a href="#schedule-note" aria-label="See schedule note 1">1</a></sup>
+          </span>
+        </strong>
+      </div>
+
+      <div className={styles.fact}>
+        <span className={styles.factLabel}>In-person location</span>
+        <strong>
+          [VENUE NAME]<br />
+          [FULL STREET ADDRESS]<br />
+          Washington, DC [ZIP CODE]
+        </strong>
       </div>
 
       <div className={styles.fact}>
         <span className={styles.factLabel}>Participation</span>
-        <strong>In person or online</strong>
-      </div>
-
-      <div className={styles.fact}>
-        <span className={styles.factLabel}>Instructors</span>
-        <strong>John Beverley and Barry Smith</strong>
+        <strong>In person, live online, or by recording</strong>
       </div>
     </div>
   </div>
@@ -79,14 +90,18 @@ import styles from './styles.module.css';
 <section className={styles.intro}>
   <div>
     <p className={styles.sectionLabel}>Course overview</p>
-    <h2>Ontology from philosophical foundations to practical systems</h2>
+
+    <h2>
+      Ontology from philosophical foundations to practical systems
+    </h2>
   </div>
 
   <div className={styles.introText}>
     <p>
-      This intensive hybrid graduate seminar is offered by the University
-      at Buffalo and introduces ontology as both a philosophical discipline
-      and a practical technology for modern information systems.
+      Co-sponsored by the University at Buffalo and the National Center
+      for Ontological Research, this intensive hybrid graduate seminar
+      introduces ontology as both a philosophical discipline and a practical
+      technology for modern information systems.
     </p>
 
     <p>
@@ -95,17 +110,28 @@ import styles from './styles.module.css';
       government, industry, finance, law, national security, and artificial
       intelligence.
     </p>
+
+    <p>
+      All instructional content will be available online both synchronously
+      and asynchronously. Participants may join sessions live, and recordings
+      will be made available afterward. Those attending in person will
+      therefore be able to revisit material or make up any sessions or
+      portions of sessions they miss.
+    </p>
   </div>
 </section>
 
 <section className={styles.highlightSection}>
   <p className={styles.sectionLabel}>Program highlights</p>
+
   <h2>What you will explore</h2>
 
   <div className={styles.cardGrid}>
     <article className={styles.card}>
       <div className={styles.cardNumber}>01</div>
+
       <h3>Foundations</h3>
+
       <p>
         Basic Formal Ontology, realism, universals and particulars,
         and the role of upper-level ontologies.
@@ -114,7 +140,9 @@ import styles from './styles.module.css';
 
     <article className={styles.card}>
       <div className={styles.cardNumber}>02</div>
+
       <h3>Standards</h3>
+
       <p>
         BFO and ISO/IEC 21838, ontology standards, governance,
         interoperability, and shared semantic infrastructure.
@@ -123,7 +151,9 @@ import styles from './styles.module.css';
 
     <article className={styles.card}>
       <div className={styles.cardNumber}>03</div>
+
       <h3>Engineering</h3>
+
       <p>
         Ontology engineering tradecraft, modeling patterns, quality
         control, evaluation, and maintainable ontology development.
@@ -132,7 +162,9 @@ import styles from './styles.module.css';
 
     <article className={styles.card}>
       <div className={styles.cardNumber}>04</div>
+
       <h3>Knowledge graphs</h3>
+
       <p>
         The relationship between ontologies, knowledge graphs,
         semantic interoperability, and enterprise data integration.
@@ -141,7 +173,9 @@ import styles from './styles.module.css';
 
     <article className={styles.card}>
       <div className={styles.cardNumber}>05</div>
+
       <h3>Applications</h3>
+
       <p>
         Ontology applications in science, finance, law, government,
         national security, industry, and information systems.
@@ -150,7 +184,9 @@ import styles from './styles.module.css';
 
     <article className={styles.card}>
       <div className={styles.cardNumber}>06</div>
+
       <h3>Artificial intelligence</h3>
+
       <p>
         AI-assisted ontology construction, ontology-driven AI,
         emerging systems, and contemporary research directions.
@@ -162,6 +198,7 @@ import styles from './styles.module.css';
 <section className={styles.audienceSection}>
   <div className={styles.audienceContent}>
     <p className={styles.sectionLabel}>Who should attend?</p>
+
     <h2>Designed for a multidisciplinary audience</h2>
 
     <p>
@@ -184,32 +221,68 @@ import styles from './styles.module.css';
     <p className={styles.sectionLabel}>Course format</p>
 
     <h3>Workshop week</h3>
-    <p className={styles.formatDate}>August 3–7, 2026</p>
+
+    <p className={styles.formatDate}>
+      August 3–7, 2026
+    </p>
+
     <p>
-      Interactive lectures, workshops, demonstrations, group discussions,
-      and debates, available in person and online.
+      <strong>Daily schedule:</strong>{' '}
+      [START TIME]–[END TIME]{' '}
+      <span className={styles.keepTogether}>
+        Eastern Time<sup className={styles.footnoteRef}><a href="#schedule-note" aria-label="See schedule note 1">1</a></sup>
+      </span>
+    </p>
+
+    <p>
+      <strong>In-person location:</strong><br />
+      [VENUE NAME]<br />
+      [FULL STREET ADDRESS]<br />
+      Washington, DC [ZIP CODE]
+    </p>
+
+    <p>
+      The workshop week will include interactive lectures, workshops,
+      demonstrations, group discussions, and debates.
+    </p>
+
+    <p>
+      All instructional content will be available live online and as
+      recordings. Online participants may take part synchronously or review
+      sessions later. In-person participants may also use the recordings to
+      revisit course content or make up gaps in attendance.
     </p>
 
     <div className={styles.divider}></div>
 
     <h3>Graduate-credit track</h3>
+
     <p>
-      Students seeking University at Buffalo graduate credit will also
-      participate in post-workshop Zoom seminars, logic exercises,
-      presentations, and research-paper development.
+      Students registered for University at Buffalo graduate credit will
+      also participate in post-workshop Zoom seminars, logic exercises,
+      student presentations, and research-paper development.
     </p>
   </aside>
 </section>
 
 <section className={styles.instructorSection}>
   <p className={styles.sectionLabel}>Instruction</p>
+
   <h2>Course instructors</h2>
 
   <div className={styles.instructorGrid}>
     <article className={styles.instructor}>
-      <div className={styles.initials}>JB</div>
-      <div>
+      <div className={styles.photoFrame}>
+        <img
+          className={styles.instructorPhoto}
+          src="/img/people/JB-relaxed.png"
+          alt="John Beverley"
+        />
+      </div>
+
+      <div className={styles.instructorText}>
         <h3>John Beverley</h3>
+
         <p>
           University at Buffalo and National Center for Ontological Research
         </p>
@@ -217,9 +290,17 @@ import styles from './styles.module.css';
     </article>
 
     <article className={styles.instructor}>
-      <div className={styles.initials}>BS</div>
-      <div>
+      <div className={styles.photoFrame}>
+        <img
+          className={styles.instructorPhoto}
+          src="/img/people/barry_smith.jpeg"
+          alt="Barry Smith"
+        />
+      </div>
+
+      <div className={styles.instructorText}>
         <h3>Barry Smith</h3>
+
         <p>
           University at Buffalo and National Center for Ontological Research
         </p>
@@ -232,6 +313,7 @@ import styles from './styles.module.css';
   <div className={styles.registrationHeading}>
     <div>
       <p className={styles.sectionLabelLight}>Registration</p>
+
       <h2>Reserve your place</h2>
     </div>
 
@@ -240,31 +322,37 @@ import styles from './styles.module.css';
 
   <p className={styles.registrationIntro}>
     Everyone planning to attend should complete the attendance form,
-    including University at Buffalo students registering separately for
-    academic credit.
+    including University at Buffalo students who are registered separately
+    for academic credit.
   </p>
 
   <div className={styles.registrationNotes}>
     <div>
-      <strong>UB students</strong>
+      <strong>Registered UB students</strong>
+
       <span>
-        Register through HUB for PHI 605SEM-SMI (13336) and also complete
-        the attendance form below.
+        Students registered for PHI 605SEM (13336) through HUB should also
+        complete the attendance form below.
       </span>
     </div>
 
     <div>
       <strong>Prospective UB Applied Ontology students</strong>
+
       <span>
         Email <a href="mailto:ubreg@buffalo.edu">ubreg@buffalo.edu</a> and
-        explain that you wish to enroll before beginning the graduate program.
+        explain that you wish to register for the Summer 2026 course before
+        beginning the graduate program.
       </span>
     </div>
 
     <div>
       <strong>Other participants</strong>
+
       <span>
-        Complete the form below. There is no attendance fee.
+        Complete the attendance form below. There is no attendance fee, and
+        participation is available in person, live online, or through
+        recorded sessions.
       </span>
     </div>
   </div>
@@ -272,7 +360,7 @@ import styles from './styles.module.css';
   <div className={styles.formWrapper}>
     <iframe
       className={styles.formFrame}
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeEzorgzzy9iwkeqzVLRz3I-KqvLMWy_At6CnoxxNEEO-ZLWA/viewform?usp=dialog"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeEzorgzzy9iwkeqzVLRz3I-KqvLMWy_At6CnoxxNEEO-ZLWA/viewform?embedded=true"
       title="Intensive Ontology Summer School registration form"
       loading="lazy"
     />
@@ -290,11 +378,11 @@ import styles from './styles.module.css';
   </p>
 
   <p className={styles.privacyNotice}>
-    Registration information will be used only to administer the Summer
-    School and communicate with participants about course logistics.
+    Registration information will be used only by the University at Buffalo
+    and the National Center for Ontological Research to administer the
+    Summer School and communicate with participants about course logistics.
   </p>
 </section>
-
 
 <section className={styles.moreInfo}>
   <h2>Additional information</h2>
@@ -313,5 +401,14 @@ import styles from './styles.module.css';
   </a>
 </section>
 
+<p id="schedule-note" className={styles.footnote}>
+  <small>
+    <sup>1</sup> Daily session times are provisional and may be adjusted
+    according to participant availability and popular demand. Any changes
+    will be communicated to registered participants.
+  </small>
+</p>
+
 </main>
+
 </div>

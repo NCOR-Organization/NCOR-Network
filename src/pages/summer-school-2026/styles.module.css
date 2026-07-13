@@ -1,3 +1,7 @@
+/* =========================================================
+   PAGE
+   ========================================================= */
+
 .page {
   max-width: 1180px;
   margin: 0 auto;
@@ -11,9 +15,9 @@
 
 .hero {
   position: relative;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  overflow: hidden;
   margin-bottom: 4rem;
   padding: clamp(2rem, 4vw, 3.5rem);
   border-radius: 24px;
@@ -63,28 +67,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 920px;
-}
-
-.eyebrow,
-.draftBadge,
-.freeBadge {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.eyebrow {
-  margin-bottom: 1.2rem;
-  padding: 0.45rem 0.8rem;
-  color: #dffbf2;
-  background: rgba(255, 255, 255, 0.11);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 980px;
 }
 
 .courseCode {
@@ -117,12 +100,102 @@
 }
 
 .heroDescription {
-  max-width: 760px;
+  max-width: 790px;
   margin: 0;
   color: #d7e7f4;
   font-size: 1.04rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
+
+/* =========================================================
+   SPONSORS
+   ========================================================= */
+
+.sponsorBlock {
+  margin-top: 1.5rem;
+}
+
+.sponsorLabel {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: #b9d8f1;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sponsorLogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: stretch;
+}
+
+.sponsorCard {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  width: 350px;
+  min-height: 92px;
+  padding: 0.75rem 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 11px;
+  background: rgba(4, 20, 38, 0.64);
+}
+
+.ubLogoViewport,
+.ncorLogoViewport {
+  position: relative;
+  width: 112px;
+  height: 66px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.ubLogoViewport {
+  background: #ffffff;
+}
+
+.ncorLogoViewport {
+  background: #071a32;
+}
+
+.ubLogo,
+.ncorLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+.ubLogo {
+  transform: translate(-50%, -50%) scale(1.75);
+}
+
+.ncorLogo {
+  transform: translate(-50%, -50%) scale(2.8);
+}
+
+.sponsorName {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
 
 .heroActions {
   display: flex;
@@ -134,8 +207,8 @@
 .primaryButton,
 .secondaryButton {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-height: 46px;
   padding: 0.7rem 1.2rem;
   border-radius: 9px;
@@ -173,6 +246,10 @@
   background: rgba(255, 255, 255, 0.14);
 }
 
+/* =========================================================
+   HERO FACTS
+   ========================================================= */
+
 .factGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -185,8 +262,8 @@
 }
 
 .fact {
-  min-height: 76px;
-  padding: 0.85rem 1rem;
+  min-height: 92px;
+  padding: 0.9rem 1rem;
   background: rgba(5, 29, 52, 0.56);
 }
 
@@ -203,7 +280,7 @@
 .fact strong {
   color: #ffffff;
   font-size: 0.92rem;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 /* =========================================================
@@ -211,8 +288,7 @@
    ========================================================= */
 
 .intro,
-.audienceSection,
-.syllabusSection {
+.audienceSection {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(2rem, 6vw, 5rem);
@@ -227,7 +303,6 @@
 .highlightSection h2,
 .audienceSection h2,
 .instructorSection h2,
-.syllabusSection h2,
 .moreInfo h2 {
   margin-top: 0;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -261,8 +336,7 @@
    PROGRAM HIGHLIGHTS
    ========================================================= */
 
-.highlightSection,
-.instructorSection {
+.highlightSection {
   margin-bottom: 4.5rem;
 }
 
@@ -370,6 +444,10 @@
    INSTRUCTORS
    ========================================================= */
 
+.instructorSection {
+  margin-bottom: 4.5rem;
+}
+
 .instructorGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -378,25 +456,45 @@
 }
 
 .instructor {
-  display: flex;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
   gap: 1.25rem;
   align-items: center;
+  min-height: 160px;
   padding: 1.5rem;
+  overflow: hidden;
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 16px;
   background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 30px rgba(20, 40, 70, 0.05);
 }
 
-.initials {
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  color: #ffffff;
-  background: linear-gradient(135deg, #143d68, #177899);
-  font-weight: 850;
+.photoFrame {
+  width: 112px;
+  height: 112px;
+  overflow: hidden;
+  border: 3px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.instructorPhoto {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor:first-child .instructorPhoto {
+  object-position: center 20%;
+}
+
+.instructor:last-child .instructorPhoto {
+  object-position: center 18%;
+}
+
+.instructorText {
+  min-width: 0;
 }
 
 .instructor h3,
@@ -404,9 +502,14 @@
   margin: 0;
 }
 
+.instructor h3 {
+  font-size: 1.35rem;
+}
+
 .instructor p {
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
   color: var(--ifm-color-emphasis-700);
+  line-height: 1.55;
 }
 
 /* =========================================================
@@ -444,10 +547,18 @@
 }
 
 .freeBadge {
+  display: inline-flex;
   flex: 0 0 auto;
+  align-items: center;
+  width: fit-content;
   padding: 0.55rem 0.9rem;
+  border-radius: 999px;
   color: #09223c;
   background: #7ee3c4;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .registrationIntro {
@@ -502,7 +613,7 @@
 .formFrame {
   display: block;
   width: 100%;
-  height: 980px;
+  height: 1050px;
   border: 0;
   background: #ffffff;
 }
@@ -519,66 +630,6 @@
 
 .privacyNotice {
   margin-bottom: 0;
-}
-
-/* =========================================================
-   SYLLABUS
-   ========================================================= */
-
-.syllabusSection {
-  align-items: center;
-  margin-bottom: 4.5rem;
-  padding: clamp(2rem, 5vw, 3.5rem);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 22px;
-}
-
-.draftBadge {
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.75rem;
-  color: #744f00;
-  background: #fff0b3;
-}
-
-.downloadCard {
-  display: flex;
-  gap: 1.15rem;
-  align-items: center;
-  padding: 1.5rem;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 16px;
-  color: var(--ifm-font-color-base);
-  background: var(--ifm-color-emphasis-100);
-  text-decoration: none;
-  transition: transform 150ms ease;
-}
-
-.downloadCard:hover {
-  color: var(--ifm-font-color-base);
-  text-decoration: none;
-  transform: translateY(-3px);
-}
-
-.downloadIcon {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  color: #ffffff;
-  background: var(--ifm-color-primary);
-  font-size: 1.4rem;
-  font-weight: 900;
-}
-
-.downloadCard strong,
-.downloadCard small {
-  display: block;
-}
-
-.downloadCard small {
-  margin-top: 0.25rem;
-  color: var(--ifm-color-emphasis-700);
 }
 
 /* =========================================================
@@ -600,6 +651,41 @@
 }
 
 /* =========================================================
+   FOOTNOTE
+   ========================================================= */
+
+.keepTogether {
+  white-space: nowrap;
+}
+
+.footnoteRef {
+  position: relative;
+  top: -0.1em;
+  margin-left: 0.1em;
+  font-size: 0.68em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.footnoteRef a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footnoteRef a:hover {
+  text-decoration: underline;
+}
+
+.footnote {
+  scroll-margin-top: 90px;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+/* =========================================================
    TABLET
    ========================================================= */
 
@@ -611,13 +697,31 @@
   }
 
   .intro,
-  .audienceSection,
-  .syllabusSection {
+  .audienceSection {
+    grid-template-columns: 1fr;
+  }
+
+  .instructorGrid {
     grid-template-columns: 1fr;
   }
 
   .heroTitle {
     font-size: clamp(2.6rem, 8vw, 4rem);
+  }
+}
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 750px) {
+  .sponsorLogos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sponsorCard {
+    width: 100%;
   }
 }
 
@@ -640,11 +744,6 @@
   .heroGlow {
     top: -260px;
     right: -220px;
-  }
-
-  .eyebrow {
-    margin-bottom: 1rem;
-    font-size: 0.68rem;
   }
 
   .heroTitle {
@@ -672,13 +771,33 @@
 
   .factGrid,
   .cardGrid,
-  .instructorGrid,
   .registrationNotes {
     grid-template-columns: 1fr;
   }
 
   .fact {
     min-height: auto;
+  }
+
+  .instructor {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 1rem;
+    min-height: 118px;
+    padding: 1.1rem;
+  }
+
+  .photoFrame {
+    width: 82px;
+    height: 82px;
+    border-radius: 12px;
+  }
+
+  .instructor h3 {
+    font-size: 1.15rem;
+  }
+
+  .instructor p {
+    font-size: 0.9rem;
   }
 
   .registrationSection {
@@ -695,6 +814,28 @@
   }
 
   .formFrame {
-    height: 1100px;
+    height: 1150px;
+  }
+}
+
+/* =========================================================
+   NARROW MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+  .sponsorCard {
+    grid-template-columns: 88px minmax(0, 1fr);
+    min-height: 78px;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .ubLogoViewport,
+  .ncorLogoViewport {
+    width: 88px;
+    height: 54px;
+  }
+
+  .sponsorName {
+    font-size: 0.8rem;
   }
 }
