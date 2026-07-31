@@ -839,24 +839,3 @@
     font-size: 0.8rem;
   }
 }
-
-/* =========================================================
-   UB CREDIT REGISTRATION NOTICE
-   ========================================================= */
-
-.creditNotice {
-  max-width: 760px;
-  margin-top: 1.25rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-left: 4px solid #7edfc8;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 0.98rem;
-  line-height: 1.6;
-}
-
-.creditNotice strong {
-  color: #ffffff;
-}
