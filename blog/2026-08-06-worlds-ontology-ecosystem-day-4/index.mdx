@@ -1,0 +1,200 @@
+---
+title: "The World’s Ontology Ecosystem, Day 4: Building AI Workflows You Can Actually Validate"
+description: "Day 4 moved from AI critique to construction: when to use ontology, ontology as a collective-action problem, agentic AI, validation evidence chains, SHACL, and the Zebra Puzzle."
+slug: worlds-ontology-ecosystem-day-4
+authors:
+  - john
+tags:
+  - events
+  - ontology
+  - ai
+  - standards
+keywords:
+  - agentic AI
+  - ontology engineering
+  - knowledge graph
+  - SHACL
+  - SPARQL
+  - OWL
+  - ontology validation
+  - abductive reasoning
+  - deductive reasoning
+  - Zebra Puzzle
+---
+
+import './styles.css';
+
+<div className="hero">
+  <div className="heroText">
+    <div className="kicker">Event Report · The World’s Ontology Ecosystem · Day 4</div>
+    <h1>Building AI workflows you can actually validate</h1>
+    <p>Day 4 moved from critique to construction: when ontology is the right engineering choice, how agents can use semantic structure, and how reasoning, SHACL, SPARQL, and reproducible evidence can constrain probabilistic AI.</p>
+  </div>
+</div>
+
+<div className="questionBlock">
+  <div className="goodQuestion">Guiding question</div>
+  <blockquote>What does a trustworthy ontology-enabled AI workflow actually look like?</blockquote>
+</div>
+
+<div className="coreClaim">
+  <span>Core claim</span>
+  <p>AI workflows become more trustworthy when probabilistic outputs are surrounded by explicit semantics, deterministic tools, formal tests, provenance, and reproducible evidence. Ontology is most valuable not as decoration around an LLM, but as part of the control structure of the system.</p>
+</div>
+
+{/* truncate */}
+
+## First: should you use an ontology at all?
+
+Neil Otte opened by returning to a constraint introduced earlier in the week: ontology is a technical choice, not a ritual requirement.
+
+Ontologies become attractive when a project needs capabilities such as:
+
+- rule-based explainability;
+- formal consistency checking;
+- integration across heterogeneous data sources;
+- stable identifiers and reusable standards;
+- a persistent semantic layer that outlives particular applications;
+- flexible knowledge-graph structures under changing requirements; or
+- explicit class-level knowledge that matters to inference and query.
+
+When requirements are fixed and the data structure is simple, a mature conventional database solution may be entirely appropriate.
+
+The point is not to maximize ontology use.
+
+The point is to identify the problems for which governed semantics provide leverage.
+
+## Ontology as a collective-action problem
+
+Otte then introduced one of the day’s most useful analogies: ontology engineering can suffer from a **tragedy of the commons**.
+
+Ontologies are intended to reduce heterogeneity by giving communities shared ways to represent and query data.
+
+But if every team independently creates its own ontology, the original heterogeneity simply reappears at the ontology layer.
+
+Everyone acts rationally from the local perspective. Everyone creates exactly the model needed for the immediate project. Collectively, the organization ends up with a new interoperability problem.
+
+This is why reuse, upper-level alignment, foundries, standards, and governance matter.
+
+Ontology is a social enterprise because interoperability is a social achievement.
+
+## Agents still need to know what things mean
+
+Jeremy Ravenel then shifted the focus to the intersection of **ontologies, knowledge graphs, and agentic AI**.
+
+The agentic framing promises movement from “answers” to “actions.” But action does not remove the semantic problem.
+
+An agent can call tools, retrieve information, execute code, delegate to other agents, and iterate over candidate responses. None of that guarantees that the agent correctly understands the entities, relations, constraints, or context involved.
+
+The hard problem remains: **what do you mean by that?**
+
+That question becomes more important as agentic systems become more capable, because misunderstanding can now propagate into actions rather than merely text.
+
+## Validation should produce evidence
+
+A later session focused on validation as an engineering process rather than a final checkbox.
+
+A file is not “validated” merely because it parses.
+
+A knowledge graph is not validated because a query returns results.
+
+An ontology is not validated because a reasoner prints a success message.
+
+Different claims require different evidence.
+
+Syntax can be checked by parsers. Logical consequences can be checked by reasoners. Graph constraints can be tested with SHACL. Competency questions can be operationalized through SPARQL. Regression tests can reveal whether changes broke expected behavior. Python and other tooling can orchestrate these checks and create human-readable reports.
+
+The larger principle is **traceability**.
+
+A domain commitment should be traceable from its source, through conceptualization and formalization, into executable tests and reproducible evidence.
+
+That moves ontology validation closer to mature software and systems engineering.
+
+## Deduction, induction, and abduction
+
+The afternoon then turned to reasoning.
+
+Three forms were distinguished:
+
+<div className="statusStrip">
+  <span><strong>Deduction</strong> — what must follow</span>
+  <span><strong>Induction</strong> — probabilistic generalization</span>
+  <span><strong>Abduction</strong> — the best available explanation</span>
+</div>
+
+Real analytical work often requires all three.
+
+Formal ontology has traditionally been strongest in the deductive space. Generative AI is attractive partly because it can operate in the uncertain spaces where candidate explanations must be proposed.
+
+The challenge is to combine them without pretending they provide the same kind of warrant.
+
+## The Zebra Puzzle as a testbed
+
+The classic Zebra Puzzle provided a compact way to expose the difference.
+
+The full puzzle contains enough constraints to determine deductively who owns the zebra. Encode those constraints correctly in OWL, run an appropriate reasoner, and the answer follows from the model.
+
+Remove some clues and the situation changes.
+
+There may no longer be a deductively guaranteed answer. An AI agent can still propose a likely candidate—but now it is performing a different kind of task. It is generating a hypothesis under incomplete information.
+
+The exercise progressively added information, allowing participants to compare:
+
+- an unconstrained LLM;
+- an ontology-grounded LLM;
+- agent workflows with critic components; and
+- workflows in which SHACL or other formal checks rejected candidate outputs that violated explicit constraints.
+
+The point was not that the Zebra Puzzle is an important real-world application.
+
+The point was that it provides a controlled environment in which different reasoning architectures can be compared.
+
+## Minimize the uncertain space
+
+The strongest lesson from the exercise was architectural.
+
+Do not ask probabilistic AI to guess what a deterministic method can establish.
+
+Use ontology, formal reasoning, constraints, query, and validation to reduce the problem first. Then use abductive or statistical methods in the remaining space where uncertainty is genuine.
+
+In other words:
+
+<div className="pullQuote">Minimize the space in which abduction is required.</div>
+
+That principle scales beyond puzzles. Supply chains, intelligence analysis, entity resolution, organizational data, and other complex environments contain mixtures of known facts, missing information, conflicting evidence, and candidate explanations.
+
+A robust architecture should distinguish among them.
+
+<div className="comparison">
+  <div className="compareCardStrong">
+    <h3>Formal and deterministic</h3>
+    <p>Use reasoners, queries, constraints, and validators wherever the system can establish an answer explicitly.</p>
+  </div>
+  <div className="compareCard">
+    <h3>Probabilistic and abductive</h3>
+    <p>Use agents and statistical methods where incomplete information genuinely requires hypothesis generation.</p>
+  </div>
+</div>
+
+:::tip NCOR takeaway
+The future of ontology-enabled AI is not “LLM + ontology” as a slogan. It is an engineered division of labor: explicit semantics, deterministic checks, probabilistic hypothesis generation, validation, provenance, and human adjudication where uncertainty remains.
+:::
+
+## Can the machine be intelligent?
+
+The day ended by reopening the philosophical question.
+
+Barry Smith, John Beverley, Jeremy Ravenel, and participants debated whether machines merely simulate aspects of intelligence or could eventually possess the kinds of capabilities associated with intelligence.
+
+The discussion ranged from the Clever Hans effect to artificial general intelligence, novelty, creativity, world models, and the difference between performing a task and understanding what one is doing.
+
+The debate remained unresolved—as it should.
+
+But by that point, the practical lesson was clearer than the metaphysical one: **we do not need to settle the nature of machine intelligence before building systems that are easier to inspect, constrain, and trust.**
+
+<div className="finalLine">Day 5 would turn from today’s architectures to the future of the field itself.</div>
+
+## Course resources
+
+- [The World’s Ontology Ecosystem course repository](https://github.com/Applied-Ontology-Education/World-s-Ontology-Ecosystem)
+- [NCOR Summer School 2026](https://ncor-network.org/summer-school-2026)

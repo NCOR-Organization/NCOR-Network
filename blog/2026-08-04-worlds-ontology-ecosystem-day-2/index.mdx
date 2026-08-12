@@ -1,0 +1,143 @@
+---
+title: "The World’s Ontology Ecosystem, Day 2: Careful Modeling Is the Point"
+description: "Day 2 of The World’s Ontology Ecosystem applied ontology tradecraft to difficult cases: fictional and unreal entities, law, systems, definitions, OWL reasoning, and design patterns."
+slug: worlds-ontology-ecosystem-day-2
+authors:
+  - john
+tags:
+  - events
+  - ontology
+  - standards
+keywords:
+  - ontology modeling
+  - ontology engineering
+  - Basic Formal Ontology
+  - BFO
+  - OWL
+  - legal ontology
+  - systems ontology
+  - fictional entities
+  - design patterns
+  - semantic interoperability
+---
+
+import './styles.css';
+
+<div className="hero">
+  <div className="heroText">
+    <div className="kicker">Event Report · The World’s Ontology Ecosystem · Day 2</div>
+    <h1>Careful modeling is the point</h1>
+    <p>Day 2 moved from the foundations of ontology engineering to difficult modeling practice: unreal and fictional subject matter, law, systems, definitions, design patterns, OWL, and reasoning.</p>
+  </div>
+</div>
+
+<div className="questionBlock">
+  <div className="goodQuestion">Guiding question</div>
+  <blockquote>What does competent ontology engineering look like when the easy modeling choices stop working?</blockquote>
+</div>
+
+<div className="coreClaim">
+  <span>Core claim</span>
+  <p>Good ontology engineering is not a mechanical translation from nouns to classes and verbs to relations. It requires disambiguation, explicit ontological commitments, defensible definitions, reusable design patterns, and formal tests of what follows from the model.</p>
+</div>
+
+{/* truncate */}
+
+## Why start with things that do not exist?
+
+The first challenge was intentionally awkward for a realist ontology: **how should we represent things such as Superman, fictional worlds, planned systems, simulations, or entities that may never exist?**
+
+The tempting move is to create an individual for the fictional or merely possible thing and proceed as though it were an ordinary object in the world.
+
+But that creates exactly the sort of ontological commitment a realist methodology is supposed to prevent.
+
+The alternative developed during the session begins with things that do exist: documents, plans, statements, models, simulations, images, specifications, and other information-bearing artifacts. These can be *about* arrangements described using real classes without requiring an instance of the described fictional entity.
+
+This matters in practice far beyond fiction.
+
+Engineering specifications can describe systems that have not yet been built. Threat assessments can describe scenarios that never occur. Simulations can represent hypothetical events. Plans can concern future states of affairs. A realist ontology needs to represent all of this without confusing a representation with the thing represented.
+
+OWL adds another layer of discipline because its formal restrictions determine which kinds of assertions can be made directly. The modeling strategy therefore has to respect both the ontological commitments and the logic used to encode them.
+
+## Law: where distinctions become institutional facts
+
+The legal sessions made the problem harder.
+
+Law contains documents, organizations, people, roles, obligations, claims, contracts, hearings, enactments, and many other kinds of entities. But the domain cannot be modeled by treating every legal term as one undifferentiated category.
+
+A contract is not the same thing as a document that records a contract. An obligation is not identical to the sentence that states it. A hearing is a process. A legal role depends on a bearer. Legal entities can come into existence through acts such as enactment and can cease through fulfillment, repeal, amendment, or other legally relevant processes.
+
+The discussion showed why competency questions are so important.
+
+A broad question such as “What laws or regulations serve as the legal basis for the patent application process?” immediately decomposes into more precise questions: What is a law? What is a patent? What is a patent application? What is the relevant process? Which organizations and roles participate? Which information artifacts provide evidence?
+
+Ontology engineering turns those questions into explicit distinctions that can eventually support a knowledge graph and executable queries.
+
+## Systems: everyone uses the word, few mean exactly the same thing
+
+The systems discussion exposed a different kind of ambiguity.
+
+“System” is one of the most common words in engineering and one of the easiest to use without specifying what is intended. A system may be characterized by its parts, organization, function, boundary, requirements, behavior, or relationship to a wider environment.
+
+The course did not treat this as a vocabulary problem to be solved by selecting a preferred definition and moving on.
+
+Instead, the point was methodological: when experts disagree over a difficult domain, ontology engineering should make the competing commitments visible. What counts as part of the system? What persists when components change? What distinguishes a system from an aggregate? How are requirements, functions, capabilities, and processes related?
+
+These are exactly the cases in which formalization is useful—provided formalization comes **after** the distinctions have been understood.
+
+## Definitions are engineering artifacts
+
+Day 2 also emphasized definition writing.
+
+A label is not a definition. A synonym list is not a definition. And a sentence that sounds natural is not necessarily useful for ontology engineering.
+
+Definitions should help users determine what belongs in a class and what does not. They should reveal the relevant parent category and the characteristics that distinguish the class from its siblings.
+
+That makes definitions part of quality assurance.
+
+A poorly defined class may sit comfortably in a hierarchy until it is compared with neighboring classes, used in a data mapping, or incorporated into an automated reasoning workflow. At that point, ambiguity that looked harmless becomes operational debt.
+
+## From design patterns to reasoning
+
+The afternoon exercises asked participants to turn the day’s lessons into formal models.
+
+Participants worked through design patterns, definitions, OWL encodings, and reasoner checks. The goal was not simply to produce a valid ontology file. It was to understand why a particular pattern represented the case better than plausible alternatives.
+
+This distinction is fundamental.
+
+A syntactically valid OWL file can still encode a bad model. A logically consistent ontology can still make the wrong commitment about the world. Automated reasoning can tell us what follows from the axioms we supplied; it cannot guarantee that we supplied the right axioms.
+
+That is why ontology engineering requires both formal tools and expert judgment.
+
+:::tip NCOR takeaway
+Formalization does not rescue a model that began with confused distinctions. The hard part comes first: identify what kind of things are involved, separate representations from their subjects, write defensible definitions, and only then encode commitments precisely enough to test.
+:::
+
+## The tradecraft in practice
+
+Across fictional entities, legal structures, and systems, Day 2 reinforced a repeatable pattern:
+
+<div className="semanticChecklist">
+  <h3>A repeatable modeling cycle</h3>
+  <ul>
+    <li>Begin with the problem and the questions the model must answer</li>
+    <li>Identify ambiguity before creating classes</li>
+    <li>Distinguish entities from information about those entities</li>
+    <li>Reuse upper- and middle-level structure where appropriate</li>
+    <li>Write definitions that expose the intended distinctions</li>
+    <li>Encode the model in a formal language</li>
+    <li>Run reasoning and other checks</li>
+    <li>Return to the domain when formal results expose a modeling problem</li>
+  </ul>
+</div>
+
+That cycle is slower than generating a hierarchy from a list of terms.
+
+It is also the reason the result is more valuable.
+
+<div className="finalLine">Day 3 would put this tradecraft under pressure from large language models and generative AI.</div>
+
+## Course resources
+
+- [The World’s Ontology Ecosystem course repository](https://github.com/Applied-Ontology-Education/World-s-Ontology-Ecosystem)
+- [NCOR Summer School 2026](https://ncor-network.org/summer-school-2026)

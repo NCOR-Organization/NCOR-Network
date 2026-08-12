@@ -1,0 +1,241 @@
+---
+title: "The World’s Ontology Ecosystem, Day 5: Where Ontology Engineering Goes Next"
+description: "The final day synthesized the week through participant presentations, a capstone exercise, competing visions for ontology engineering, formal verification, mapping, AI, and a final debate on machine science."
+slug: worlds-ontology-ecosystem-day-5
+authors:
+  - john
+tags:
+  - events
+  - ontology
+  - ai
+  - standards
+keywords:
+  - future of ontology engineering
+  - ontology mapping
+  - formal verification
+  - model checking
+  - artificial intelligence
+  - Basic Formal Ontology
+  - BFO
+  - ontology education
+  - semantic interoperability
+  - knowledge graphs
+---
+
+import './styles.css';
+
+<div className="hero">
+  <div className="heroText">
+    <div className="kicker">Event Report · The World’s Ontology Ecosystem · Day 5</div>
+    <h1>Where ontology engineering goes next</h1>
+    <p>The final day synthesized the week through participant presentations, capstone work, ontology mapping, formal verification, AI, tooling, education, and competing visions for the future of the field.</p>
+  </div>
+</div>
+
+<div className="questionBlock">
+  <div className="goodQuestion">Guiding question</div>
+  <blockquote>What should the next generation of ontology engineering become?</blockquote>
+</div>
+
+<div className="coreClaim">
+  <span>Core claim</span>
+  <p>The next generation of ontology engineering will be defined less by building isolated ontologies and more by governing mappings, connecting formal and statistical reasoning, integrating ontology with verification and AI workflows, improving tooling, and training enough practitioners to make semantic infrastructure operational at scale.</p>
+</div>
+
+{/* truncate */}
+
+## Participants take the floor
+
+The morning belonged largely to enrolled students.
+
+Their presentations demonstrated how wide the applied ontology problem space has become.
+
+Topics included:
+
+- representing plans, fictional content, and unreal entities within a realist framework;
+- distinguishing ontology repositories from ontology foundries;
+- deciding which ontology-engineering tasks can be delegated to LLMs and which require expert judgment;
+- explaining the transition from philosophical ontology to ontology engineering;
+- using shared semantics as a “universal translator” for counter-UAS operations;
+- connecting ontology with data-science pipelines;
+- representing military organizations and changing organizational structures;
+- modeling systems and their participants; and
+- testing whether AI can construct defensible ontology design patterns rather than merely generate OWL syntax.
+
+The presentations repeatedly returned to one lesson from the week: **syntactic success is cheap compared with semantic adequacy**.
+
+A SPARQL query can run and still fail to represent the intended competency question. An OWL file can be valid and still embody a poor design. An LLM can generate plausible mappings while missing whether two terms are equivalent, broader, narrower, context-dependent, or incompatible.
+
+The expert contribution lies partly in adjudicating those differences.
+
+## Propose, test, adjudicate
+
+One student presentation captured the emerging workflow particularly well:
+
+**propose → test → adjudicate**
+
+An LLM can propose candidate mappings, axioms, definitions, or queries.
+
+Formal tools can test the portions that are machine-checkable: logical consistency, SHACL constraints, duplicate detection, SPARQL regression tests, and other explicit requirements.
+
+Ontologists and domain experts then decide whether the candidate is actually correct for the domain and record the rationale.
+
+This is not a temporary compromise until AI becomes “good enough.”
+
+It is a mature engineering pattern for separating different kinds of evidence and responsibility.
+
+## The capstone: preserve meaning without demanding uniformity
+
+The final exercise pulled together themes from the entire week.
+
+A central problem was how to derive application-specific products from richer semantic models without allowing the downstream representation to silently redefine the source meaning.
+
+Operational systems often need simplification. They may require a smaller hierarchy, a local projection, different data structures, or a representation optimized for code.
+
+That can be acceptable.
+
+What matters is that simplification remains traceable and does not become semantic divergence.
+
+This set up the first future-oriented talk.
+
+## Mapping instead of endless ontology wars
+
+John Beverley’s vision for the future began from questions introduced on Day 1:
+
+**How much alignment can be enforced across communities without undermining their goals?**
+
+And when communities cannot fully align:
+
+**How can we minimize the downstream cost of that divergence?**
+
+One answer is more rigorous ontology mapping.
+
+Mappings should not be treated merely as labels saying that two classes “look similar.” They can be formal transformations between structures, allowing a dataset expressed under one ontology to be interpreted through another while making explicit which commitments are preserved and which must be weakened or abandoned.
+
+This changes the social dynamics of ontology alignment.
+
+Instead of requiring every disagreement among upper-level or domain ontologies to become a winner-take-all dispute, engineers can identify the exact points of agreement and incompatibility and design transformations around them.
+
+Reasoners can help expose where commitments conflict.
+
+That makes disagreement something to engineer around rather than merely argue about.
+
+<div className="comparison">
+  <div className="compareCard">
+    <h3>Winner-take-all alignment</h3>
+    <p>Force communities to choose one ontology, even when operational commitments differ.</p>
+  </div>
+  <div className="compareCardStrong">
+    <h3>Formal mapping</h3>
+    <p>Identify what can be preserved, expose incompatibilities, and weaken commitments only where required.</p>
+  </div>
+</div>
+
+## Ontology meets formal verification
+
+The second major direction was a closer relationship between ontology engineering and **formal verification**.
+
+Ontology has long promised reasoning. But reasoning is broader than classification in an OWL editor.
+
+Adjacent formal-methods communities work with:
+
+<div className="semanticChecklist">
+  <h3>Formal methods adjacent to ontology engineering</h3>
+  <ul>
+    <li>Proof checking and automated theorem proving</li>
+    <li>SAT solving</li>
+    <li>Model synthesis</li>
+    <li>Model checking</li>
+  </ul>
+</div>
+
+Model checking is especially relevant to systems whose possible states and failure conditions need to be examined.
+
+For ontology engineers, this suggests a shift in emphasis.
+
+The work will not disappear into tools, but part of the practitioner’s job may move from “construct more classes” toward **asking better questions of formally structured models**.
+
+The Zebra Puzzle was a toy version of this idea. Distributed systems, drone swarms, supply chains, and other operational environments are not.
+
+## Deduction and statistics belong in the same architecture
+
+The week also repeatedly challenged the idea that symbolic and statistical AI have to be competitors.
+
+Deductive systems are valuable when the premises and rules are sufficiently explicit.
+
+Statistical and generative systems are valuable where information is incomplete and hypotheses have to be generated.
+
+Inductive methods can identify regularities. Abductive methods can propose explanations. Ontologies can provide stable semantic structure connecting these processes.
+
+The research opportunity lies in combining them while keeping the kinds of warrant distinct.
+
+<div className="pullQuote">Known facts should not become guesses merely because an LLM sits in the workflow.</div>
+
+Guesses should not be presented as deductions merely because they sound confident.
+
+## Better tools, better training, wider use
+
+The future of the field is also a tooling and workforce problem.
+
+Protégé remains valuable for teaching and formal inspection, but the workflows discussed throughout the week point toward a second generation of ontology engineering environments: more automation, stronger validation, better mapping support, continuous quality checks, easier collaboration, AI-assisted—but not AI-governed—development, and more direct connections to operational software.
+
+Those tools will matter only if enough people know how to use them well.
+
+Education, credentialing, design patterns, public examples, open-source resources, and communities such as NCOR are therefore not peripheral to the technical future of ontology.
+
+They are part of the infrastructure required to realize it.
+
+## Ontology in an AI economy
+
+A final part of the future discussion concerned AI itself.
+
+As foundation models become more widely available, competitive advantage shifts toward the quality of the information and structure surrounding them.
+
+Ontologies and knowledge graphs can help organize training and retrieval environments, remove irrelevant ambiguity, provide reusable background knowledge, and support evaluation.
+
+That creates a market not only for ontology construction but for **ontology expertise, evaluation, validation, and semantic governance**.
+
+The faster organizations move with AI, the greater the need to know whether the semantics underneath those systems are actually sound.
+
+## Barry Smith and the future of BFO
+
+Barry Smith’s closing future-oriented session turned back toward the evolution of BFO and the expanding ecosystem built around it.
+
+The discussion considered areas in which BFO may need further development, including continuing work around systems and other categories needed by growing communities of users.
+
+That is itself evidence of a healthy ontology ecosystem.
+
+A top-level ontology is not valuable because it never changes. It is valuable when changes are made carefully enough to preserve the coordination that made the standard useful in the first place.
+
+:::tip NCOR takeaway
+The future of ontology engineering is not one universal file that eliminates disagreement. It is a mature semantic ecosystem: governed reference models, explicit mappings, formal verification, probabilistic and deductive methods used together, better tools, and communities capable of maintaining shared meaning over time.
+:::
+
+## Can AI do revolutionary science?
+
+The course ended appropriately—with another unresolved debate.
+
+The proposition concerned whether AI systems might perform “normal science” while remaining unable to perform the kind of revolutionary science associated with paradigm change.
+
+The discussion forced distinctions among search, discovery, novelty, creativity, collaboration, scientific judgment, and the role of accumulated disciplinary expertise.
+
+Can an AI system identify anomalies?
+
+Can it propose an unexpected theory?
+
+Does it count if humans provide the questions, tools, data, and evaluation?
+
+Must scientific creativity be autonomous?
+
+There was no final answer.
+
+But after five days, the debate itself illustrated something important about the course. Applied ontology is not a field in which difficult questions disappear once a formalism is introduced.
+
+The tradecraft gives us better ways to state the questions, expose the commitments, test what can be tested, and identify precisely where disagreement remains.
+
+<div className="finalLine">That is a good description of where ontology engineering should go next.</div>
+
+## Course resources
+
+- [The World’s Ontology Ecosystem course repository](https://github.com/Applied-Ontology-Education/World-s-Ontology-Ecosystem)
+- [NCOR Summer School 2026](https://ncor-network.org/summer-school-2026)

@@ -1,0 +1,174 @@
+---
+title: "The World’s Ontology Ecosystem, Day 3: AI Should Support Ontology Engineering, Not Replace It"
+description: "Day 3 examined what large language models can and cannot do for ontology engineering, from AI limitations and agentic systems to practical LLM workflows and evaluation of AI-generated ontologies."
+slug: worlds-ontology-ecosystem-day-3
+authors:
+  - john
+tags:
+  - events
+  - ontology
+  - ai
+keywords:
+  - ontology engineering
+  - artificial intelligence
+  - large language models
+  - LLM
+  - agentic AI
+  - neurosymbolic AI
+  - ontology validation
+  - Basic Formal Ontology
+  - OWL
+  - semantic reasoning
+---
+
+import './styles.css';
+
+<div className="hero">
+  <div className="heroText">
+    <div className="kicker">Event Report · The World’s Ontology Ecosystem · Day 3</div>
+    <h1>AI should support ontology engineering, not replace it</h1>
+    <p>Day 3 turned to large language models and generative AI: what they can accelerate, what they still get wrong, and how ontology engineers should evaluate AI-generated content rather than mistake plausibility for adequacy.</p>
+  </div>
+</div>
+
+<div className="questionBlock">
+  <div className="goodQuestion">Guiding question</div>
+  <blockquote>What should we actually use large language models for in ontology engineering?</blockquote>
+</div>
+
+<div className="coreClaim">
+  <span>Core claim</span>
+  <p>The useful question is not whether AI can produce ontology-shaped output. It can. The useful question is whether the resulting commitments are correct, reusable, governed, logically adequate, and defensible—and how AI can accelerate the parts of that process that are genuinely automatable.</p>
+</div>
+
+{/* truncate */}
+
+## Why plausible output is not enough
+
+Jobst Landgrebe and Barry Smith opened with a critical examination of contemporary AI systems and the limits of statistical modeling.
+
+Large language models can produce fluent language and can perform impressively across many tasks. But ontology engineering asks for more than fluent completion. It requires abstraction, comparison, generalization, planning, sustained domain judgment, and the ability to preserve many interacting constraints at once.
+
+Those requirements become especially visible when a task moves outside familiar patterns or when errors carry forward through a complex model.
+
+A generated class hierarchy may look reasonable. A generated definition may sound authoritative. A generated OWL file may even parse.
+
+None of those facts establishes that the ontology is good.
+
+## Ontology authoring is also a social process
+
+One of the most important points of the morning was that ontology engineering is not only an individual reasoning task.
+
+Shared ontologies exist for communities. They have users, stakeholders, domain experts, maintainers, downstream applications, review processes, and governance.
+
+An ontology author has to negotiate definitions, determine scope, reuse existing resources, explain modeling choices, respond to counterexamples, and build something that other people will actually adopt.
+
+That is why “generate an ontology from this document” captures so little of the real activity.
+
+The output file is only one artifact produced by a much larger engineering and governance process.
+
+## What ontology-grounded agentic AI changes
+
+The discussion then shifted from using AI **to make ontologies** toward using ontologies **inside AI systems**.
+
+Agentic AI systems typically surround one or more probabilistic models with additional components: controllers, retrieval systems, memory, intent classification, tools, code execution, validation, and guardrails.
+
+That architecture matters because not every part of an AI workflow has to be stochastic.
+
+If a deterministic method can answer a question, check a constraint, execute a query, or verify a formal consequence, there is little reason to replace that method with an unconstrained language-model guess.
+
+Ontologies can contribute structured semantics to this architecture. Formal logic, theorem proving, query, validation, and controlled retrieval can narrow the space in which the generative component needs to operate.
+
+This is the beginning of a more serious neurosymbolic strategy: not asking an LLM to become a reasoner, but connecting probabilistic capabilities with tools that already reason reliably in well-defined spaces.
+
+## A practical view of LLMs for ontology engineers
+
+Sydney Cohen then moved from conceptual critique to day-to-day ontology practice.
+
+The message was neither “never use LLMs” nor “let the LLM build everything.”
+
+LLMs can be valuable for language-heavy, high-volume, and reviewable work. They can assist with background research, coding, documentation, candidate terminology, draft definitions, tool use, and other tasks where a human or automated process can inspect the result.
+
+But domain research and ontology reuse illustrate the limit. Before minting a new class, an ontology engineer often needs to determine whether the relevant entity is already represented elsewhere, whether the candidate resource follows compatible commitments, and whether importing it will create downstream problems.
+
+Those are not merely string-matching decisions.
+
+## Reduce uncertainty before calling the LLM
+
+A particularly useful principle emerged from the practical session:
+
+<div className="pullQuote">Reduce uncertainty before handing the problem to the LLM.</div>
+
+If two labels can be compared syntactically, use a deterministic string measure first.
+
+If similarity can be estimated with a controlled embedding or other statistical method, use that evidence.
+
+If the question is answerable through SPARQL, use the query.
+
+If a reasoner can determine whether a consequence follows, run the reasoner.
+
+If SHACL or another validation language can test a requirement, use the test.
+
+Only after the well-structured parts of the problem have been handled should the workflow rely on a language model for interpretation, synthesis, or candidate generation.
+
+This makes the LLM one component in a larger engineering system rather than the source of semantic authority.
+
+## How to recognize AI-generated ontology problems
+
+Participants also discussed warning signs in AI-generated ontologies.
+
+Among them:
+
+<div className="lossGrid">
+  <div>Logical inconsistency</div>
+  <div>Implausibly placed classes</div>
+  <div>Weak or inexplicable parent assignments</div>
+  <div>Highly specific properties without a reuse strategy</div>
+  <div>Strange or disposable IRI patterns</div>
+  <div>Definitions that fail to distinguish sibling classes</div>
+  <div>Duplicated concepts that should have been reused</div>
+</div>
+
+The first check is often simple: **run the reasoner**.
+
+But that is only the first check. Logical consistency is a minimum requirement, not proof of ontological adequacy.
+
+## Participants evaluate the machine
+
+The afternoon exercise reversed the usual AI workflow.
+
+Instead of treating AI-generated ontology content as an answer, participants treated it as an object of evaluation.
+
+They inspected generated artifacts, identified modeling failures, compared them with the tradecraft developed earlier in the week, and asked what kinds of checks could be automated.
+
+This is a healthier model for AI-assisted ontology engineering:
+
+**proposal → test → adjudication**
+
+The machine can propose. Formal tools can test what is mechanically testable. Ontologists and subject-matter experts can accept, revise, or reject the proposal and record why.
+
+:::tip NCOR takeaway
+The goal is not to keep AI out of ontology engineering. It is to put AI in the right place. Use deterministic tools where the problem is determinate, formal semantics where commitments must be explicit, and generative AI where language-based inference or synthesis adds value.
+:::
+
+## The debates underneath the technology
+
+The day closed with debates that exposed the deeper questions behind the tooling:
+
+- Does Searle’s Chinese Room argument still apply to contemporary LLMs?
+- Can an organization begin ontologizing too early?
+- Do commercial incentives encourage weak ontologies?
+- Should ontology files contain particulars?
+- Can formal ontologies become rigid enough to suppress innovation?
+- Could future AI systems become capable of authoring high-quality ontologies?
+
+Those questions were intentionally left open.
+
+What Day 3 did establish was a more useful standard for answering them: **do not judge AI by how ontology-like its output appears. Judge the workflow by what can be verified, traced, governed, and trusted.**
+
+<div className="finalLine">Day 4 would take that standard into implementation.</div>
+
+## Course resources
+
+- [The World’s Ontology Ecosystem course repository](https://github.com/Applied-Ontology-Education/World-s-Ontology-Ecosystem)
+- [NCOR Summer School 2026](https://ncor-network.org/summer-school-2026)

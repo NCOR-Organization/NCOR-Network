@@ -1,0 +1,147 @@
+---
+title: "The World’s Ontology Ecosystem, Day 1: From Philosophy to Tradecraft"
+description: "Day 1 of NCOR and the University at Buffalo’s World’s Ontology Ecosystem summer school established the foundations of applied ontology: its history, ecosystem, foundries, operational value, and engineering tradecraft."
+slug: worlds-ontology-ecosystem-day-1
+authors:
+  - john
+tags:
+  - events
+  - ontology
+  - standards
+keywords:
+  - applied ontology
+  - ontology engineering
+  - Basic Formal Ontology
+  - BFO
+  - ontology foundry
+  - semantic interoperability
+  - ontology tradecraft
+  - University at Buffalo
+  - NCOR
+---
+
+import './styles.css';
+
+<div className="hero">
+  <div className="heroText">
+    <div className="kicker">Event Report · The World’s Ontology Ecosystem · Day 1</div>
+    <h1>From philosophy to tradecraft</h1>
+    <p>The opening day established the foundations of applied ontology: where the field came from, why shared semantic infrastructure matters, and what distinguishes ontology engineering as a professional tradecraft.</p>
+  </div>
+</div>
+
+<div className="questionBlock">
+  <div className="goodQuestion">Guiding question</div>
+  <blockquote>What kind of field is applied ontology, and what does someone need to know to practice it well?</blockquote>
+</div>
+
+<div className="coreClaim">
+  <span>Core claim</span>
+  <p>Ontology engineering is not simply the production of class hierarchies or knowledge graphs. It is a discipline for making distinctions explicit, preserving meaning across systems, improving information quality, and coordinating communities around reusable semantic commitments.</p>
+</div>
+
+{/* truncate */}
+
+## From ontology as philosophy to ontology as engineering
+
+Barry Smith opened the substantive program by tracing ontology from its philosophical origins into its modern computational setting.
+
+That history matters because contemporary ontology engineering inherits a demanding question from philosophy: **what kinds of things are there, and how should we distinguish them?** But applied ontology adds an engineering requirement. The distinctions must be made explicit enough to support data integration, reasoning, validation, reuse, and operational systems.
+
+The transition from philosophy to engineering does not remove the philosophical problem. It makes the consequences of getting it wrong easier to see.
+
+A confused distinction may become a confused class hierarchy. A confused class hierarchy may become a confused data model. Once that model is reused across systems, the original ambiguity can propagate into queries, analytics, automation, and AI.
+
+## The ontology ecosystem
+
+The next session widened the view from individual ontologies to the larger ecosystem in which they live.
+
+Modern ontology work is distributed across biomedical research, manufacturing, defense and intelligence, geospatial information, law, supply chains, and many other domains. These efforts differ in purpose and institutional setting, but they face a common problem: **local success does not automatically produce interoperability**.
+
+An ontology can be internally coherent and still fail to work with anything else.
+
+That is one reason upper-level resources such as **Basic Formal Ontology (BFO)** and shared middle-level resources matter. They provide common points of reference that allow independently developed domain ontologies to make compatible distinctions about such things as objects, processes, roles, qualities, information artifacts, and relations.
+
+## Why foundries exist
+
+John Beverley then focused on ontology foundries, including the Open Biological and Biomedical Ontologies (OBO) Foundry, the Industrial Ontologies Foundry (IOF), and national-security-oriented foundry and federation efforts.
+
+The important point was not merely that foundries provide places to publish ontology files.
+
+<div className="semanticChecklist">
+  <h3>A serious foundry coordinates four things</h3>
+  <ul>
+    <li><strong>Meaning</strong> — identifiers, definitions, relations, and axioms</li>
+    <li><strong>Method</strong> — modeling principles, reuse expectations, and quality criteria</li>
+    <li><strong>Lifecycle</strong> — review, validation, release, deprecation, and maintenance</li>
+    <li><strong>Community</strong> — domain experts, ontology engineers, implementers, and governance bodies</li>
+  </ul>
+</div>
+
+This changes the problem from “How do I build an ontology?” to “How do many communities build and use semantic assets without recreating the silos ontology was supposed to remove?”
+
+Two questions framed this discussion and continued to recur throughout the week:
+
+1. **How much alignment can be enforced across communities without undermining their operational goals?**
+2. **What can be done to minimize downstream alignment work when communities nevertheless diverge?**
+
+Those are not merely standards questions. They are architecture and governance questions.
+
+## Ontology has to earn its keep
+
+Denise Ferniza brought the discussion down to operational practice from an Air Force perspective.
+
+A recurring theme was return on investment. Ontology engineering is difficult work. It requires domain expertise, careful modeling, review, maintenance, and coordination. That effort is justified only when it produces capabilities that simpler approaches cannot provide as well.
+
+That is an important constraint on the field.
+
+Not every problem needs an ontology. Sometimes a database schema, controlled vocabulary, API, transformation script, or conventional software model is enough. The ontology engineer should therefore be able to explain what ontology contributes to a particular problem and, just as importantly, recognize when it is not the appropriate tool.
+
+## Ontology engineering as tradecraft
+
+The afternoon brought these threads together under the heading of **ontology tradecraft**.
+
+The central proposal was that ontology engineering is distinguished by the joint pursuit of two goals:
+
+- **interoperability**, and
+- **information quality**.
+
+Those goals are connected by **systematic disambiguation**.
+
+The same word may refer to different kinds of things. Different words may refer to the same thing. A database field may hide assumptions about time, identity, evidence, measurement, or context. Data may move successfully between systems while the meaning needed to interpret it remains trapped in code, documentation, or institutional practice.
+
+Ontology engineering tries to make those distinctions explicit before they become downstream integration problems.
+
+BFO and related resources are useful not because an upper ontology magically solves every domain problem, but because they force modelers to ask what kind of thing they are representing before they begin building local structures around familiar words.
+
+## From discussion to formal models
+
+Participants then moved into the course’s first hands-on exercises using GitHub, OWL, Protégé, and automated reasoning.
+
+The goal was not mastery of a particular editor. It was to expose a basic fact about formal ontology: **axioms have consequences**.
+
+As commitments are added to an ontology, the space of possible interpretations becomes smaller. A reasoner can then determine what follows from those commitments, expose certain inconsistencies, and make implicit structure visible.
+
+That lesson set up the rest of the week. Ontology engineering is not simply drawing boxes and arrows. It is the construction of representations whose commitments can be inspected, challenged, and tested.
+
+:::tip NCOR takeaway
+The value of ontology comes from disciplined meaning, not from the word “ontology” itself. The field succeeds when it combines careful distinctions, formal representation, reusable standards, operational value, and governance.
+:::
+
+## What Day 1 established
+
+By the end of Day 1, the course had established the vocabulary for everything that followed:
+
+- ontology as both a philosophical and engineering activity;
+- interoperability and information quality as linked goals;
+- systematic disambiguation as a central part of the tradecraft;
+- BFO and shared architectures as mechanisms for coordination;
+- foundries as governance communities rather than file repositories; and
+- formal reasoning as a way to expose the consequences of modeling decisions.
+
+<div className="finalLine">Day 2 would take the next step: what does careful modeling actually look like when the domain is difficult?</div>
+
+## Course resources
+
+- [The World’s Ontology Ecosystem course repository](https://github.com/Applied-Ontology-Education/World-s-Ontology-Ecosystem)
+- [NCOR Summer School 2026](https://ncor-network.org/summer-school-2026)

@@ -40,7 +40,7 @@ const config = {
         routeBasePath: 'blog',
         sortPosts: 'descending',
         blogSidebarTitle: 'Recent Posts',
-        blogSidebarCount: 8,
+        blogSidebarCount: 20,
         blogTitle: 'NCOR Blog',
         blogDescription:
           'Field notes, best practices, and commentary from the National Center for Ontological Research.',
