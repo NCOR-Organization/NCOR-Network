@@ -106,3 +106,17 @@ Key topics in our industrial ontology research include:
 
 By leveraging industrial ontologies, we empower organizations to streamline operations, improve collaboration, and drive innovation. Our work emphasizes practical applications that align with industry needs while maintaining a robust theoretical foundation, distinguishing NCOR's approach as both practical and philosophically sound.
 
+## Defense and Intelligence
+
+The defense and intelligence domain presents unique challenges of large-scale, heterogeneous data and cross-agency coordination. This research area applies ontology-based methods to enhance intelligence gathering and analysis. By establishing common semantic frameworks, NCOR’s work enables better data sharing and interoperability across military and intelligence systems, helping analysts integrate disparate sources and derive actionable insights.
+
+Key topics in our defense and intelligence ontology research include:
+
+- **Common Standards:** Developing common ontology standards for consistent information exchange among defense and intelligence agencies.  
+- **Data Integration:** Integrating heterogeneous intelligence data sources to support threat detection and analysis.  
+- **Enhanced Analysis:** Improving federated search capabilities and reducing analysis timelines through ontology-driven knowledge management.  
+- **Adaptation of Frameworks:** Adapting proven ontology frameworks (e.g., the OBO Foundry) to military and intelligence contexts.  
+
+By leveraging ontologies in this domain, we empower defense and intelligence organizations to attain greater situational awareness, strengthen inter-agency collaboration, and make faster, more informed decisions. Our approach demonstrates how applied ontology can address critical national security needs by transforming diverse, raw data into interoperable, actionable intelligence.
+
+For more information, see the [Department of Defense memorandum on applied ontology](https://dailynous.com/wp-content/uploads/2024/03/memo-dod-applied-ontology.pdf).
