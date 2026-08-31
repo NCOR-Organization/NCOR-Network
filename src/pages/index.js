@@ -260,18 +260,25 @@ export default function Home() {
   description="NCOR - A global hub fostering National Centers for Ontological Research across diverse cultures"
   className="homepage">
 
-  {/* ✅ SEO meta tags */}
-  <Head>
-    <title>NCOR Network | Ontology Research, Collaboration & Best Practices</title>
-    <meta
-      name="description"
-      content="The NCOR Network is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems."
-    />
-    <meta
-      name="keywords"
-      content="ontology, NCOR, research, workshops, AI, education"
-    />
-  </Head>
+{/* ✅ SEO meta tags */}
+<Head>
+  <title>NCOR Network | Ontology Research, Collaboration & Best Practices</title>
+  <meta
+    name="description"
+    content="The NCOR Network is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems."
+  />
+  <meta
+    name="keywords"
+    content="ontology, NCOR, research, workshops, AI, education, semantic interoperability, ontology standards, knowledge graphs"
+  />
+
+  {/* Open Graph tags (used by most platforms including X/Twitter, LinkedIn, FB) */}
+  <meta property="og:title" content="NCOR Network | Ontology Research, Collaboration & Best Practices" />
+  <meta property="og:description" content="Advancing ontology research, education, and implementation across domains." />
+  <meta property="og:image" content="https://ncor-network.org/img/ncor-network-logo.png" />
+  <meta property="og:url" content="https://ncor-network.org/" />
+  <meta property="og:type" content="website" />
+</Head>
 
   <HomepageHeader />
 
