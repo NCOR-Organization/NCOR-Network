@@ -58,6 +58,7 @@ const config = {
           changefreq: 'weekly',
           priority: 0.7,
           filename: 'sitemap.xml',
+          ignorePatterns: ['/candidate-pool'],
         },
       }),
     ],

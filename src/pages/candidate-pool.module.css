@@ -1,0 +1,262 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 92% 4%, rgba(184, 139, 29, 0.14), transparent 24rem),
+    #f6f7f9;
+  color: #25272b;
+  font-size: 1rem;
+}
+
+.header {
+  background: linear-gradient(125deg, #262626 0%, #35312a 68%, #725317 100%);
+  color: #fff;
+  padding: 3.25rem 1.5rem 3rem;
+  border-bottom: 4px solid #b88b1d;
+}
+
+.headerInner,
+.content {
+  width: min(100%, 960px);
+  margin: 0 auto;
+}
+
+.headerInner {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #f5e1a4;
+  padding: 5px;
+}
+
+.eyebrow,
+.stepLabel {
+  display: block;
+  color: #e6c774;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: Merriweather, Georgia, serif;
+  font-size: clamp(2.1rem, 6vw, 3.35rem);
+  line-height: 1.08;
+  margin: 0.35rem 0 0.75rem;
+  letter-spacing: -0.035em;
+}
+
+.intro {
+  max-width: 710px;
+  margin: 0;
+  color: #ece8df;
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.content {
+  padding: 2.75rem 1.5rem 4rem;
+}
+
+.summary,
+.policy {
+  max-width: 790px;
+}
+
+.summary h2,
+.policy h2,
+.formHeading h2 {
+  font-family: Merriweather, Georgia, serif;
+  color: #242424;
+  letter-spacing: -0.025em;
+}
+
+.summary ol {
+  padding-left: 1.35rem;
+}
+
+.summary li {
+  padding-left: 0.4rem;
+  margin: 0.55rem 0;
+}
+
+.note {
+  border-left: 4px solid #b88b1d;
+  background: #fff9e9;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0 0;
+  color: #4b4537;
+}
+
+.formCard {
+  margin: 2.75rem 0;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  background: #fff;
+  border: 1px solid #dedfe2;
+  border-top: 5px solid #9e7418;
+  border-radius: 10px;
+  box-shadow: 0 12px 36px rgba(29, 31, 35, 0.08);
+}
+
+.formHeading {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.stepLabel {
+  color: #865c14;
+  margin: 0 0 0.35rem;
+}
+
+.formHeading h2 {
+  margin: 0 0 0.65rem;
+}
+
+.formHeading p {
+  margin: 0;
+  color: #5d6067;
+}
+
+.formCard fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.formCard legend {
+  width: 100%;
+  padding: 0 0 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2e3034;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.option,
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.option {
+  min-height: 48px;
+  padding: 0.75rem;
+  border: 1px solid #dedfe2;
+  border-radius: 6px;
+  background: #fafafa;
+  line-height: 1.4;
+}
+
+.option:hover {
+  border-color: #b88b1d;
+  background: #fffbf1;
+}
+
+.option input,
+.consent input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.15rem 0 0;
+  flex: 0 0 auto;
+  accent-color: #9e7418;
+}
+
+.consent {
+  padding: 1rem;
+  margin: 0.25rem 0 1.25rem;
+  border-radius: 6px;
+  background: #f3f4f5;
+  color: #3f4248;
+  line-height: 1.55;
+}
+
+.submitButton {
+  display: inline-block;
+  padding: 0.8rem 1.35rem;
+  border-radius: 5px;
+  background: #9e7418;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.submitButton:hover {
+  background: #865c14;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.submitButton:focus-visible,
+.option:has(input:focus-visible),
+.consent:has(input:focus-visible) {
+  outline: 3px solid rgba(10, 102, 194, 0.42);
+  outline-offset: 3px;
+}
+
+.disabled,
+.disabled:hover {
+  background: #aaa8a2;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.emailNote {
+  margin: 0.85rem 0 0;
+  color: #666970;
+  font-size: 0.9rem;
+}
+
+.policy {
+  padding-top: 0.25rem;
+}
+
+.policy p {
+  color: #50535a;
+}
+
+.footer {
+  padding: 1.5rem;
+  border-top: 1px solid #dedfe2;
+  color: #6a6d72;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .header {
+    padding-top: 2.4rem;
+  }
+
+  .headerInner {
+    grid-template-columns: 56px 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .optionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
